@@ -1,0 +1,28 @@
+{
+  "name": "vodlink",
+  "version": "0.0.1",
+  "description": "twitch vod timestamp links to lol matches",
+  "main": "index.js",
+  "scripts": {
+    "create_migration": "node utils/scripts/create_migration.js",
+    "migrate_database": "node utils/scripts/migrate_database.js",
+    "rollback_migration": "node utils/scripts/rollback_database.js",
+    "seed_database": "node utils/scripts/initial_seed.js",
+    "update_champion_json": "node utils/scripts/fetch_champion_json.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cron": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "pg": "^8.7.3",
+    "pg-promise": "^10.11.1",
+    "postgrator": "^7.1.0",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "plaiceholder": "^2.3.0",
+    "prettier": "^2.6.2"
+  }
+}
