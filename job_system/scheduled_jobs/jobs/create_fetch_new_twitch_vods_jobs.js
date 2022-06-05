@@ -1,5 +1,5 @@
 const db = require("../../../database");
-const jobTypes = require("../../job_queue/job_types");
+const Job = require("../../job_queue/jobs/Job");
 const logger = require("../../../utils/logger");
 
 /**
@@ -25,7 +25,7 @@ async function createFetchNewTwitchVodsJob() {
     let payload = { twitchChannelId: twitchAccount.id };
 
     try {
-      await db.jobs.createNewJob(jobTypes.FETCH_NEW_TWITCH_VODS, payload);
+      await db.jobs.createNewJob(Job.TYPES.FETCH_NEW_TWITCH_VODS, payload);
     } catch (sqlError) {
       logger.error(
         `createFetchNewTwitchVodsJob - Error creating new FETCH_NEW_TWITCH_VODS job for twitchAccount id: ${twitchAccount.id}`

@@ -1,5 +1,5 @@
 const db = require("../../../database");
-const jobTypes = require("../../job_queue/job_types");
+const Job = require("../../job_queue/jobs/Job");
 const logger = require("../../../utils/logger");
 
 /**
@@ -27,7 +27,7 @@ async function createCheckVodExistenceJobs() {
     };
 
     try {
-      await db.jobs.createNewJob(jobTypes.CHECK_VOD_EXISTENCE, payload);
+      await db.jobs.createNewJob(Job.TYPES.CHECK_VOD_EXISTENCE, payload);
     } catch (sqlError) {
       logger.error(
         `createCheckVodExistenceJob - Error creating CHECK_VOD_EXISTENCE job for vod - ${vod.id}`

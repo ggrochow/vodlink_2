@@ -1,7 +1,6 @@
-const Job = require("../job");
+const Job = require("../Job");
 const lolApi = require("../../../../external_apis/lol");
 const db = require("../../../../database");
-const jobTypes = require("../../job_types");
 
 /**
  * Job to lookup a summoner by name & region, If found associate it to the provided channel
@@ -71,9 +70,9 @@ class FetchLolSummonerIdJob extends Job {
 
     try {
       let payload = { twitchChannelId: this.twitchChannelId };
-      await db.jobs.createNewJob(jobTypes.FETCH_NEW_TWITCH_VODS, payload);
+      await db.jobs.createNewJob(Job.TYPES.FETCH_NEW_TWITCH_VODS, payload);
     } catch (sqlError) {
-      this.errors = `SQL error creating ${jobTypes.FETCH_NEW_TWITCH_VODS} job`;
+      this.errors = `SQL error creating ${Job.TYPES.FETCH_NEW_TWITCH_VODS} job`;
       console.error(sqlError);
     }
 

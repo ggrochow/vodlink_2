@@ -77,5 +77,6 @@ CREATE TABLE jobs (
     job_type    job_type_enum       NOT NULL,
     status      job_status_enum     NOT NULL,
     payload     JSONB               NOT NULL,
+    priority    INTEGER             NOT NULL,
     errors      VARCHAR
 );

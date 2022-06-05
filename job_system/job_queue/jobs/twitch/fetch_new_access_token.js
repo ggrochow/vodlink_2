@@ -1,4 +1,4 @@
-const Job = require("../job");
+const Job = require("../Job");
 const twitchApi = require("../../../../external_apis/twitch");
 const db = require("../../../../database");
 

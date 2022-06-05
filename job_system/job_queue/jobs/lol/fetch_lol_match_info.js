@@ -1,7 +1,6 @@
-const Job = require("../job");
+const Job = require("../Job");
 const lolApi = require("../../../../external_apis/lol");
 const db = require("../../../../database");
-const jobTypes = require("../../job_types");
 const moment = require("moment");
 
 /**
@@ -45,7 +44,7 @@ class FetchLolMatchInfoJob extends Job {
       try {
         let payLoad = { matchId: lolMatch.id };
         await db.jobs.createNewJob(
-          jobTypes.ASSOCIATE_LOL_MATCH_TO_TWITCH_VOD,
+          Job.TYPES.ASSOCIATE_LOL_MATCH_TO_TWITCH_VOD,
           payLoad
         );
         return this;
@@ -171,7 +170,7 @@ class FetchLolMatchInfoJob extends Job {
     // and finally create a determine roles job
     let payload = { matchId, participantMapping };
     try {
-      await db.jobs.createNewJob(jobTypes.DETERMINE_LOL_MATCH_ROLES, payload);
+      await db.jobs.createNewJob(Job.TYPES.DETERMINE_LOL_MATCH_ROLES, payload);
     } catch (sqlError) {
       this.errors = `SQL error when creating determine roles job - ${sqlError.message}`;
       console.error(sqlError);

@@ -1,8 +1,7 @@
-const Job = require("../job");
+const Job = require("../Job");
 const logger = require("../../../../utils/logger");
 const lolApi = require("../../../../external_apis/lol");
 const db = require("../../../../database");
-const jobTypes = require("../../job_types");
 
 /**
  * Job to find a list of all lol_matches played by a streamer during a given twitch vod
@@ -83,7 +82,7 @@ class FetchLolMatchesDuringVodJob extends Job {
           nativeMatchId: lolMatch.gameId,
           region: lolSummoner.region,
         };
-        await db.jobs.createNewJob(jobTypes.FETCH_LOL_MATCH_INFO, payload);
+        await db.jobs.createNewJob(Job.TYPES.FETCH_LOL_MATCH_INFO, payload);
       } catch (sqlError) {
         this.errors = `Error saving FETCH MATCH INFO job - ${sqlError}`;
         console.error(sqlError);

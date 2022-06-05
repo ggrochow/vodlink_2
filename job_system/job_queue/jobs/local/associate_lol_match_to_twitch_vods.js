@@ -1,4 +1,4 @@
-const Job = require("../job");
+const Job = require("../Job");
 const db = require("../../../../database");
 const moment = require("moment");
 

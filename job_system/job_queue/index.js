@@ -1,10 +1,12 @@
 const JobQueue = require("./job_queue");
-const jobTypes = require("./job_types");
+const Job = require("./jobs/Job");
+const jobTypes = Job.TYPES;
 
 const twitchJobTypes = [
   jobTypes.FETCH_TWITCH_CHANNEL_ID,
   jobTypes.FETCH_NEW_TWITCH_VODS,
   jobTypes.CHECK_VOD_EXISTENCE,
+  jobTypes.FETCH_NEW_ACCESS_TOKEN,
 ];
 // https://dev.twitch.tv/docs/api/guide/#rate-limits
 // No bearer token = 30 requests per minute.

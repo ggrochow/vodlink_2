@@ -5,7 +5,7 @@
 require("dotenv").config();
 
 const db = require("../../database");
-const JOB_TYPES = require("../../job_system/job_queue/job_types.js");
+const Job = require("../../job_system/job_queue/jobs/Job.js");
 
 const ACCOUNTS = [
   {
@@ -20,7 +20,7 @@ const ACCOUNTS = [
 ];
 
 ACCOUNTS.forEach((accountObj) => {
-  let jobType = JOB_TYPES.FETCH_TWITCH_CHANNEL_ID;
+  let jobType = Job.TYPES.FETCH_TWITCH_CHANNEL_ID;
   let payload = {
     twitchName: accountObj.twitch_name,
     lolAccounts: accountObj.lol_accounts,

@@ -1,7 +1,6 @@
-const Job = require("../job");
+const Job = require("../Job");
 const twitchApi = require("../../../../external_apis/twitch");
 const db = require("../../../../database");
-const jobTypes = require("../../job_types");
 const moment = require("moment");
 
 /**
@@ -70,7 +69,7 @@ class FetchNewTwitchVodsJob extends Job {
       };
 
       try {
-        await db.jobs.createNewJob(jobTypes.FETCH_NEW_TWITCH_VODS, payload);
+        await db.jobs.createNewJob(Job.TYPES.FETCH_NEW_TWITCH_VODS, payload);
       } catch (sqlError) {
         this.errors = `Error while creating fetchNewTwitchVods job with pagination cursor - ${sqlError.message}`;
         console.error(sqlError);
@@ -162,7 +161,7 @@ class FetchNewTwitchVodsJob extends Job {
             summonerId: summonerAccount.id,
           };
           await db.jobs.createNewJob(
-            jobTypes.FETCH_LOL_MATCHES_DURING_VOD,
+            Job.TYPES.FETCH_LOL_MATCHES_DURING_VOD,
             payload
           );
         } catch (sqlError) {

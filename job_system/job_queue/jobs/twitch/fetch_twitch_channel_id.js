@@ -1,6 +1,5 @@
 const twitchApi = require("../../../../external_apis/twitch");
-const jobTypes = require("../../job_types");
-const Job = require("../job");
+const Job = require("../Job");
 const db = require("../../../../database");
 
 /**
@@ -76,9 +75,9 @@ class FetchTwitchChannelIdJob extends Job {
       };
 
       try {
-        await db.jobs.createNewJob(jobTypes.FETCH_LOL_SUMMONER_ID, payload);
+        await db.jobs.createNewJob(Job.TYPES.FETCH_LOL_SUMMONER_ID, payload);
       } catch (sqlErr) {
-        this.errors = `SQL error saving ${jobTypes.FETCH_LOL_SUMMONER_ID} job, ${sqlErr.message}`;
+        this.errors = `SQL error saving ${Job.TYPES.FETCH_LOL_SUMMONER_ID} job, ${sqlErr.message}`;
         console.error(sqlErr);
         return this;
       }

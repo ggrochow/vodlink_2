@@ -1,4 +1,4 @@
-const Job = require("../job");
+const Job = require("../Job");
 const twitchApi = require("../../../../external_apis/twitch");
 const db = require("../../../../database");
 
@@ -35,6 +35,11 @@ class CheckVodExistenceJob extends Job {
       statusCode = 200;
     } catch (apiError) {
       if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
+        this.setToRetry();
+        return this;
+      }
+      if (apiError.statusCode === 401) {
+        ///
         this.setToRetry();
         return this;
       }
