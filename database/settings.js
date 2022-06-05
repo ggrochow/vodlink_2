@@ -21,9 +21,9 @@ function upsertSetting(settingType, settingValue) {
   return db.queryOne(query, params);
 }
 
-function getSetting(settingType) {
+function getSettingValue(settingType) {
   const query = `
-    SELECT * 
+    SELECT setting_value
     FROM settings
     WHERE setting_type = $(settingType)
   `;
@@ -35,8 +35,12 @@ function getSetting(settingType) {
   return db.queryOne(query, params);
 }
 
+function getAccessToken() {
+  return getSettingValue(settingTypes.TWITCH_ACCESS_TOKEN);
+}
+
 module.exports = {
-  upsertSetting,
-  getSetting,
   settingTypes,
+  upsertSetting,
+  getAccessToken,
 };

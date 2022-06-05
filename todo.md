@@ -8,7 +8,8 @@
 - admin UI to add new channels + lol acc
 - update pgpromise code
 - eslint+prettier
--
+- database transactions
+- retry before non retry 
 
 ### Wants
 

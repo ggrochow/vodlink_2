@@ -26,11 +26,41 @@ class FetchTwitchChannelIdJob extends Job {
   }
 
   async run() {
+    let accessToken;
+    try {
+      accessToken = await db.settings.getAccessToken();
+    } catch (sqlError) {
+      this.errors = `sql Error getting twitch auth token ${sqlError.message}`;
+      console.error(sqlError);
+      return this;
+    }
+
     let apiResult;
     try {
-      apiResult = await twitchApi.getUserInfoFromChannelName(this.channelName);
+      apiResult = await twitchApi.getUserInfoFromChannelName(
+        this.channelName,
+        accessToken
+      );
     } catch (apiError) {
+      // all branches return , can likely have common handling logic
       if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
+        this.setToRetry();
+        return this;
+      }
+
+      // 401 means our access token has expired, we create a high priority job and set this to retry
+      if (apiError.statusCode === 401) {
+        try {
+          await db.jobs.createNewJob(
+            Job.TYPES.FETCH_NEW_ACCESS_TOKEN,
+            {},
+            Job.PRIORITIES.URGENT
+          );
+        } catch (sqlError) {
+          this.errors = `sql Error creating update twitch auth token job ${sqlError.message}`;
+          console.error(sqlError);
+          return this;
+        }
         this.setToRetry();
         return this;
       }

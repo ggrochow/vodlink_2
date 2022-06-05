@@ -41,17 +41,43 @@ class FetchNewTwitchVodsJob extends Job {
       return this;
     }
 
+    let accessToken;
+    try {
+      accessToken = await db.settings.getAccessToken();
+    } catch (sqlError) {
+      this.errors = `Error retrieving access token from DB - ${sqlError.message}`;
+      console.error(sqlError);
+      return this;
+    }
+
     let nativeChannelId = twitchChannel.native_channel_id;
     let apiResult;
-
     // API query to find archive of vods for channel
     try {
       apiResult = await twitchApi.getVodsForChannel(
         nativeChannelId,
+        accessToken,
         this.cursor
       );
     } catch (apiError) {
       if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
+        this.setToRetry();
+        return this;
+      }
+
+      // 401 means our access token has expired, we create a high priority job and set this to retry
+      if (apiError.statusCode === 401) {
+        try {
+          await db.jobs.createNewJob(
+            Job.TYPES.FETCH_NEW_ACCESS_TOKEN,
+            {},
+            Job.PRIORITIES.URGENT
+          );
+        } catch (sqlError) {
+          this.errors = `sql Error creating update twitch auth token job ${sqlError.message}`;
+          console.error(sqlError);
+          return this;
+        }
         this.setToRetry();
         return this;
       }

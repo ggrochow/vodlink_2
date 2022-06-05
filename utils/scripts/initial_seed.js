@@ -30,3 +30,7 @@ ACCOUNTS.forEach((accountObj) => {
     .createNewJob(jobType, payload)
     .catch((e) => console.error(JSON.stringify(e, null, 4)));
 });
+
+db.jobs
+  .createNewJob(Job.TYPES.FETCH_NEW_ACCESS_TOKEN, {}, Job.PRIORITIES.URGENT)
+  .catch((e) => console.error(JSON.stringify(e, null, 4)));
