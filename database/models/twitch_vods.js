@@ -9,14 +9,14 @@ function createNew(startedAt, endedAt, twitchChannelId, nativeVodId) {
 
   let params = [startedAt, endedAt, twitchChannelId, nativeVodId];
 
-  return db.queryOne(query, params);
+  return db.one(query, params);
 }
 
 function getById(id) {
   let query = "SELECT * FROM twitch_vods WHERE id = $1";
   let params = [id];
 
-  return db.queryOne(query, params);
+  return db.oneOrNone(query, params);
 }
 
 function getAllNativeVodIdsByTwitchChannelId(twitchChannelId) {
@@ -24,7 +24,7 @@ function getAllNativeVodIdsByTwitchChannelId(twitchChannelId) {
     "SELECT native_vod_id FROM twitch_vods WHERE twitch_channel_id = $1";
   let params = [twitchChannelId];
 
-  return db.query(query, params);
+  return db.manyOrNone(query, params);
 }
 
 function findVodPlayedDuringPeriodByAccount(
@@ -37,20 +37,20 @@ function findVodPlayedDuringPeriodByAccount(
     "SELECT * FROM twitch_vods WHERE started_at < $1 AND ended_at > $2 AND twitch_channel_id = $3";
   let params = [startTime, endTime, twitchAccountId];
 
-  return db.queryOne(query, params);
+  return db.oneOrNone(query, params);
 }
 
 function deleteById(id) {
   let query = "DELETE FROM twitch_vods WHERE id = $1";
   let params = [id];
 
-  return db.query(query, params);
+  return db.none(query, params);
 }
 
 function getAll() {
   let query = "SELECT * FROM twitch_vods";
 
-  return db.query(query);
+  return db.manyOrNone(query);
 }
 
 module.exports = {

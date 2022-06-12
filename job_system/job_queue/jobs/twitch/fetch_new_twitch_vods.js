@@ -1,7 +1,11 @@
 const Job = require("../Job");
 const twitchApi = require("../../../../external_apis/twitch");
-const db = require("../../../../database");
-const moment = require("moment");
+const db = require("../../../../database/models");
+const dayjs = require("dayjs");
+const utc = require("dayjs/plugin/utc");
+const duration = require("dayjs/plugin/duration");
+dayjs.extend(utc);
+dayjs.extend(duration);
 
 /**
  * Job to find all new twitch vods for a channel
@@ -44,6 +48,7 @@ class FetchNewTwitchVodsJob extends Job {
     let accessToken;
     try {
       accessToken = await db.settings.getAccessToken();
+      accessToken = accessToken?.setting_value;
     } catch (sqlError) {
       this.errors = `Error retrieving access token from DB - ${sqlError.message}`;
       console.error(sqlError);
@@ -59,6 +64,7 @@ class FetchNewTwitchVodsJob extends Job {
         accessToken,
         this.cursor
       );
+      apiResult = apiResult.data;
     } catch (apiError) {
       if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
         this.setToRetry();
@@ -135,7 +141,7 @@ class FetchNewTwitchVodsJob extends Job {
     }
     // For each vod, if its new, public, and created within the last month,
     // create DB entry then foreach lol account associated - a new FIND_LOL_MATCHES_DURING_VOD job.
-    let oneMonthAgo = moment().subtract(1, "month");
+    let oneMonthAgo = dayjs().subtract(1, "month");
     for (let vodIndex in apiResult.data) {
       let vodInfo = apiResult.data[vodIndex];
 
@@ -156,7 +162,7 @@ class FetchNewTwitchVodsJob extends Job {
         // TODO: look into why this might still allow for duplicate vodId
       }
 
-      let startTime = moment.utc(vodInfo.created_at);
+      let startTime = dayjs.utc(vodInfo.created_at);
       if (startTime < oneMonthAgo) {
         continue;
       }
@@ -204,9 +210,9 @@ class FetchNewTwitchVodsJob extends Job {
 
 function calculateVodEndTime(durationString, startedAt) {
   let iso8601Duration = `PT${durationString.toUpperCase()}`;
-  let duration = moment.duration(iso8601Duration);
+  let duration = dayjs.duration(iso8601Duration);
 
-  let startTime = moment.utc(startedAt);
+  let startTime = dayjs.utc(startedAt);
   return startTime.add(duration);
 }
 

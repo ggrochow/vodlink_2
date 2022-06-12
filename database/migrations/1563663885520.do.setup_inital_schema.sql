@@ -7,6 +7,7 @@ CREATE TABLE twitch_channels (
 CREATE TABLE lol_summoners (
     id                  serial      PRIMARY KEY,
     native_summoner_id  VARCHAR     UNIQUE NOT NULL,
+    native_puuid        VARCHAR     UNIQUE NOT NULL,
     summoner_name       VARCHAR     UNIQUE NOT NULL,
     region              VARCHAR     NOT NULL,
     twitch_channel_id   INTEGER     NOT NULL
@@ -22,7 +23,7 @@ CREATE TABLE twitch_vods (
 
 CREATE TABLE lol_matches (
     id                  serial      PRIMARY KEY,
-    native_match_id     BIGINT      UNIQUE NOT NULL,
+    native_match_id     VARCHAR     UNIQUE NOT NULL,
     winning_team        INTEGER     NOT NULL,
     started_at          TIMESTAMP   NOT NULL,
     ended_at            TIMESTAMP   NOT NULL,
@@ -61,7 +62,8 @@ CREATE TYPE job_type_enum AS ENUM (
     'DETERMINE_LOL_MATCH_ROLES',
     'ASSOCIATE_LOL_MATCH_TO_TWITCH_VOD',
     'CLEANUP_EXPIRED_TWITCH_VODS',
-    'CHECK_VOD_EXISTENCE'
+    'CHECK_VOD_EXISTENCE',
+    'FETCH_NEW_ACCESS_TOKEN'
 );
 
 CREATE TYPE job_status_enum AS ENUM (

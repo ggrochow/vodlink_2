@@ -1,5 +1,5 @@
 const jobs = require("./jobs");
-const db = require("../../database");
+const db = require("../../database/models");
 const logger = require("../../utils/logger");
 
 // Setup two queues, with different 'rate limits' to wait between each job
@@ -120,7 +120,8 @@ class JobQueue {
 
   // Wait an arbitrary amount of time if we don't find any results.
   hasBeenEnoughTimeSinceLastNoJobsFound() {
-    const waitTimeBetweenNoJobsFound = 60000; // 60 seconds
+    // const waitTimeBetweenNoJobsFound = 60000; // 60 seconds
+    const waitTimeBetweenNoJobsFound = 5000; // 60 seconds // TODO not this
     let firstTimeNotFindingJobs = this.timeOfLastNoJobsFound === null;
 
     let currentTime = new Date().getTime();
@@ -153,7 +154,7 @@ class JobQueue {
 
     try {
       let job = await this.getNewJob();
-      if (job === undefined) {
+      if (job === undefined || job === null) {
         this.timeOfLastNoJobsFound = new Date().getTime();
         return;
       }

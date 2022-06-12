@@ -3,13 +3,13 @@
  */
 
 const db = require("./raw_queries");
-const Job = require("../job_system/job_queue/jobs/Job.js");
+const Job = require("../../job_system/job_queue/jobs/Job.js");
 
 function createNewJob(jobType, payload, priority = Job.PRIORITIES.DEFAULT) {
   let query = `
     INSERT INTO jobs
            (job_type, status, payload, priority) 
-    VALUES ( $(jobType), $(status), $(payload) $(priority) ) 
+    VALUES ( $(jobType), $(status), $(payload), $(priority) ) 
     RETURNING *
     `;
   let params = {
@@ -19,7 +19,7 @@ function createNewJob(jobType, payload, priority = Job.PRIORITIES.DEFAULT) {
     status: Job.STATUS_TYPES.NEW,
   };
 
-  return db.queryOne(query, params);
+  return db.one(query, params);
 }
 
 function getRunnableJobOfType(jobTypeArray) {
@@ -27,10 +27,10 @@ function getRunnableJobOfType(jobTypeArray) {
     SELECT * 
     FROM jobs 
     WHERE 
-      job_type IN ( $(jobTypes):list ) 
-      AND status IN ( $(statusTypes):list ) 
+      job_type IN ( $(jobTypes:list) ) 
+      AND status IN ( $(statusTypes:list) ) 
     ORDER BY 
-      priority ASC
+      priority ASC,
       id ASC 
     LIMIT 1
    `;
@@ -39,7 +39,7 @@ function getRunnableJobOfType(jobTypeArray) {
     jobTypes: jobTypeArray,
   };
 
-  return db.queryOne(query, params);
+  return db.oneOrNone(query, params);
 }
 
 function setJobToRunning(id) {
@@ -54,14 +54,14 @@ function deleteFinishedJobs() {
   let query = "DELETE FROM jobs WHERE status = $1";
   let params = [Job.STATUS_TYPES.FINISHED];
 
-  return db.query(query, params);
+  return db.none(query, params);
 }
 
 function setJobToStatus(id, status) {
   let query = "UPDATE jobs SET status = $1 WHERE id = $2 RETURNING *";
   let params = [status, id];
 
-  return db.queryOne(query, params);
+  return db.one(query, params);
 }
 
 function setJobToError(id, errors) {
@@ -69,7 +69,7 @@ function setJobToError(id, errors) {
     "UPDATE jobs SET (status, errors) = ($1, $2) WHERE id = $3 RETURNING *";
   let params = [Job.STATUS_TYPES.ERROR, errors, id];
 
-  return db.queryOne(query, params);
+  return db.one(query, params);
 }
 
 function setJobToRetry(id, payload) {
@@ -77,7 +77,7 @@ function setJobToRetry(id, payload) {
     "UPDATE jobs SET (status, payload) = ($1, $2) WHERE id = $3 RETURNING *";
   let params = [Job.STATUS_TYPES.RETRY, payload, id];
 
-  return db.queryOne(query, params);
+  return db.one(query, params);
 }
 
 module.exports = {

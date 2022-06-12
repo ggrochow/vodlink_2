@@ -8,23 +8,23 @@ const { twitchJobQueue, lolJobQueue, nonApiJobQueue } = jobQueues;
 logger.info("Initializing Job queues");
 setInterval(() => {
   lolJobQueue.run();
-}, 100);
+}, 1000);
 setInterval(() => {
   twitchJobQueue.run();
-}, 100);
+}, 1000);
 setInterval(() => {
   nonApiJobQueue.run();
-}, 100);
+}, 1000);
 
-const {
-  createFetchNewVods,
-  createCheckVodExistence,
-  deleteFinishedJobsCron,
-  deleteOldLolMatchesCron,
-} = cronJobs;
-
-logger.info("Initializing CRON jobs");
-createFetchNewVods.start();
-createCheckVodExistence.start();
-deleteFinishedJobsCron.start();
-deleteOldLolMatchesCron.start();
+// const {
+//   createFetchNewVods,
+//   createCheckVodExistence,
+//   deleteFinishedJobsCron,
+//   deleteOldLolMatchesCron,
+// } = cronJobs;
+//
+// logger.info("Initializing CRON jobs");
+// createFetchNewVods.start();
+// createCheckVodExistence.start();
+// deleteFinishedJobsCron.start();
+// deleteOldLolMatchesCron.start();

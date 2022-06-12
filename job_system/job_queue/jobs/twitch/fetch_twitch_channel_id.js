@@ -1,6 +1,6 @@
 const twitchApi = require("../../../../external_apis/twitch");
 const Job = require("../Job");
-const db = require("../../../../database");
+const db = require("../../../../database/models");
 
 /**
  * Finds native id for a twitch channel by name
@@ -29,6 +29,7 @@ class FetchTwitchChannelIdJob extends Job {
     let accessToken;
     try {
       accessToken = await db.settings.getAccessToken();
+      accessToken = accessToken?.setting_value;
     } catch (sqlError) {
       this.errors = `sql Error getting twitch auth token ${sqlError.message}`;
       console.error(sqlError);
@@ -41,15 +42,17 @@ class FetchTwitchChannelIdJob extends Job {
         this.channelName,
         accessToken
       );
+      apiResult = apiResult.data;
     } catch (apiError) {
+      const status = apiError.response.status;
       // all branches return , can likely have common handling logic
-      if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
+      if (status === 429 || status >= 500) {
         this.setToRetry();
         return this;
       }
 
       // 401 means our access token has expired, we create a high priority job and set this to retry
-      if (apiError.statusCode === 401) {
+      if (status === 401) {
         try {
           await db.jobs.createNewJob(
             Job.TYPES.FETCH_NEW_ACCESS_TOKEN,
@@ -71,11 +74,7 @@ class FetchTwitchChannelIdJob extends Job {
       // Set relevant errors on job, return it.
     }
 
-    if (
-      apiResult === undefined ||
-      apiResult.data.length === 0 ||
-      apiResult.data[0].id === undefined
-    ) {
+    if (apiResult?.data?.[0]?.id === undefined) {
       // No results found for name, error this
       this.errors = `No twitch channel with the username ${this.channelName} found via twitchapi`;
       return this;

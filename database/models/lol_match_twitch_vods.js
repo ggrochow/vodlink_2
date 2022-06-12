@@ -8,7 +8,7 @@ function createNew(matchId, vodId, timestampString) {
     "VALUES ($1, $2, $3) returning *";
   let params = [matchId, vodId, timestampString];
 
-  return db.queryOne(query, params);
+  return db.one(query, params);
 }
 
 function findByMatchAndVodId(matchId, vodId) {
@@ -16,14 +16,14 @@ function findByMatchAndVodId(matchId, vodId) {
     "SELECT * FROM lol_match_twitch_vods WHERE lol_match_id = $1 AND twitch_vod_id = $2";
   let params = [matchId, vodId];
 
-  return db.queryOne(query, params);
+  return db.oneOrNone(query, params);
 }
 
 function deleteByVodId(vodId) {
   let query = "DELETE FROM lol_match_twitch_vods WHERE twitch_vod_id  = $1";
   let params = [vodId];
 
-  return db.query(query, params);
+  return db.none(query, params);
 }
 
 function deleteByLolMatchIds(ids) {
@@ -31,7 +31,7 @@ function deleteByLolMatchIds(ids) {
     "DELETE FROM lol_match_twitch_vods WHERE lol_match_id IN ( $1:list )";
   let params = [ids];
 
-  return db.query(query, params);
+  return db.none(query, params);
 }
 
 module.exports = {

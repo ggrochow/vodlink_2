@@ -1,7 +1,10 @@
 const Job = require("../Job");
 const logger = require("../../../../utils/logger");
 const lolApi = require("../../../../external_apis/lol");
-const db = require("../../../../database");
+const db = require("../../../../database/models");
+const dayjs = require("dayjs");
+const utc = require("dayjs/plugin/utc");
+dayjs.extend(utc);
 
 /**
  * Job to find a list of all lol_matches played by a streamer during a given twitch vod
@@ -44,17 +47,18 @@ class FetchLolMatchesDuringVodJob extends Job {
       return this;
     }
 
-    let startTime = twitchVod.started_at.valueOf();
-    let endTime = twitchVod.ended_at.valueOf();
+    let startTime = dayjs.utc(twitchVod.started_at).unix();
+    let endTime = dayjs.utc(twitchVod.ended_at).unix();
 
     let apiResults;
     try {
       apiResults = await lolApi.getMatchesForAccountInPeriod(
         lolSummoner.region,
-        lolSummoner.native_summoner_id,
+        lolSummoner.native_puuid,
         startTime,
         endTime
       );
+      apiResults = apiResults.data;
     } catch (apiError) {
       if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
         this.setToRetry();
@@ -74,12 +78,12 @@ class FetchLolMatchesDuringVodJob extends Job {
       return this;
     }
 
-    for (let matchIndex in apiResults.matches) {
-      let lolMatch = apiResults.matches[matchIndex];
+    for (let matchIndex in apiResults) {
+      let nativeMatchId = apiResults[matchIndex];
 
       try {
         let payload = {
-          nativeMatchId: lolMatch.gameId,
+          nativeMatchId,
           region: lolSummoner.region,
         };
         await db.jobs.createNewJob(Job.TYPES.FETCH_LOL_MATCH_INFO, payload);

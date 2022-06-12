@@ -1,7 +1,9 @@
 const Job = require("../Job");
 const lolApi = require("../../../../external_apis/lol");
-const db = require("../../../../database");
-const moment = require("moment");
+const db = require("../../../../database/models");
+const dayjs = require("dayjs");
+const utc = require("dayjs/plugin/utc");
+dayjs.extend(utc);
 
 /**
  * Job to get details about a LoL Match and its participants
@@ -40,7 +42,7 @@ class FetchLolMatchInfoJob extends Job {
 
     // If we know about it, we don't need to collect any more info, but we might have new vods to compare against
     // so we create a new associate job to check.
-    if (lolMatch !== undefined) {
+    if (lolMatch !== undefined && lolMatch !== null) {
       try {
         let payLoad = { matchId: lolMatch.id };
         await db.jobs.createNewJob(
@@ -61,6 +63,7 @@ class FetchLolMatchInfoJob extends Job {
         this.region,
         this.nativeMatchId
       );
+      apiResult = apiResult.data;
     } catch (apiError) {
       if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
         this.setToRetry();
@@ -74,25 +77,21 @@ class FetchLolMatchInfoJob extends Job {
 
     // We only want to show ranked solo Q games.
     const soloQueueRankedId = 420;
-    if (apiResult.queueId !== soloQueueRankedId) {
+    if (apiResult.info.queueId !== soloQueueRankedId) {
       return this;
     }
 
-    let startTime = moment.utc(apiResult.gameCreation);
-    let endTime = moment
-      .utc(apiResult.gameCreation)
-      .add(apiResult.gameDuration, "seconds");
+    const startTime = dayjs.utc(apiResult.info.gameCreation);
+    const endTime = startTime.clone().add(apiResult.info.gameDuration, "s");
 
-    let minimumGameLength = 12 * 60;
-    if (apiResult.gameDuration < minimumGameLength) {
+    const minimumGameLength = 12 * 60;
+    if (apiResult.info.gameDuration < minimumGameLength) {
       // The library used to determine roles requires at least 12 minutes of Game time
       // additionally games took less than 12m are likely of very low quality.
       return this;
     }
 
-    let winningTeam = apiResult.teams.find(
-      (teamInfo) => teamInfo.win === "Win"
-    );
+    const winningTeam = apiResult.info.teams.find((teamInfo) => teamInfo.win);
     let winningTeamId = winningTeam.teamId;
 
     try {
@@ -112,34 +111,18 @@ class FetchLolMatchInfoJob extends Job {
     // Gather all participant info, it lives in two separate arrays in the api results, so we have to do some combining
     let participants = {};
 
-    for (let participantIndex in apiResult.participants) {
-      let participant = apiResult.participants[participantIndex];
-
+    for (let participant of apiResult.info.participants) {
       let participantInfo = {
         participantId: participant.participantId,
         teamId: participant.teamId,
         championId: participant.championId,
+        accountId: participant.summonerId,
+        puuid: participant.puuid,
+        summonerName: participant.summonerName,
+        role: participant.teamPosition,
       };
 
       participants[participantInfo.participantId] = participantInfo;
-    }
-
-    for (let participantIdentityIndex in apiResult.participantIdentities) {
-      let participantIdentity =
-        apiResult.participantIdentities[participantIdentityIndex];
-      let historyUri = participantIdentity.player.matchHistoryUri.split("/");
-      // To be able to link to the match history page, we need to extract the final number from this URI
-      // "/v1/stats/player_history/NA/78247"
-      let historyId = historyUri[historyUri.length - 1];
-
-      let identityInfo = {
-        participantId: participantIdentity.participantId,
-        accountId: participantIdentity.player.currentAccountId,
-        summonerName: participantIdentity.player.summonerName,
-        historyAccountId: historyId,
-      };
-
-      Object.assign(participants[identityInfo.participantId], identityInfo);
     }
 
     let participantMapping = {
@@ -156,7 +139,8 @@ class FetchLolMatchInfoJob extends Job {
           participantInfo.teamId,
           participantInfo.championId,
           participantInfo.summonerName,
-          participantInfo.accountId
+          participantInfo.accountId,
+          participantInfo.role
         );
 
         participantMapping[participantId] = participant.id;
@@ -167,16 +151,15 @@ class FetchLolMatchInfoJob extends Job {
       }
     }
 
-    // and finally create a determine roles job
-    let payload = { matchId, participantMapping };
     try {
-      await db.jobs.createNewJob(Job.TYPES.DETERMINE_LOL_MATCH_ROLES, payload);
+      await db.jobs.createNewJob(Job.TYPES.ASSOCIATE_LOL_MATCH_TO_TWITCH_VOD, {
+        matchId: lolMatch.id,
+      });
     } catch (sqlError) {
-      this.errors = `SQL error when creating determine roles job - ${sqlError.message}`;
+      this.errors = `SQL error while creating new associate job - ${sqlError.message}`;
       console.error(sqlError);
       return this;
     }
-
     return this;
   }
 }

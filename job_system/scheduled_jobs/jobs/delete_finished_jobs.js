@@ -1,4 +1,4 @@
-const db = require("../../../database");
+const db = require("../../../database/models");
 const logger = require("../../../utils/logger");
 
 /**

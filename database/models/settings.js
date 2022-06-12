@@ -18,7 +18,7 @@ function upsertSetting(settingType, settingValue) {
     settingValue,
   };
 
-  return db.queryOne(query, params);
+  return db.one(query, params);
 }
 
 function getSettingValue(settingType) {
@@ -32,7 +32,7 @@ function getSettingValue(settingType) {
     settingType,
   };
 
-  return db.queryOne(query, params);
+  return db.oneOrNone(query, params);
 }
 
 function getAccessToken() {

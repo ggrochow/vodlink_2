@@ -1,6 +1,6 @@
 const Job = require("../Job");
 const twitchApi = require("../../../../external_apis/twitch");
-const db = require("../../../../database");
+const db = require("../../../../database/models");
 
 /**
  * Job to check that a vod still exists, and cleanup if its gone
@@ -32,6 +32,7 @@ class CheckVodExistenceJob extends Job {
     let accessToken;
     try {
       accessToken = await db.settings.getAccessToken();
+      accessToken = accessToken?.setting_value;
     } catch (sqlError) {
       this.errors = `Error retrieving access token from DB - ${sqlError.message}`;
       console.error(sqlError);

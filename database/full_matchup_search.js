@@ -1,4 +1,4 @@
-const db = require("./raw_queries");
+const db = require("./models/raw_queries");
 
 let roleNames = [
   "ally_top",
@@ -100,7 +100,7 @@ function matchupSearch(matchupInfo) {
         ${matchupWheres.join("\n\tand ")}
      order by relation.id DESC`;
 
-  return db.query(query, params);
+  return db.manyOrNone(query, params);
 }
 
 module.exports = {

@@ -1,6 +1,10 @@
 const Job = require("../Job");
-const db = require("../../../../database");
-const moment = require("moment");
+const db = require("../../../../database/models");
+const dayjs = require("dayjs");
+const duration = require("dayjs/plugin/duration");
+const utc = require("dayjs/plugin/utc");
+dayjs.extend(duration);
+dayjs.extend(utc);
 
 /**
  * Job to find all twitch vods that this lol match was played on.
@@ -57,8 +61,8 @@ class AssociateLolMatchToTwitchVodsJob extends Job {
       return this;
     }
 
-    let matchStart = lolMatch.started_at;
-    let matchEnd = lolMatch.ended_at;
+    let matchStart = dayjs.utc(lolMatch.started_at);
+    let matchEnd = dayjs.utc(lolMatch.ended_at);
 
     for (let twitchAccountIndex in twitchAccounts) {
       let twitchAccount = twitchAccounts[twitchAccountIndex];
@@ -72,10 +76,9 @@ class AssociateLolMatchToTwitchVodsJob extends Job {
         );
       } catch (sqlError) {
         this.errors = `SQL Error while finding twitch vod - ${sqlError.message}`;
-        console.error(sqlError);
         return this;
       }
-      if (twitchVod === undefined) {
+      if (twitchVod === null) {
         continue;
       }
 
@@ -91,11 +94,11 @@ class AssociateLolMatchToTwitchVodsJob extends Job {
         console.error(sqlError);
         return this;
       }
-      if (twitchVodLolMatchRelation !== undefined) {
+      if (twitchVodLolMatchRelation !== null) {
         continue;
       }
 
-      let durationToMatchStart = moment.duration(
+      let durationToMatchStart = dayjs.duration(
         matchStart.diff(twitchVod.started_at)
       );
       let secondsFromVodStartToMatchStart = Math.round(

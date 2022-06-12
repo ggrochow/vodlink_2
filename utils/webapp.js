@@ -26,10 +26,6 @@ export function twitchVodLink(vodId, secondsOffset) {
   }s`;
 }
 
-export function matchHistoryLink(region, matchId) {
-  return `https://matchhistory.na.leagueoflegends.com/en/#match-details/${region.toUpperCase()}/${matchId}?tab=overview`;
-}
-
 export function capitalize(str) {
   return str[0].toUpperCase() + str.slice(1);
 }

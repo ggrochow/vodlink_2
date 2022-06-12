@@ -1,6 +1,6 @@
 const Job = require("../Job");
 const lolApi = require("../../../../external_apis/lol");
-const db = require("../../../../database");
+const db = require("../../../../database/models");
 
 /**
  * Job to lookup a summoner by name & region, If found associate it to the provided channel
@@ -37,6 +37,7 @@ class FetchLolSummonerIdJob extends Job {
         this.accountRegion,
         this.accountName
       );
+      apiResult = apiResult.data;
     } catch (apiError) {
       if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
         this.setToRetry();
@@ -52,12 +53,14 @@ class FetchLolSummonerIdJob extends Job {
       this.errors = `No Summoner account found with this name/region combo`;
       return this;
     }
-    let nativeSummonerId = apiResult.accountId;
-    let summonerName = apiResult.name;
+    const nativeSummonerId = apiResult.id;
+    const nativePuuid = apiResult.puuid;
+    const summonerName = apiResult.name;
 
     try {
       await db.lolSummoners.createNewLolSummoner(
         nativeSummonerId,
+        nativePuuid,
         summonerName,
         this.accountRegion,
         this.twitchChannelId
