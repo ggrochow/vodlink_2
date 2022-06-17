@@ -35,9 +35,15 @@ CREATE TABLE lol_match_participants (
     lol_match_id        INTEGER     NOT NULL,
     team_id             INTEGER     NOT NULL,
     champion_id         INTEGER     NOT NULL,
-    role                VARCHAR,
+    role                VARCHAR     NOT NULL,
     summoner_name       VARCHAR     NOT NULL,
-    native_summoner_id  VARCHAR     NOT NULL
+    native_summoner_id  VARCHAR     NOT NULL,
+    native_puuid        VARCHAR     NOT NULL,
+    rank_tier           VARCHAR,
+    rank_rank           VARCHAR,
+    rank_lp             INTEGER,
+    mastery_level       INTEGER,
+    mastery_points      INTEGER
 );
 
 CREATE TABLE lol_match_twitch_vods (
@@ -63,7 +69,10 @@ CREATE TYPE job_type_enum AS ENUM (
     'ASSOCIATE_LOL_MATCH_TO_TWITCH_VOD',
     'CLEANUP_EXPIRED_TWITCH_VODS',
     'CHECK_VOD_EXISTENCE',
-    'FETCH_NEW_ACCESS_TOKEN'
+    'FETCH_NEW_ACCESS_TOKEN',
+    'FETCH_EXTRA_LOL_PARTICIPANT_INFO',
+    'FETCH_LOL_PARTICIPANT_RANK',
+    'FETCH_LOL_PARTICIPANT_MASTERY'
 );
 
 CREATE TYPE job_status_enum AS ENUM (

@@ -72,9 +72,26 @@ function getMatchInfoById(region, matchId) {
   return request(url);
 }
 
+function getRankBySummonerId(region, summonerId) {
+  const url = `${baseUrl(
+    region
+  )}/lol/league/v4/entries/by-summoner/${summonerId}`;
+
+  return request(url);
+}
+
+function getMasteryBySummonerIdAndChampion(region, summonerId, championId) {
+  const url = `${baseUrl(
+    region
+  )}/lol/champion-mastery/v4/champion-masteries/by-summoner/${summonerId}/by-champion/${championId}`;
+  return request(url);
+}
+
 module.exports = {
   getAccountInfoFromSummonerName,
   getMatchesForAccountInPeriod,
   getMatchInfoById,
+  getRankBySummonerId,
+  getMasteryBySummonerIdAndChampion,
   API_KEY,
 };

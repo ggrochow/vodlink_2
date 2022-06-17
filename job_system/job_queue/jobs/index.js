@@ -7,6 +7,9 @@ const FetchLolMatchInfo = require("./lol/fetch_lol_match_info");
 const AssociateLolMatchToTwitchVods = require("./local/associate_lol_match_to_twitch_vods");
 const CheckVodExistence = require("./twitch/check_vod_existence");
 const FetchNewAccessToken = require("./twitch/fetch_new_access_token");
+const FetchLoLMatchExtraParticipantInfo = require("./local/fetch_lol_match_extra_participant_info");
+const FetchLoLParticipantMastery = require("./lol/fetch_lol_match_participant_mastery");
+const FetchLoLParticipantRank = require("./lol/fetch_lol_participant_rank");
 
 const jobTypes = Job.TYPES;
 const jobs = {
@@ -18,6 +21,10 @@ const jobs = {
   [jobTypes.ASSOCIATE_LOL_MATCH_TO_TWITCH_VOD]: AssociateLolMatchToTwitchVods,
   [jobTypes.CHECK_VOD_EXISTENCE]: CheckVodExistence,
   [jobTypes.FETCH_NEW_ACCESS_TOKEN]: FetchNewAccessToken,
+  [jobTypes.FETCH_LOL_MATCH_EXTRA_PARTICIPANT_INFO]:
+    FetchLoLMatchExtraParticipantInfo,
+  [jobTypes.FETCH_LOL_PARTICIPANT_MASTERY]: FetchLoLParticipantMastery,
+  [jobTypes.FETCH_LOL_PARTICIPANT_RANK]: FetchLoLParticipantRank,
 };
 
 function instantiateJob(jobRows) {

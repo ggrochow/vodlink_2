@@ -139,8 +139,9 @@ class FetchLolMatchInfoJob extends Job {
           participantInfo.teamId,
           participantInfo.championId,
           participantInfo.summonerName,
+          participantInfo.role,
           participantInfo.accountId,
-          participantInfo.role
+          participantInfo.puuid
         );
 
         participantMapping[participantId] = participant.id;
@@ -149,6 +150,17 @@ class FetchLolMatchInfoJob extends Job {
         console.error(sqlError);
         return this;
       }
+    }
+
+    try {
+      await db.jobs.createNewJob(
+        Job.TYPES.FETCH_LOL_MATCH_EXTRA_PARTICIPANT_INFO,
+        { matchId: lolMatch.id }
+      );
+    } catch (sqlError) {
+      this.errors = `SQL error while creating new extra participant info job - ${sqlError.message}`;
+      console.error(sqlError);
+      return this;
     }
 
     try {

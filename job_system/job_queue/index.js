@@ -18,6 +18,8 @@ const lolJobTypes = [
   jobTypes.FETCH_LOL_SUMMONER_ID,
   jobTypes.FETCH_LOL_MATCHES_DURING_VOD,
   jobTypes.FETCH_LOL_MATCH_INFO,
+  jobTypes.FETCH_LOL_PARTICIPANT_MASTERY,
+  jobTypes.FETCH_LOL_PARTICIPANT_RANK,
   jobTypes.DETERMINE_LOL_MATCH_ROLES,
 ];
 
@@ -27,7 +29,10 @@ const lolRateLimit = 900;
 
 let lolJobQueue = new JobQueue(lolJobTypes, lolRateLimit, "LoL");
 
-const nonApiJobTypes = [jobTypes.ASSOCIATE_LOL_MATCH_TO_TWITCH_VOD];
+const nonApiJobTypes = [
+  jobTypes.ASSOCIATE_LOL_MATCH_TO_TWITCH_VOD,
+  jobTypes.FETCH_LOL_MATCH_EXTRA_PARTICIPANT_INFO,
+];
 const nonApiRateLimit = 100;
 
 let nonApiJobQueue = new JobQueue(nonApiJobTypes, nonApiRateLimit, "SQL");

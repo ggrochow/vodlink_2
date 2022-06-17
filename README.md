@@ -10,7 +10,6 @@ Automatically fetches matches & vods from Twitch/LoL APIs grabbing new data dail
 
 postgres 11.4
 node 12.6.0
-python 64bit 3.7.4
 
 ### Setup
 
@@ -42,5 +41,4 @@ Make sure you are running the start commands from project root to ensure the .en
   - scheduled_jobs - scheduled job runner & related jobs
 - utils - utility functions and folders
   - lol_data - League of legends constants and champion Info
-  - python - python scripts for FFI calls
   - scripts - package.json scripts
