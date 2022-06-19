@@ -42,7 +42,12 @@ function matchupSearch(matchupInfo) {
       let teamJoinType = team === "ally" ? "=" : "!=";
 
       matchupSelect.push(
-        `$[${roleName}.joinName~].champion_id as ${roleName}_champion`
+        `$[${roleName}.joinName~].champion_id as ${roleName}_champion`,
+        `$[${roleName}.joinName~].rank_tier as ${roleName}_rank_tier`,
+        `$[${roleName}.joinName~].rank_rank as ${roleName}_rank_rank`,
+        `$[${roleName}.joinName~].rank_lp as ${roleName}_rank_lp`,
+        `$[${roleName}.joinName~].mastery_level as ${roleName}_mastery_level`,
+        `$[${roleName}.joinName~].mastery_points as ${roleName}_mastery_points`
       );
       matchupJoins.push(
         `join lol_match_participants as $[${roleName}.joinName~] on
@@ -81,6 +86,11 @@ function matchupSearch(matchupInfo) {
         summoner.summoner_name as summoner_name,
         summoner.region as region,
         participant.champion_id as streamer_champion,
+        participant.rank_tier as streamer_rank_tier,
+        participant.rank_rank as streamer_rank_rank,
+        participant.rank_lp as streamer_rank_lp,
+        participant.mastery_level as streamer_mastery_level,
+        participant.mastery_points as streamer_mastery_points,
         ${matchupSelect.join(",\n")}
     from 
         lol_match_twitch_vods as relation
