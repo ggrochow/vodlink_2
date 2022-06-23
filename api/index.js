@@ -7,8 +7,9 @@ const {
   vodlinkChampionCounts,
   vodlinkEnemyChampionCounts,
 } = require("../database/vodlink_counts");
+const { matchupSearch } = require("../database/full_matchup_search");
 
-function getCountFactory(countFn) {
+function getFactory(countFn) {
   return async (req, res) => {
     try {
       const counts = await countFn(req.query);
@@ -20,12 +21,10 @@ function getCountFactory(countFn) {
   };
 }
 
-app.get("/counts/roleCounts", getCountFactory(vodlinkRoleCounts));
-app.get("/counts/champCounts", getCountFactory(vodlinkChampionCounts));
-app.get(
-  "/counts/enemyChampCounts",
-  getCountFactory(vodlinkEnemyChampionCounts)
-);
+app.get("/counts/roleCounts", getFactory(vodlinkRoleCounts));
+app.get("/counts/champCounts", getFactory(vodlinkChampionCounts));
+app.get("/counts/enemyChampCounts", getFactory(vodlinkEnemyChampionCounts));
+app.get("/vodlinks/matchupSearch", getFactory(matchupSearch));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

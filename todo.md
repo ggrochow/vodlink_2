@@ -9,6 +9,7 @@
       - number of games per opponent champ, given role + champ
       
 ### Wants
+- joi validations on api routes
 - database transactions
 - eslint
 - move cron job schedules to job files as properties on function

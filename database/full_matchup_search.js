@@ -1,16 +1,16 @@
 const db = require("./models/raw_queries");
 
 let roleNames = [
-  "ally_top",
-  "ally_mid",
-  "ally_bot",
-  "ally_support",
-  "ally_jungle",
-  "enemy_top",
-  "enemy_mid",
-  "enemy_bot",
-  "enemy_support",
-  "enemy_jungle",
+  "ally_TOP",
+  "ally_MIDDLE",
+  "ally_BOTTOM",
+  "ally_UTILITY",
+  "ally_JUNGLE",
+  "enemy_TOP",
+  "enemy_MIDDLE",
+  "enemy_BOTTOM",
+  "enemy_UTILITY",
+  "enemy_JUNGLE",
 ];
 
 /**

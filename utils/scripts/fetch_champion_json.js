@@ -9,7 +9,6 @@ function request(uri) {
 }
 
 async function run() {
-  debugger;
   let versionsJson = await request(versionsUrl);
   versionsJson = versionsJson.data;
   let championVersion = versionsJson.n.champion;

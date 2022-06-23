@@ -8,7 +8,9 @@
     "create_migration": "node utils/scripts/create_migration.js",
     "migrate_database": "postgrator",
     "seed_database": "node utils/scripts/initial_seed.js",
-    "update_champion_json": "node utils/scripts/fetch_champion_json.js"
+    "update_champion_json": "node utils/scripts/fetch_champion_json.js",
+    "update_rank_role_json": "node utils/scripts/fetch_role_rank_json.js",
+    "update_rune_json": "node utils/scripts/fetch_rune_json.js"
   },
   "author": "",
   "license": "ISC",
