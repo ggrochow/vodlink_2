@@ -111,40 +111,41 @@ class FetchLolMatchInfoJob extends Job {
     // Gather all participant info, it lives in two separate arrays in the api results, so we have to do some combining
     let participants = {};
 
-    for (let participant of apiResult.info.participants) {
-      let participantInfo = {
+    for (const participant of apiResult.info.participants) {
+      const primaryRunes = participant?.perks?.styles?.[0]?.selections;
+      const secondaryRunes = participant?.perks?.styles?.[1]?.selections;
+      const runes = [...primaryRunes, ...secondaryRunes].map(
+        (rune) => rune.perk
+      );
+
+      const participantInfo = {
         participantId: participant.participantId,
         teamId: participant.teamId,
         championId: participant.championId,
-        accountId: participant.summonerId,
-        puuid: participant.puuid,
         summonerName: participant.summonerName,
         role: participant.teamPosition,
+        nativeSummonerId: participant.summonerId,
+        nativePuuid: participant.puuid,
+        rune1: runes[0],
+        rune2: runes[1],
+        rune3: runes[2],
+        rune4: runes[3],
+        rune5: runes[4],
+        rune6: runes[5],
       };
 
       participants[participantInfo.participantId] = participantInfo;
     }
-
-    let participantMapping = {
-      // participantId: lol_match_participant.id
-    };
 
     // Save all our participant info
     let matchId = lolMatch.id;
     for (let participantId in participants) {
       let participantInfo = participants[participantId];
       try {
-        let participant = await db.lolMatchParticipant.createNew(
+        await db.lolMatchParticipant.createNew({
           matchId,
-          participantInfo.teamId,
-          participantInfo.championId,
-          participantInfo.summonerName,
-          participantInfo.role,
-          participantInfo.accountId,
-          participantInfo.puuid
-        );
-
-        participantMapping[participantId] = participant.id;
+          ...participantInfo,
+        });
       } catch (sqlError) {
         this.errors = `Error saving lol_match_participant to DB - ${sqlError.message}`;
         console.error(sqlError);

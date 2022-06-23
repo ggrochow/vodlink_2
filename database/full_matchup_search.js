@@ -43,11 +43,18 @@ function matchupSearch(matchupInfo) {
 
       matchupSelect.push(
         `$[${roleName}.joinName~].champion_id as ${roleName}_champion`,
+        `$[${roleName}.joinName~].summoner_name as ${roleName}_summoner_name`,
         `$[${roleName}.joinName~].rank_tier as ${roleName}_rank_tier`,
         `$[${roleName}.joinName~].rank_rank as ${roleName}_rank_rank`,
         `$[${roleName}.joinName~].rank_lp as ${roleName}_rank_lp`,
         `$[${roleName}.joinName~].mastery_level as ${roleName}_mastery_level`,
-        `$[${roleName}.joinName~].mastery_points as ${roleName}_mastery_points`
+        `$[${roleName}.joinName~].mastery_points as ${roleName}_mastery_points`,
+        `$[${roleName}.joinName~].rune_1 as ${roleName}_rune_1`,
+        `$[${roleName}.joinName~].rune_2 as ${roleName}_rune_2`,
+        `$[${roleName}.joinName~].rune_3 as ${roleName}_rune_3`,
+        `$[${roleName}.joinName~].rune_4 as ${roleName}_rune_4`,
+        `$[${roleName}.joinName~].rune_5 as ${roleName}_rune_5`,
+        `$[${roleName}.joinName~].rune_6 as ${roleName}_rune_6`
       );
       matchupJoins.push(
         `join lol_match_participants as $[${roleName}.joinName~] on
@@ -91,6 +98,12 @@ function matchupSearch(matchupInfo) {
         participant.rank_lp as streamer_rank_lp,
         participant.mastery_level as streamer_mastery_level,
         participant.mastery_points as streamer_mastery_points,
+        participant.rune_1 as streamer_rune_1,
+        participant.rune_2 as streamer_rune_2,
+        participant.rune_3 as streamer_rune_3,
+        participant.rune_4 as streamer_rune_4,
+        participant.rune_5 as streamer_rune_5,
+        participant.rune_6 as streamer_rune_6,
         ${matchupSelect.join(",\n")}
     from 
         lol_match_twitch_vods as relation
