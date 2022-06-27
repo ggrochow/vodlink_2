@@ -65,7 +65,9 @@ class FetchLolMatchInfoJob extends Job {
       );
       apiResult = apiResult.data;
     } catch (apiError) {
-      if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
+      const statusCode = apiError.response.statusCode;
+
+      if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();
         return this;
       }

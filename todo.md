@@ -9,12 +9,11 @@
       - number of games per opponent champ, given role + champ
       
 ### Wants
-- joi validations on api routes
+- better joi validation errors
 - database transactions
 - eslint
 - move cron job schedules to job files as properties on function
 - can do a regular summoner ranked acc lookup to set it to inactive if account becomes inactive?
 - docker?
 - service to get twitch app oath key and create job if fails + return error
-
-# docker start ddeb17e8f1e1
+- some way of looking at a channels video list, and the amount of games found on them, maybe help find more lol accounts to add for users

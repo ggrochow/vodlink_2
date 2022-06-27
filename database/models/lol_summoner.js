@@ -31,6 +31,24 @@ function getAllByTwitchId(twitchId) {
   return db.manyOrNone(query, params);
 }
 
+function getAllByTwitchIds(twitchIds) {
+  const query = `
+    SELECT 
+        *
+    FROM
+        lol_summoners
+    WHERE
+        twitch_channel_id IN $(twitchIds:list)
+  `;
+  const params = { twitchIds };
+
+  return db.manyOrNone(query, params);
+}
+
+function getAll() {
+  return db.manyOrNone(`SELECT * FROM lol_summoners`);
+}
+
 function getById(id) {
   let query = "SELECT * FROM lol_summoners WHERE id = $1";
   let params = [id];
@@ -41,5 +59,7 @@ function getById(id) {
 module.exports = {
   createNewLolSummoner,
   getAllByTwitchId,
+  getAllByTwitchIds,
+  getAll,
   getById,
 };

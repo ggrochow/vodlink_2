@@ -4,6 +4,7 @@
   "description": "twitch vod timestamp links to lol matches",
   "scripts": {
     "api": "node api/index.js",
+    "api_dev": "nodemon api/index.js",
     "job_runner": "node job_system/index.js",
     "create_migration": "node utils/scripts/create_migration.js",
     "migrate_database": "postgrator",
@@ -20,11 +21,14 @@
     "dayjs": "^1.11.3",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "morgan": "^1.10.0",
     "pg": "^8.7.3",
     "pg-promise": "^10.11.1",
     "winston": "^3.7.2"
   },
   "devDependencies": {
+    "nodemon": "^2.0.18",
     "plaiceholder": "^2.3.0",
     "postgrator": "^7.1.0",
     "postgrator-cli": "^6.0.0",

@@ -113,11 +113,26 @@ function setMasteryById(level, points, id) {
   return db.one(query, params);
 }
 
+function setVodlinkById(vodlinkId, id) {
+  const query = `
+    update
+      lol_match_participants
+    SET
+      lol_match_twitch_vods_id = $(vodlinkId)
+    WHERE
+        id = $(id)
+    RETURNING *;
+  `;
+  const params = { vodlinkId, id };
+  return db.one(query, params);
+}
+
 module.exports = {
   createNew,
   getByMatchId,
   getById,
   setRankById,
+  setVodlinkById,
   setMasteryById,
   deleteByLolMatchIds,
 };

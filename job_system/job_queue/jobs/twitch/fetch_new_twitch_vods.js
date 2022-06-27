@@ -66,13 +66,15 @@ class FetchNewTwitchVodsJob extends Job {
       );
       apiResult = apiResult.data;
     } catch (apiError) {
-      if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
+      const statusCode = apiError.response.statusCode;
+
+      if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();
         return this;
       }
 
       // 401 means our access token has expired, we create a high priority job and set this to retry
-      if (apiError.statusCode === 401) {
+      if (statusCode === 401) {
         try {
           await db.jobs.createNewJob(
             Job.TYPES.FETCH_NEW_ACCESS_TOKEN,

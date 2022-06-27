@@ -1,4 +1,4 @@
-const db = require("./models/raw_queries");
+const db = require("../models/raw_queries");
 
 function vodlinkChampionCounts({ role }) {
   const query = `

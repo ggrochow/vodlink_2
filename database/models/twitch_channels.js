@@ -1,13 +1,18 @@
 const db = require("./raw_queries");
 
-function createNew(twitchUserName, nativeTwitchId) {
+function createNew(twitchUserName, twitchDisplayName, nativeTwitchId) {
   let query = `
-    INSERT INTO twitch_channels(native_channel_id, channel_name) VALUES($1, $2)
-    ON CONFLICT ON CONSTRAINT twitch_channels_native_channel_id_key
-    DO UPDATE SET channel_name = EXCLUDED.channel_name
+    INSERT INTO 
+        twitch_channels 
+        (native_channel_id, channel_name, display_name) 
+        VALUES ( $(nativeTwitchId), $(twitchUserName), $(twitchDisplayName) )
     RETURNING *
    `;
-  let params = [nativeTwitchId, twitchUserName];
+  let params = {
+    nativeTwitchId,
+    twitchDisplayName,
+    twitchUserName,
+  };
 
   return db.one(query, params);
 }
@@ -17,6 +22,13 @@ function getById(id) {
   let params = [id];
 
   return db.one(query, params);
+}
+
+function getByNativeId(nativeId) {
+  const query = `SELECT * FROM twitch_channels WHERE native_channel_id = $(nativeId)`;
+  const params = { nativeId };
+
+  return db.oneOrNone(query, params);
 }
 
 function getByNativeSummonerIds(nativeSummonerIds) {
@@ -42,6 +54,7 @@ function getAll() {
 module.exports = {
   createNew,
   getById,
+  getByNativeId,
   getByNativeSummonerIds,
   getAll,
 };

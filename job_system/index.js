@@ -8,13 +8,13 @@ const { twitchJobQueue, lolJobQueue, nonApiJobQueue } = jobQueues;
 logger.info("Initializing Job queues");
 setInterval(() => {
   lolJobQueue.run();
-}, 1000);
+}, 100);
 setInterval(() => {
   twitchJobQueue.run();
-}, 1000);
+}, 100);
 setInterval(() => {
   nonApiJobQueue.run();
-}, 1000);
+}, 100);
 
 // const {
 //   createFetchNewVods,

@@ -1,4 +1,4 @@
-const db = require("./models/raw_queries");
+const db = require("../models/raw_queries");
 
 let roleNames = [
   "ally_TOP",
@@ -87,6 +87,9 @@ function matchupSearch(matchupInfo) {
     select 
         relation.id as id,
         vod.native_vod_id as vod_id,
+        match.started_at as match_timestamp,
+        match.region as match_region,
+        match.native_match_id as native_match_id,
         relation.vod_timestamp as vod_offset_seconds,
         match.native_match_id as native_match_id,
         channel.channel_name as streamer_name,

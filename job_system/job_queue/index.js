@@ -25,7 +25,8 @@ const lolJobTypes = [
 
 // https://developer.riotgames.com/rate-limiting.html
 // 100 requests every 2 minutes, around 833ms, round up to 900.
-const lolRateLimit = 900;
+// rank by league =  60 requests every 1 minutes
+const lolRateLimit = 1000; // 1 second
 
 let lolJobQueue = new JobQueue(lolJobTypes, lolRateLimit, "LoL");
 

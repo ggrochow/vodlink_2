@@ -81,18 +81,31 @@ class FetchTwitchChannelIdJob extends Job {
     }
 
     let nativeTwitchId = apiResult.data[0].id;
-    let twitchName = apiResult.data[0].display_name;
 
     let twitchAccount;
     try {
-      twitchAccount = await db.twitchAccounts.createNew(
-        twitchName,
-        nativeTwitchId
-      );
-    } catch (sqlErr) {
-      this.errors = `SQL error while saving twitch account - ${sqlErr.message}`;
-      console.error(sqlErr);
+      twitchAccount = await db.twitchAccounts.getByNativeId(nativeTwitchId);
+    } catch (sqlError) {
+      this.errors = `sql Error retrieving existing twitch account from db`;
+      console.error(sqlError);
       return this;
+    }
+
+    if (!twitchAccount) {
+      let twitchDisplayName = apiResult.data[0].display_name;
+      let twitchName = apiResult.data[0].login;
+
+      try {
+        twitchAccount = await db.twitchAccounts.createNew(
+          twitchName,
+          twitchDisplayName,
+          nativeTwitchId
+        );
+      } catch (sqlErr) {
+        this.errors = `SQL error while saving twitch account - ${sqlErr.message}`;
+        console.error(sqlErr);
+        return this;
+      }
     }
 
     const twitchChannelId = twitchAccount.id;

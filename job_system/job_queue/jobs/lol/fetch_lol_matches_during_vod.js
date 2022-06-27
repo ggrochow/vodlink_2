@@ -60,12 +60,14 @@ class FetchLolMatchesDuringVodJob extends Job {
       );
       apiResults = apiResults.data;
     } catch (apiError) {
-      if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
+      const statusCode = apiError.response.statusCode;
+
+      if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();
         return this;
       }
 
-      if (apiError.statusCode === 404) {
+      if (statusCode === 404) {
         // 404 is returned if no results are found
         logger.verbose(
           `${this.logPrefix()} got 404 while searching for games, assuming that means none found for this vod`

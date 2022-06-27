@@ -46,7 +46,10 @@ class FetchLoLParticipantRankJob extends Job {
       );
       rankedApiResponse = rankedApiResponse.data;
     } catch (apiError) {
-      if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
+      console.log(apiError);
+      const statusCode = apiError.response.statusCode;
+
+      if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();
         return this;
       }

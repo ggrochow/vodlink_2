@@ -64,9 +64,7 @@ class AssociateLolMatchToTwitchVodsJob extends Job {
     let matchStart = dayjs.utc(lolMatch.started_at);
     let matchEnd = dayjs.utc(lolMatch.ended_at);
 
-    for (let twitchAccountIndex in twitchAccounts) {
-      let twitchAccount = twitchAccounts[twitchAccountIndex];
-
+    for (let twitchAccount of twitchAccounts) {
       let twitchVod;
       try {
         twitchVod = await db.twitchVods.findVodPlayedDuringPeriodByAccount(
@@ -105,14 +103,42 @@ class AssociateLolMatchToTwitchVodsJob extends Job {
         durationToMatchStart.as("seconds")
       );
 
+      let vodlink;
       try {
-        await db.lolMatchTwitchVods.createNew(
+        vodlink = await db.lolMatchTwitchVods.createNew(
           this.matchId,
           twitchVod.id,
           secondsFromVodStartToMatchStart
         );
       } catch (sqlError) {
         this.errors = `SQL Error while creating twitchVodLolMatch relation - ${sqlError.message}`;
+        console.error(sqlError);
+        return this;
+      }
+
+      let channelSummoners;
+      try {
+        channelSummoners = await db.lolSummoners.getAllByTwitchId(
+          twitchAccount.id
+        );
+      } catch (sqlError) {
+        this.errors = `SQL Error while getting twitch account - ${sqlError.message}`;
+        console.error(sqlError);
+        return this;
+      }
+
+      const participant = matchParticipants.find((participant) => {
+        return channelSummoners.find(
+          (summoner) =>
+            summoner.nativePuuid === participant.nativePuuid &&
+            summoner.region === lolMatch.region
+        );
+      });
+
+      try {
+        await db.lolMatchParticipant.setVodlinkById(vodlink.id, participant.id);
+      } catch (sqlError) {
+        this.errors = `SQL Error while updating participant vodlinkId - ${sqlError.message}`;
         console.error(sqlError);
         return this;
       }

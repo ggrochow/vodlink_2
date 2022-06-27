@@ -44,13 +44,14 @@ class CheckVodExistenceJob extends Job {
       await twitchApi.getVodById(twitchVod.native_vod_id, accessToken);
       statusCode = 200;
     } catch (apiError) {
-      if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
+      statusCode = apiError.response.statusCode;
+      if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();
         return this;
       }
 
       // 401 means our access token has expired, we create a high priority job and set this to retry
-      if (apiError.statusCode === 401) {
+      if (statusCode === 401) {
         try {
           await db.jobs.createNewJob(
             Job.TYPES.FETCH_NEW_ACCESS_TOKEN,
@@ -67,13 +68,11 @@ class CheckVodExistenceJob extends Job {
       }
 
       // API returns 404 if no vod is found when ID provided.
-      if (apiError.statusCode !== 404) {
+      if (statusCode !== 404) {
         this.errors = `Error retrieving vod from api - ${apiError.message}`;
         console.error(apiError);
         return this;
       }
-
-      statusCode = apiError.statusCode;
     }
 
     if (statusCode === 404) {

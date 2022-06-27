@@ -12,14 +12,14 @@ async function run() {
   let versionsJson = await request(versionsUrl);
   versionsJson = versionsJson.data;
   const championVersion = versionsJson.n.champion;
-  const championUrl = `http://ddragon.leagueoflegends.com/cdn/${championVersion}/data/en_US/runesReforged.json`;
+  const championUrl = `https://ddragon.leagueoflegends.com/cdn/${championVersion}/data/en_US/runesReforged.json`;
   const runesResponse = await request(championUrl);
   const runeData = runesResponse.data;
 
   const runeJson = {};
 
   for (const runeArray of runeData) {
-    const imageUrl = `http://ddragon.leagueoflegends.com/cdn/img/${runeArray.icon}`;
+    const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/${runeArray.icon}`;
     const { base64 } = await plaiceholder.getPlaiceholder(imageUrl);
     runeJson[runeArray.id] = {
       id: runeArray.id,
@@ -32,7 +32,7 @@ async function run() {
     for (const slotNumber in runeArray.slots) {
       const slot = runeArray.slots[slotNumber];
       for (const rune of slot.runes) {
-        const runeImageUrl = `http://ddragon.leagueoflegends.com/cdn/img/${rune.icon}`;
+        const runeImageUrl = `https://ddragon.leagueoflegends.com/cdn/img/${rune.icon}`;
         const { base64: runeBase64 } = await plaiceholder.getPlaiceholder(
           runeImageUrl
         );

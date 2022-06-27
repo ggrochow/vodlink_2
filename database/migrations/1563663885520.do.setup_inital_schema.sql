@@ -1,7 +1,8 @@
 CREATE TABLE twitch_channels (
     id                  serial      PRIMARY KEY,
     native_channel_id   BIGINT      UNIQUE NOT NULL,
-    channel_name        VARCHAR     NOT NULL
+    channel_name        VARCHAR     NOT NULL,
+    display_name        VARCHAR     NOT NULL
 );
 
 CREATE TABLE lol_summoners (
@@ -49,7 +50,8 @@ CREATE TABLE lol_match_participants (
     rank_rank           VARCHAR,
     rank_lp             INTEGER,
     mastery_level       INTEGER,
-    mastery_points      INTEGER
+    mastery_points      INTEGER,
+    lol_match_twitch_vods_id INTEGER
 );
 
 CREATE TABLE lol_match_twitch_vods (

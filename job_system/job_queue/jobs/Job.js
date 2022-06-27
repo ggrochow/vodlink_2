@@ -7,6 +7,7 @@ const logger = require("../../../utils/logger");
 class Job {
   static PRIORITIES = {
     DEFAULT: 10,
+    HIGH: 5,
     URGENT: 1,
   };
 

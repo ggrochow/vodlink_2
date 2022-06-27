@@ -39,7 +39,8 @@ class FetchLolSummonerIdJob extends Job {
       );
       apiResult = apiResult.data;
     } catch (apiError) {
-      if (apiError.statusCode === 429 || apiError.statusCode >= 500) {
+      const statusCode = apiError.response.statusCode;
+      if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();
         return this;
       }
@@ -57,6 +58,7 @@ class FetchLolSummonerIdJob extends Job {
     const nativePuuid = apiResult.puuid;
     const summonerName = apiResult.name;
 
+    // TODO ensure this doesnt exist already, adding dupe account might not be error
     try {
       await db.lolSummoners.createNewLolSummoner(
         nativeSummonerId,
