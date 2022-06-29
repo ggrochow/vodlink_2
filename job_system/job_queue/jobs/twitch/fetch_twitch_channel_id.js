@@ -117,7 +117,11 @@ class FetchTwitchChannelIdJob extends Job {
       };
 
       try {
-        await db.jobs.createNewJob(Job.TYPES.FETCH_LOL_SUMMONER_ID, payload);
+        await db.jobs.createNewJob(
+          Job.TYPES.FETCH_LOL_SUMMONER_ID,
+          payload,
+          Job.PRIORITIES.HIGH
+        );
       } catch (sqlErr) {
         this.errors = `SQL error saving ${Job.TYPES.FETCH_LOL_SUMMONER_ID} job, ${sqlErr.message}`;
         console.error(sqlErr);

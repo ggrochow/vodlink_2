@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
+    "cors": "^2.8.5",
     "cron": "^2.0.0",
     "dayjs": "^1.11.3",
     "dotenv": "^16.0.1",

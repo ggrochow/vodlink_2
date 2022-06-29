@@ -131,14 +131,14 @@ class AssociateLolMatchToTwitchVodsJob extends Job {
         return channelSummoners.find(
           (summoner) =>
             summoner.nativePuuid === participant.nativePuuid &&
-            summoner.region === lolMatch.region
+            summoner.region?.toUpperCase() === lolMatch.region?.toUpperCase()
         );
       });
 
       try {
         await db.lolMatchParticipant.setVodlinkById(vodlink.id, participant.id);
       } catch (sqlError) {
-        this.errors = `SQL Error while updating participant vodlinkId - ${sqlError.message}`;
+        this.errors = `SQL Error while updating participant vodlinkId VLID ${vodlink?.id} PID ${participant?.id} - ${sqlError.message}`;
         console.error(sqlError);
         return this;
       }

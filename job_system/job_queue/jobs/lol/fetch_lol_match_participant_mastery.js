@@ -47,14 +47,14 @@ class FetchLoLMatchParticipantMasteryJob extends Job {
       );
       masteryApiResponse = masteryApiResponse.data;
     } catch (apiError) {
-      const statusCode = apiError.response.statusCode;
+      const statusCode = apiError.response.status;
       if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();
         return this;
       }
       console.log(apiError);
 
-      this.errors = `Api error retrieving mastery for user ${matchParticipant.native_summoner_id} ${matchParticipant.champion_id} in region ${lolMatch.region}`;
+      this.errors = `Api error code: ${statusCode} retrieving mastery for user ${matchParticipant.native_summoner_id} ${matchParticipant.champion_id} in region ${lolMatch.region}`;
       return this;
     }
 

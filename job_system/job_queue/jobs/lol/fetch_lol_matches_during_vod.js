@@ -60,7 +60,7 @@ class FetchLolMatchesDuringVodJob extends Job {
       );
       apiResults = apiResults.data;
     } catch (apiError) {
-      const statusCode = apiError.response.statusCode;
+      const statusCode = apiError.response.status;
 
       if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();

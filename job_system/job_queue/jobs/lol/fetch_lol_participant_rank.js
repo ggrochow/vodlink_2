@@ -47,23 +47,28 @@ class FetchLoLParticipantRankJob extends Job {
       rankedApiResponse = rankedApiResponse.data;
     } catch (apiError) {
       console.log(apiError);
-      const statusCode = apiError.response.statusCode;
+      const statusCode = apiError.response.status;
 
       if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();
         return this;
       }
 
-      this.errors = `Api error retrieving ranked information for user ${matchParticipant.native_summoner_id} in region ${lolMatch.region}`;
+      this.errors = `Api error retrieving ranked information for user ${
+        matchParticipant.native_summoner_id
+      } in region ${lolMatch.region} SC - ${statusCode} ${typeof statusCode}`;
     }
 
-    const soloQueueRankObject = rankedApiResponse.find(
+    let soloQueueRankObject = rankedApiResponse.find(
       (rank) => rank.queueType === "RANKED_SOLO_5x5"
     );
 
     if (!soloQueueRankObject) {
-      this.errors = `No solo queue rank found for ${this.matchParticipantId}`;
-      return this;
+      soloQueueRankObject = {
+        tier: "unranked",
+        rank: "unranked",
+        leaguePoints: 0,
+      };
     }
 
     try {

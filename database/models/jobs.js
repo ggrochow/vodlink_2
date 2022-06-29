@@ -31,7 +31,8 @@ function getRunnableJobOfType(jobTypeArray) {
       AND status IN ( $(statusTypes:list) ) 
     ORDER BY 
       priority ASC,
-      id ASC 
+      status ASC,
+      id ASC
     LIMIT 1
    `;
   const params = {

@@ -6,7 +6,8 @@ const deleteOldLolMatches = require("./jobs/delete_old_lol_matches");
 
 // Every day at midnight
 let createFetchNewVods = new CronJob(
-  "00 00 00 * * *",
+  // "00 00 00 * * *",
+  "00 00 15 * * *",
   createFetchNewTwitchVodsJob
 );
 

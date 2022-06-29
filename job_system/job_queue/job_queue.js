@@ -21,6 +21,7 @@ class JobQueue {
     this.timeOfLastFinishedJob = null;
     this.timeOfLastNoJobsFound = null;
     this.currentJob = null;
+    this.isFetching = false;
 
     this.jobTypeArray = jobTypeArray;
     this.rateLimitMs = rateLimitMs;
@@ -131,13 +132,14 @@ class JobQueue {
   }
 
   isReadyForNextJob() {
-    let noPreviousJobs = this.timeOfLastFinishedJob === null;
+    const noPreviousJobs = this.timeOfLastFinishedJob === null;
+    const notFetching = !this.isFetching;
 
-    let currentTime = new Date().getTime();
-    let minimumIntervalPassed =
+    const currentTime = new Date().getTime();
+    const minimumIntervalPassed =
       currentTime - this.timeOfLastFinishedJob >= this.rateLimitMs;
 
-    return noPreviousJobs || minimumIntervalPassed;
+    return notFetching && (noPreviousJobs || minimumIntervalPassed);
   }
 
   async run() {
@@ -152,7 +154,10 @@ class JobQueue {
     logger.verbose(`Job Queue ${this.name} starting run()`);
 
     try {
+      this.isFetching = true;
       let job = await this.getNewJob();
+      this.isFetching = false;
+
       if (job === undefined || job === null) {
         this.timeOfLastNoJobsFound = new Date().getTime();
         return;
@@ -169,6 +174,7 @@ class JobQueue {
       }
     } catch (err) {
       // TODO
+      this.isFetching = false;
       logger.error(err.message);
       console.error(err);
     }

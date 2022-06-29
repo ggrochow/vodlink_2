@@ -10,7 +10,7 @@ const addChannelsWithSummonersSchema = Joi.object({
       .min(1)
       .required()
   ),
-});
+}).required();
 
 module.exports = {
   addChannelsWithSummonersSchema,

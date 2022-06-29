@@ -31,7 +31,7 @@ class FetchLolMatchInfoJob extends Job {
     let lolMatch;
     try {
       lolMatch = await db.lolMatches.getByRegionAndNativeId(
-        this.region,
+        this.region?.toUpperCase(),
         this.nativeMatchId
       );
     } catch (sqlError) {
@@ -42,7 +42,7 @@ class FetchLolMatchInfoJob extends Job {
 
     // If we know about it, we don't need to collect any more info, but we might have new vods to compare against
     // so we create a new associate job to check.
-    if (lolMatch !== undefined && lolMatch !== null) {
+    if (lolMatch?.id) {
       try {
         let payLoad = { matchId: lolMatch.id };
         await db.jobs.createNewJob(
@@ -65,14 +65,16 @@ class FetchLolMatchInfoJob extends Job {
       );
       apiResult = apiResult.data;
     } catch (apiError) {
-      const statusCode = apiError.response.statusCode;
+      const statusCode = apiError.response.status;
 
       if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();
         return this;
       }
 
-      this.errors = `Error while retrieving match info from lol api - ${apiError.message}`;
+      this.errors = `Error while retrieving match info from lol api - ${
+        apiError.message
+      } status: ${statusCode} ${typeof statusCode}`;
       console.error(apiError);
       return this;
     }

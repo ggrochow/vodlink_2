@@ -66,7 +66,7 @@ class FetchNewTwitchVodsJob extends Job {
       );
       apiResult = apiResult.data;
     } catch (apiError) {
-      const statusCode = apiError.response.statusCode;
+      const statusCode = apiError.response.status;
 
       if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();

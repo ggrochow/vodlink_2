@@ -44,7 +44,7 @@ class CheckVodExistenceJob extends Job {
       await twitchApi.getVodById(twitchVod.native_vod_id, accessToken);
       statusCode = 200;
     } catch (apiError) {
-      statusCode = apiError.response.statusCode;
+      statusCode = apiError.response.status;
       if (statusCode === 429 || statusCode >= 500) {
         this.setToRetry();
         return this;

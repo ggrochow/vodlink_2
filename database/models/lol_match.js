@@ -2,7 +2,7 @@ const db = require("./raw_queries");
 
 function getByRegionAndNativeId(region, nativeMatchId) {
   let query =
-    "SELECT * FROM lol_matches WHERE region = $1 AND native_match_id = $2";
+    "SELECT * FROM lol_matches WHERE UPPER(region) = $1 AND native_match_id = $2";
   let params = [region, nativeMatchId];
 
   return db.oneOrNone(query, params);

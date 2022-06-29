@@ -16,15 +16,15 @@ setInterval(() => {
   nonApiJobQueue.run();
 }, 100);
 
-// const {
-//   createFetchNewVods,
-//   createCheckVodExistence,
-//   deleteFinishedJobsCron,
-//   deleteOldLolMatchesCron,
-// } = cronJobs;
-//
-// logger.info("Initializing CRON jobs");
-// createFetchNewVods.start();
-// createCheckVodExistence.start();
-// deleteFinishedJobsCron.start();
-// deleteOldLolMatchesCron.start();
+const {
+  createFetchNewVods,
+  createCheckVodExistence,
+  deleteFinishedJobsCron,
+  deleteOldLolMatchesCron,
+} = cronJobs;
+
+logger.info("Initializing CRON jobs");
+createFetchNewVods.start();
+createCheckVodExistence.start();
+deleteFinishedJobsCron.start();
+deleteOldLolMatchesCron.start();

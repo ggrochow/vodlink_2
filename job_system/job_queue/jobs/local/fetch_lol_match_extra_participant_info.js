@@ -33,18 +33,26 @@ class FetchLolMatchExtraParticipantInfoJob extends Job {
 
     for (let matchParticipant of matchParticipants) {
       try {
-        await db.jobs.createNewJob(Job.TYPES.FETCH_LOL_PARTICIPANT_RANK, {
-          matchParticipantId: matchParticipant.id,
-        });
+        await db.jobs.createNewJob(
+          Job.TYPES.FETCH_LOL_PARTICIPANT_RANK,
+          {
+            matchParticipantId: matchParticipant.id,
+          },
+          Job.PRIORITIES.LOW
+        );
       } catch (sqlError) {
         this.errors = `SQL error while creating new fetch rank job - ${sqlError.message}`;
         return this;
       }
 
       try {
-        await db.jobs.createNewJob(Job.TYPES.FETCH_LOL_PARTICIPANT_MASTERY, {
-          matchParticipantId: matchParticipant.id,
-        });
+        await db.jobs.createNewJob(
+          Job.TYPES.FETCH_LOL_PARTICIPANT_MASTERY,
+          {
+            matchParticipantId: matchParticipant.id,
+          },
+          Job.PRIORITIES.LOW
+        );
       } catch (sqlError) {
         this.errors = `SQL error while creating new fetch mastery job - ${sqlError.message}`;
         return this;
