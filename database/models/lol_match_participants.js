@@ -47,6 +47,18 @@ function getByMatchId(matchId) {
   return db.manyOrNone(query, params);
 }
 
+function getByMatchIds(matchIds) {
+  if (!matchIds || matchIds.length === 0) {
+    return [];
+  }
+
+  let query =
+    "SELECT * FROM lol_match_participants WHERE lol_match_id IN ( $(matchIds:list) )";
+  let params = { matchIds };
+
+  return db.manyOrNone(query, params);
+}
+
 function getById(id) {
   const query = `
     SELECT 
@@ -130,6 +142,7 @@ function setVodlinkById(vodlinkId, id) {
 module.exports = {
   createNew,
   getByMatchId,
+  getByMatchIds,
   getById,
   setRankById,
   setVodlinkById,

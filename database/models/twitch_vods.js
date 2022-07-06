@@ -19,6 +19,17 @@ function getById(id) {
   return db.oneOrNone(query, params);
 }
 
+function getByIds(ids) {
+  if (!ids || ids.length === 0) {
+    return [];
+  }
+
+  let query = "SELECT * FROM twitch_vods WHERE id IN ( $(ids:list) )";
+  let params = { ids };
+
+  return db.manyOrNone(query, params);
+}
+
 function getAllNativeVodIdsByTwitchChannelId(twitchChannelId) {
   let query =
     "SELECT native_vod_id FROM twitch_vods WHERE twitch_channel_id = $1";
@@ -56,6 +67,7 @@ function getAll() {
 module.exports = {
   createNew,
   getById,
+  getByIds,
   getAllNativeVodIdsByTwitchChannelId,
   findVodPlayedDuringPeriodByAccount,
   deleteById,

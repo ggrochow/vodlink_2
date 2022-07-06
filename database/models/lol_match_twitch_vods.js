@@ -34,9 +34,21 @@ function deleteByLolMatchIds(ids) {
   return db.none(query, params);
 }
 
+function getByIds(ids) {
+  if (!ids || ids.length === 0) {
+    return [];
+  }
+
+  let query = "SELECT * FROM lol_match_twitch_vods WHERE id IN ( $(ids:list) )";
+  let params = { ids };
+
+  return db.manyOrNone(query, params);
+}
+
 module.exports = {
   createNew,
   findByMatchAndVodId,
   deleteByVodId,
+  getByIds,
   deleteByLolMatchIds,
 };

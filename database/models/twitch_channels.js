@@ -24,6 +24,17 @@ function getById(id) {
   return db.one(query, params);
 }
 
+function getByIds(ids) {
+  if (!ids || ids.length === 0) {
+    return [];
+  }
+
+  let query = "SELECT * FROM twitch_channels WHERE id IN ( $(ids:list) )";
+  let params = { ids };
+
+  return db.manyOrNone(query, params);
+}
+
 function getByNativeId(nativeId) {
   const query = `SELECT * FROM twitch_channels WHERE native_channel_id = $(nativeId)`;
   const params = { nativeId };
@@ -54,6 +65,7 @@ function getAll() {
 module.exports = {
   createNew,
   getById,
+  getByIds,
   getByNativeId,
   getByNativeSummonerIds,
   getAll,

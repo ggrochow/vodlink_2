@@ -1,31 +1,42 @@
-const db = require("../models/raw_queries");
-
-let roleNames = [
-  "ally_TOP",
-  "ally_MIDDLE",
-  "ally_BOTTOM",
-  "ally_UTILITY",
-  "ally_JUNGLE",
-  "enemy_TOP",
-  "enemy_MIDDLE",
-  "enemy_BOTTOM",
-  "enemy_UTILITY",
-  "enemy_JUNGLE",
+const queries = require("../models/raw_queries");
+const {
+  lolMatchParticipant,
+  lolMatchTwitchVods,
+  twitchVods,
+  twitchAccounts,
+} = require("../models");
+const vodsPerPage = 10;
+const roleNames = [
+  "ALLY_TOP",
+  "ALLY_MIDDLE",
+  "ALLY_BOTTOM",
+  "ALLY_UTILITY",
+  "ALLY_JUNGLE",
+  "ENEMY_TOP",
+  "ENEMY_MIDDLE",
+  "ENEMY_BOTTOM",
+  "ENEMY_UTILITY",
+  "ENEMY_JUNGLE",
 ];
 
 /**
  * Find VodLinks for up to a full matchup
  * @param matchupInfo Object with the all the above roleNames as keys.
  *                    roleNames may optionally have a championId as the value to be searched for
- *                    Object must also have a 'streamerRole' key, with the value being a role string for the desired role
+ *                    Object may optionally have a 'ROLE' key, with the value being a role string for the desired role
+ *                    Object must have a 'PAGE' key for use in pagination
  */
-function matchupSearch(matchupInfo) {
-  let matchupSelect = [];
+
+async function matchupSearch(matchupInfo) {
   let matchupJoins = [];
   let matchupWheres = [];
-  let params = {};
+  let params = {
+    page: matchupInfo.PAGE,
+    limit: vodsPerPage,
+    offset: (matchupInfo.PAGE - 1) * vodsPerPage,
+  };
 
-  let streamerRoleName = `ally_${matchupInfo.streamerRole}`;
+  let streamerRoleName = `ALLY_${matchupInfo.ROLE}`;
 
   for (let index in roleNames) {
     let roleName = roleNames[index];
@@ -38,37 +49,21 @@ function matchupSearch(matchupInfo) {
     };
 
     if (streamerRoleName !== roleName) {
-      // Add all Non-streamer roles as participants
-      let teamJoinType = team === "ally" ? "=" : "!=";
-
-      matchupSelect.push(
-        `$[${roleName}.joinName~].champion_id as ${roleName}_champion`,
-        `$[${roleName}.joinName~].summoner_name as ${roleName}_summoner_name`,
-        `$[${roleName}.joinName~].rank_tier as ${roleName}_rank_tier`,
-        `$[${roleName}.joinName~].rank_rank as ${roleName}_rank_rank`,
-        `$[${roleName}.joinName~].rank_lp as ${roleName}_rank_lp`,
-        `$[${roleName}.joinName~].mastery_level as ${roleName}_mastery_level`,
-        `$[${roleName}.joinName~].mastery_points as ${roleName}_mastery_points`,
-        `$[${roleName}.joinName~].rune_1 as ${roleName}_rune_1`,
-        `$[${roleName}.joinName~].rune_2 as ${roleName}_rune_2`,
-        `$[${roleName}.joinName~].rune_3 as ${roleName}_rune_3`,
-        `$[${roleName}.joinName~].rune_4 as ${roleName}_rune_4`,
-        `$[${roleName}.joinName~].rune_5 as ${roleName}_rune_5`,
-        `$[${roleName}.joinName~].rune_6 as ${roleName}_rune_6`
-      );
-      matchupJoins.push(
-        `join lol_match_participants as $[${roleName}.joinName~] on
-                    $[${roleName}.joinName~].lol_match_id = match.id
-                    and $[${roleName}.joinName~].team_id ${teamJoinType} participant.team_id`
-      );
-      matchupWheres.push(`$[${roleName}.joinName~].role = $[${roleName}.role]`);
+      // If a champion filter is included for this role, add a join and where filters for it
       if (championId) {
+        let teamJoinType = team === "ALLY" ? "=" : "!=";
+        matchupJoins.push(
+          `join lol_match_participants as $[${roleName}.joinName~] on
+                    $[${roleName}.joinName~].lol_match_id = lm.id
+                    and $[${roleName}.joinName~].team_id ${teamJoinType} participant.team_id`
+        );
         matchupWheres.push(
+          `$[${roleName}.joinName~].role = $[${roleName}.role]`,
           `$[${roleName}.joinName~].champion_id = $[${roleName}.championId]`
         );
       }
-    } else {
-      // streamer role has extra joins so it needs special treatment.
+    } else if (matchupInfo.ROLE) {
+      // streamer role has extra joins, so it needs special treatment.
       params.participant = {
         role,
         championId,
@@ -84,49 +79,56 @@ function matchupSearch(matchupInfo) {
   }
 
   let query = `
-    select 
-        relation.id as id,
-        vod.native_vod_id as vod_id,
-        match.started_at as match_timestamp,
-        match.region as match_region,
-        match.native_match_id as native_match_id,
-        relation.vod_timestamp as vod_offset_seconds,
-        match.native_match_id as native_match_id,
-        channel.channel_name as streamer_name,
-        summoner.summoner_name as summoner_name,
-        summoner.region as region,
-        participant.champion_id as streamer_champion,
-        participant.rank_tier as streamer_rank_tier,
-        participant.rank_rank as streamer_rank_rank,
-        participant.rank_lp as streamer_rank_lp,
-        participant.mastery_level as streamer_mastery_level,
-        participant.mastery_points as streamer_mastery_points,
-        participant.rune_1 as streamer_rune_1,
-        participant.rune_2 as streamer_rune_2,
-        participant.rune_3 as streamer_rune_3,
-        participant.rune_4 as streamer_rune_4,
-        participant.rune_5 as streamer_rune_5,
-        participant.rune_6 as streamer_rune_6,
-        ${matchupSelect.join(",\n")}
-    from 
-        lol_match_twitch_vods as relation
-    join lol_matches as match on
-        match.id = relation.lol_match_id
-    join lol_match_participants as participant on
-        match.id = participant.lol_match_id
-    join lol_summoners as summoner on
-        participant.native_summoner_id = summoner.native_summoner_id
-    join twitch_channels as channel on
-        channel.id = summoner.twitch_channel_id
-    join twitch_vods as vod on
-        vod.id = relation.twitch_vod_id
-        and vod.twitch_channel_id = channel.id
+     SELECT 
+        lm.*,
+        participant.lol_match_twitch_vods_id as vodlink_id
+     FROM 
+        lol_matches lm
+     JOIN 
+        lol_match_participants participant 
+            ON  participant.lol_match_id = lm.id 
+            AND participant.lol_match_twitch_vods_id is not null
      ${matchupJoins.join("\n")}
-     where
+     ${matchupWheres.length > 0 ? "WHERE" : ""}
         ${matchupWheres.join("\n\tand ")}
-     order by relation.id DESC`;
+     ORDER by lm.id DESC
+     LIMIT $(limit) OFFSET $(offset)
+     `;
 
-  return db.manyOrNone(query, params);
+  const lolMatches = await queries.manyOrNone(query, params);
+  const lolMatchIds = [];
+  const vodlinkIds = [];
+
+  lolMatches.forEach((match) => {
+    lolMatchIds.push(match.id);
+    vodlinkIds.push(match.vodlink_id);
+  });
+
+  const participants = await lolMatchParticipant.getByMatchIds(lolMatchIds);
+  const vodLinks = await lolMatchTwitchVods.getByIds(vodlinkIds);
+  const vodIds = vodLinks.map((vodLink) => vodLink.twitch_vod_id);
+  const vods = await twitchVods.getByIds(vodIds);
+  const channelIds = vods.map((vod) => vod.twitch_channel_id);
+  const channels = await twitchAccounts.getByIds(channelIds);
+
+  return lolMatches.map((lolMatch) => {
+    lolMatch.participants = participants.filter(
+      (participant) => participant.lol_match_id === lolMatch.id
+    );
+    lolMatch.vodLinks = vodLinks.filter(
+      (vodlink) => vodlink.lol_match_id === lolMatch.id
+    );
+    lolMatch.vods = vods.filter((vod) => {
+      const vodIds = lolMatch.vodLinks.map((vl) => vl.twitch_vod_id);
+      return vodIds.includes(vod.id);
+    });
+    lolMatch.channels = channels.filter((channel) => {
+      const channelIds = lolMatch.vods.map((vod) => vod.twitch_channel_id);
+      return channelIds.includes(channel.id);
+    });
+
+    return lolMatch;
+  });
 }
 
 module.exports = {
