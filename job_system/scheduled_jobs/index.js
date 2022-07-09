@@ -3,27 +3,43 @@ const createFetchNewTwitchVodsJob = require("./jobs/create_fetch_new_twitch_vods
 const createCheckVodExistenceJobs = require("./jobs/create_check_vod_existence_jobs");
 const deleteFinishedJobs = require("./jobs/delete_finished_jobs");
 const deleteOldLolMatches = require("./jobs/delete_old_lol_matches");
-
+const refreshLolAccounts = require("./jobs/refresh_lol_account_information");
+const refreshTwitchAccounts = require("./jobs/refresh_twitch_account_information");
 // Every day at midnight
-let createFetchNewVods = new CronJob(
+const createFetchNewVods = new CronJob(
+  "00 00 19 * * *",
   // "00 00 00 * * *",
-  "00 00 15 * * *",
   createFetchNewTwitchVodsJob
 );
 
 // Every day at noon
-let createCheckVodExistence = new CronJob(
+const createCheckVodExistence = new CronJob(
   "00 00 12 * * *",
   createCheckVodExistenceJobs
 );
 
 // Every Monday at 5pm
-let deleteFinishedJobsCron = new CronJob("00 00 17 * * 1", deleteFinishedJobs);
+const deleteFinishedJobsCron = new CronJob(
+  "00 00 17 * * 1",
+  deleteFinishedJobs
+);
 
 // Every Tuesday at 5pm
-let deleteOldLolMatchesCron = new CronJob(
+const deleteOldLolMatchesCron = new CronJob(
   "00 00 17 * * 2",
   deleteOldLolMatches
+);
+
+// First day of every month
+const refreshTwitchAccountsCron = new CronJob(
+  "00 00 00 01 * *",
+  refreshTwitchAccounts
+);
+
+// Every Weds at 5pm
+const refreshLolAccountsCron = new CronJob(
+  "00 00 17 * * 3",
+  refreshLolAccounts
 );
 
 module.exports = {
@@ -31,4 +47,6 @@ module.exports = {
   createCheckVodExistence,
   deleteFinishedJobsCron,
   deleteOldLolMatchesCron,
+  refreshTwitchAccountsCron,
+  refreshLolAccountsCron,
 };

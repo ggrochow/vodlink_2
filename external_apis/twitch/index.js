@@ -1,4 +1,5 @@
 const axios = require("axios");
+const { func } = require("joi");
 const NEW_API_BASE_URL = "https://api.twitch.tv/helix";
 const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET;
@@ -16,6 +17,13 @@ function getAccessToken() {
 function getUserInfoFromChannelName(channelName, authToken) {
   let url = `${NEW_API_BASE_URL}/users`;
   let queryParams = { login: channelName };
+
+  return request(url, queryParams, authToken);
+}
+
+function getUserInfoFromNativeId(nativeId, authToken) {
+  let url = `${NEW_API_BASE_URL}/users`;
+  let queryParams = { id: nativeId };
 
   return request(url, queryParams, authToken);
 }
@@ -59,6 +67,7 @@ function request(url, params, authToken) {
 
 module.exports = {
   getUserInfoFromChannelName,
+  getUserInfoFromNativeId,
   getVodsForChannel,
   getVodById,
   getAccessToken,

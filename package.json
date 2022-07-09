@@ -11,7 +11,8 @@
     "seed_database": "node utils/scripts/initial_seed.js",
     "update_champion_json": "node utils/scripts/fetch_champion_json.js",
     "update_rank_role_json": "node utils/scripts/fetch_role_rank_json.js",
-    "update_rune_json": "node utils/scripts/fetch_rune_json.js"
+    "update_rune_json": "node utils/scripts/fetch_rune_json.js",
+    "fetch_new_vods": "node utils/scripts/fetch_new_vods.js"
   },
   "author": "",
   "license": "ISC",

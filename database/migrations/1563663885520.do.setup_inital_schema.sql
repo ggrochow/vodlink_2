@@ -54,6 +54,9 @@ CREATE TABLE lol_match_participants (
     lol_match_twitch_vods_id INTEGER
 );
 
+CREATE INDEX lmp_role_index ON lol_match_participants (role);
+CREATE INDEX lmp_champion_id_index ON lol_match_participants (champion_id);
+
 CREATE TABLE lol_match_twitch_vods (
     id                  serial      PRIMARY KEY,
     lol_match_id        INTEGER     NOT NULL,
@@ -80,7 +83,9 @@ CREATE TYPE job_type_enum AS ENUM (
     'FETCH_NEW_ACCESS_TOKEN',
     'FETCH_EXTRA_LOL_PARTICIPANT_INFO',
     'FETCH_LOL_PARTICIPANT_RANK',
-    'FETCH_LOL_PARTICIPANT_MASTERY'
+    'FETCH_LOL_PARTICIPANT_MASTERY',
+    'REFRESH_LOL_ACCOUNT',
+    'REFRESH_TWITCH_ACCOUNT'
 );
 
 CREATE TYPE job_status_enum AS ENUM (

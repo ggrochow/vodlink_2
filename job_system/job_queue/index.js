@@ -7,6 +7,7 @@ const twitchJobTypes = [
   jobTypes.FETCH_NEW_TWITCH_VODS,
   jobTypes.CHECK_VOD_EXISTENCE,
   jobTypes.FETCH_NEW_ACCESS_TOKEN,
+  jobTypes.REFRESH_TWITCH_ACCOUNT,
 ];
 // https://dev.twitch.tv/docs/api/guide/#rate-limits
 // No bearer token = 30 requests per minute.
@@ -21,6 +22,7 @@ const lolJobTypes = [
   jobTypes.FETCH_LOL_PARTICIPANT_MASTERY,
   jobTypes.FETCH_LOL_PARTICIPANT_RANK,
   jobTypes.DETERMINE_LOL_MATCH_ROLES,
+  jobTypes.REFRESH_LOL_ACCOUNT,
 ];
 
 // https://developer.riotgames.com/rate-limiting.html

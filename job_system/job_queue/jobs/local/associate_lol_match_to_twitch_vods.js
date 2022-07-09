@@ -64,6 +64,9 @@ class AssociateLolMatchToTwitchVodsJob extends Job {
     let matchStart = dayjs.utc(lolMatch.started_at);
     let matchEnd = dayjs.utc(lolMatch.ended_at);
 
+    let createdVodlinks = 0;
+    let updatedLMPs = 0;
+
     for (let twitchAccount of twitchAccounts) {
       let twitchVod;
       try {
@@ -110,6 +113,7 @@ class AssociateLolMatchToTwitchVodsJob extends Job {
           twitchVod.id,
           secondsFromVodStartToMatchStart
         );
+        createdVodlinks++;
       } catch (sqlError) {
         this.errors = `SQL Error while creating twitchVodLolMatch relation - ${sqlError.message}`;
         console.error(sqlError);
@@ -127,21 +131,32 @@ class AssociateLolMatchToTwitchVodsJob extends Job {
         return this;
       }
 
-      const participant = matchParticipants.find((participant) => {
-        return channelSummoners.find(
-          (summoner) =>
-            summoner.nativePuuid === participant.nativePuuid &&
+      for (const summoner of channelSummoners) {
+        const participant = matchParticipants.find((p) => {
+          return (
+            summoner.native_puuid === p.native_puuid &&
             summoner.region?.toUpperCase() === lolMatch.region?.toUpperCase()
-        );
-      });
+          );
+        });
 
-      try {
-        await db.lolMatchParticipant.setVodlinkById(vodlink.id, participant.id);
-      } catch (sqlError) {
-        this.errors = `SQL Error while updating participant vodlinkId VLID ${vodlink?.id} PID ${participant?.id} - ${sqlError.message}`;
-        console.error(sqlError);
-        return this;
+        if (participant) {
+          try {
+            await db.lolMatchParticipant.setVodlinkById(
+              vodlink.id,
+              participant.id
+            );
+            updatedLMPs++;
+          } catch (sqlError) {
+            this.errors = `SQL Error while updating participant vodlinkId VLID ${vodlink?.id} PID ${participant?.id} - ${sqlError.message}`;
+            console.error(sqlError);
+            return this;
+          }
+        }
       }
+    }
+
+    if (createdVodlinks !== updatedLMPs) {
+      this.errors = `Didn't associate the same amount of LMPs as vodlinks created`;
     }
 
     return this;

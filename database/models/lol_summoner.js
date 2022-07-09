@@ -45,6 +45,21 @@ function getAllByTwitchIds(twitchIds) {
   return db.manyOrNone(query, params);
 }
 
+function updateSummonerName(id, summonerName) {
+  const query = `
+  UPDATE
+    lol_summoners
+  SET
+    summoner_name = $(summonerName)
+  WHERE
+    id = $(id)
+  RETURNING *
+  `;
+  const params = { id, summonerName };
+
+  return db.one(query, params);
+}
+
 function getAll() {
   return db.manyOrNone(`SELECT * FROM lol_summoners`);
 }
@@ -60,6 +75,7 @@ module.exports = {
   createNewLolSummoner,
   getAllByTwitchId,
   getAllByTwitchIds,
+  updateSummonerName,
   getAll,
   getById,
 };

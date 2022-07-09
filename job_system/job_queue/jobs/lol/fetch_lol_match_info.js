@@ -122,6 +122,8 @@ class FetchLolMatchInfoJob extends Job {
         (rune) => rune.perk
       );
 
+      // TODO: fix role, team position can be empty string,
+      //       if blank, we might be able to calculate it from other roles
       const participantInfo = {
         participantId: participant.participantId,
         teamId: participant.teamId,

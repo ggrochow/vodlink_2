@@ -62,6 +62,22 @@ function getAll() {
   return db.manyOrNone(query);
 }
 
+function updateDisplayAndLoginName(id, displayName, loginName) {
+  const query = `
+  UPDATE
+    twitch_channels
+  SET
+    channel_name = $(loginName),
+    display_name = $(displayName)
+  WHERE
+    id = $(id)
+  RETURNING *
+  `;
+  const params = { id, displayName, loginName };
+
+  return db.one(query, params);
+}
+
 module.exports = {
   createNew,
   getById,
@@ -69,4 +85,5 @@ module.exports = {
   getByNativeId,
   getByNativeSummonerIds,
   getAll,
+  updateDisplayAndLoginName,
 };

@@ -3,7 +3,7 @@
     "channel_name": "loltyler1",
     "summoners": [
       {
-        "summoner_name": "COOKIEMONSTER123",
+        "name": "COOKIEMONSTER123",
         "region": "NA1"
       }
     ]
@@ -12,7 +12,7 @@
     "channel_name": "thebausffs",
     "summoners": [
       {
-        "summoner_name": "Thebausffs",
+        "name": "Thebausffs",
         "region": "EUW1"
       }
     ]
@@ -21,7 +21,7 @@
     "channel_name": "noway4u_sir",
     "summoners": [
       {
-        "summoner_name": "WashedUp4USir",
+        "name": "WashedUp4USir",
         "region": "EUW1"
       }
     ]
@@ -30,7 +30,7 @@
     "channel_name": "yoda",
     "summoners": [
       {
-        "summoner_name": "YOCHALLENGER2022",
+        "name": "TFT YODA",
         "region": "BR1"
       }
     ]
@@ -39,7 +39,7 @@
     "channel_name": "ratirl",
     "summoners": [
       {
-        "summoner_name": "Villager C",
+        "name": "Villager C",
         "region": "EUW1"
       }
     ]
@@ -48,7 +48,7 @@
     "channel_name": "sneakylol",
     "summoners": [
       {
-        "summoner_name": "SentientAI",
+        "name": "SentientAI",
         "region": "NA1"
       }
     ]
@@ -57,7 +57,7 @@
     "channel_name": "doublelift",
     "summoners": [
       {
-        "summoner_name": "Doublelift",
+        "name": "Doublelift",
         "region": "NA1"
       }
     ]
@@ -66,11 +66,11 @@
     "channel_name": "rush",
     "summoners": [
       {
-        "summoner_name": "never my fault",
+        "name": "never my fault",
         "region": "KR"
       },
       {
-        "summoner_name": "pvman",
+        "name": "pvman",
         "region": "KR"
       }
     ]
@@ -79,7 +79,7 @@
     "channel_name": "bbbb87",
     "summoners": [
       {
-        "summoner_name": "1314 bOuOd",
+        "name": "1314 bOuOd",
         "region": "KR"
       }
     ]
@@ -88,7 +88,7 @@
     "channel_name": "midbeast",
     "summoners": [
       {
-        "summoner_name": "HamburgerEater59",
+        "name": "HamburgerEater59",
         "region": "NA1"
       }
     ]
@@ -97,7 +97,7 @@
     "channel_name": "naayil",
     "summoners": [
       {
-        "summoner_name": "NAAYIL",
+        "name": "NAAYIL",
         "region": "EUW1"
       }
     ]
@@ -106,11 +106,11 @@
     "channel_name": "lethalborz",
     "summoners": [
       {
-        "summoner_name": "Prowler Aatrox",
+        "name": "Prowler Aatrox",
         "region": "EUW1"
       },
       {
-        "summoner_name": "Lethalokami",
+        "name": "Lethalokami",
         "region": "EUW1"
       }
     ]
@@ -119,7 +119,7 @@
     "channel_name": "eldarglorfindel",
     "summoners": [
       {
-        "summoner_name": "Glorfindel",
+        "name": "Glorfindel",
         "region": "BR1"
       }
     ]
@@ -128,7 +128,7 @@
     "channel_name": "domayn",
     "summoners": [
       {
-        "summoner_name": "DomayN ",
+        "name": "DomayN ",
         "region": "EUW1"
       }
     ]
@@ -137,7 +137,7 @@
     "channel_name": "legitkorea",
     "summoners": [
       {
-        "summoner_name": "TTV LegitKorea",
+        "name": "TTV LegitKorea",
         "region": "NA1"
       }
     ]
@@ -146,11 +146,11 @@
     "channel_name": "vrowx",
     "summoners": [
       {
-        "summoner_name": "twtv vrowx",
+        "name": "twtv vrowx",
         "region": "EUW1"
       },
       {
-        "summoner_name": "Queen Of Hatred",
+        "name": "Queen Of Hatred",
         "region": "EUW1"
       }
     ]
@@ -159,7 +159,7 @@
     "channel_name": "ricelegend",
     "summoners": [
       {
-        "summoner_name": "RiceLegend",
+        "name": "RiceLegend",
         "region": "NA1"
       }
     ]
@@ -168,11 +168,11 @@
     "channel_name": "poliko",
     "summoners": [
       {
-        "summoner_name": "frost in head",
+        "name": "Kesha mid acc",
         "region": "EUW1"
       },
       {
-        "summoner_name": "chill in head",
+        "name": "chill in head",
         "region": "EUW1"
       }
     ]
@@ -181,7 +181,7 @@
     "channel_name": "anniebot",
     "summoners": [
       {
-        "summoner_name": "Annie Bot",
+        "name": "Annie Bot",
         "region": "NA1"
       }
     ]
@@ -190,7 +190,7 @@
     "channel_name": "body_those_fools",
     "summoners": [
       {
-        "summoner_name": "Chadímus Maxímus",
+        "name": "Chadímus Maxímus",
         "region": "NA1"
       }
     ]
@@ -199,7 +199,7 @@
     "channel_name": "witnessazir",
     "summoners": [
       {
-        "summoner_name": "Witness Azir",
+        "name": "Witness Azir",
         "region": "EUW1"
       }
     ]
@@ -208,7 +208,7 @@
     "channel_name": "lathyrustv",
     "summoners": [
       {
-        "summoner_name": "Lathyrus",
+        "name": "Lathyrus",
         "region": "EUW1"
       }
     ]
@@ -217,7 +217,7 @@
     "channel_name": "beefyy",
     "summoners": [
       {
-        "summoner_name": "beefyyy",
+        "name": "beefyyy",
         "region": "NA1"
       }
     ]
@@ -226,7 +226,7 @@
     "channel_name": "jlandlol",
     "summoners": [
       {
-        "summoner_name": "JLand",
+        "name": "JLand",
         "region": "NA1"
       }
     ]
@@ -235,7 +235,7 @@
     "channel_name": "feviknight",
     "summoners": [
       {
-        "summoner_name": "feviknight",
+        "name": "feviknight",
         "region": "KR"
       }
     ]
@@ -244,7 +244,7 @@
     "channel_name": "hachchicken",
     "summoners": [
       {
-        "summoner_name": "HachchickeN",
+        "name": "HachchickeN",
         "region": "EUW1"
       }
     ]
@@ -253,7 +253,7 @@
     "channel_name": "shaprock",
     "summoners": [
       {
-        "summoner_name": "TL Shaprock",
+        "name": "TL Shaprock",
         "region": "NA1"
       }
     ]
@@ -262,11 +262,11 @@
     "channel_name": "sdrxmetix",
     "summoners": [
       {
-        "summoner_name": "xMetix",
+        "name": "xMetix",
         "region": "EUW1"
       },
       {
-        "summoner_name": "SDR xMetix",
+        "name": "SDR xMetix",
         "region": "NA1"
       }
     ]
@@ -275,7 +275,7 @@
     "channel_name": "drututt",
     "summoners": [
       {
-        "summoner_name": "Drututt",
+        "name": "Drututt",
         "region": "EUW1"
       }
     ]
@@ -284,7 +284,7 @@
     "channel_name": "sakuritou",
     "summoners": [
       {
-        "summoner_name": "Saku",
+        "name": "Saku",
         "region": "EUW1"
       }
     ]
@@ -293,7 +293,7 @@
     "channel_name": "adzioo",
     "summoners": [
       {
-        "summoner_name": "AdziOo",
+        "name": "AdziOo",
         "region": "EUN1"
       }
     ]
@@ -302,7 +302,7 @@
     "channel_name": "dystrex",
     "summoners": [
       {
-        "summoner_name": "Dystrex",
+        "name": "Dystrex",
         "region": "NA1"
       }
     ]
@@ -311,7 +311,7 @@
     "channel_name": "rhokutv",
     "summoners": [
       {
-        "summoner_name": "Rhoku",
+        "name": "Rhoku",
         "region": "EUW1"
       }
     ]
@@ -320,7 +320,7 @@
     "channel_name": "just1kb",
     "summoners": [
       {
-        "summoner_name": "Just1KB",
+        "name": "Just1KB",
         "region": "EUW1"
       }
     ]
@@ -329,7 +329,7 @@
     "channel_name": "arcsecond",
     "summoners": [
       {
-        "summoner_name": "Replay Remix",
+        "name": "Replay Remix",
         "region": "EUW1"
       }
     ]
@@ -338,7 +338,7 @@
     "channel_name": "jackspektra",
     "summoners": [
       {
-        "summoner_name": "SPKTRA",
+        "name": "SPKTRA",
         "region": "EUW1"
       }
     ]
@@ -347,7 +347,7 @@
     "channel_name": "theadstract",
     "summoners": [
       {
-        "summoner_name": "Adstract",
+        "name": "Adstract",
         "region": "NA1"
       }
     ]
@@ -356,7 +356,7 @@
     "channel_name": "moondiak",
     "summoners": [
       {
-        "summoner_name": "No ego free win",
+        "name": "No ego free win",
         "region": "EUW1"
       }
     ]
@@ -365,7 +365,7 @@
     "channel_name": "supgi",
     "summoners": [
       {
-        "summoner_name": "Supgi",
+        "name": "Supgi",
         "region": "NA1"
       }
     ]
@@ -374,7 +374,7 @@
     "channel_name": "tobiasfate",
     "summoners": [
       {
-        "summoner_name": "Rumahoy",
+        "name": "Rumahoy",
         "region": "NA1"
       }
     ]
@@ -383,7 +383,7 @@
     "channel_name": "thingintheice_",
     "summoners": [
       {
-        "summoner_name": "Thing in the Ice",
+        "name": "Thing in the Ice",
         "region": "NA1"
       }
     ]
@@ -392,15 +392,15 @@
     "channel_name": "karasmai",
     "summoners": [
       {
-        "summoner_name": "Rahyne",
+        "name": "Rahyne",
         "region": "NA1"
       },
       {
-        "summoner_name": "171 xo",
+        "name": "171 xo",
         "region": "NA1"
       },
       {
-        "summoner_name": "Edgymemerguy69",
+        "name": "Edgymemerguy69",
         "region": "NA1"
       }
     ]
@@ -409,7 +409,7 @@
     "channel_name": "lolgunslinger",
     "summoners": [
       {
-        "summoner_name": "EgoSlinger",
+        "name": "EgoSlinger",
         "region": "NA1"
       }
     ]
@@ -418,7 +418,7 @@
     "channel_name": "justanengineer42",
     "summoners": [
       {
-        "summoner_name": "jungledinger",
+        "name": "jungledinger",
         "region": "NA1"
       }
     ]
@@ -427,7 +427,7 @@
     "channel_name": "rezonegames",
     "summoners": [
       {
-        "summoner_name": "Gregmerdinger",
+        "name": "Gregmerdinger",
         "region": "EUW1"
       }
     ]
@@ -436,7 +436,7 @@
     "channel_name": "yesoo2010",
     "summoners": [
       {
-        "summoner_name": "코 태",
+        "name": "코 태",
         "region": "KR"
       }
     ]
@@ -445,7 +445,7 @@
     "channel_name": "jamicanbanana",
     "summoners": [
       {
-        "summoner_name": "jamican banana",
+        "name": "jamican banana",
         "region": "NA1"
       }
     ]
@@ -454,7 +454,7 @@
     "channel_name": "the_tank_man_",
     "summoners": [
       {
-        "summoner_name": "The Tank Man",
+        "name": "The Tank Man",
         "region": "NA1"
       }
     ]
@@ -463,20 +463,25 @@
     "channel_name": "king_nidhogg",
     "summoners": [
       {
-        "summoner_name": "KiNG Nidhogg",
+        "name": "KiNG Nidhogg",
         "region": "NA1"
       }
     ]
   },
   {
     "channel_name": "rangerzx",
-    "summoners": []
+    "summoners": [
+      {
+        "name": "Zeal Goodman",
+        "region": "EUW1"
+      }
+    ]
   },
   {
     "channel_name": "thisispatrik",
     "summoners": [
       {
-        "summoner_name": "PATRIKZX",
+        "name": "PATRIKZX",
         "region": "EUW1"
       }
     ]
@@ -485,19 +490,19 @@
     "channel_name": "ikeepittaco",
     "summoners": [
       {
-        "summoner_name": "Flash 4th Shot",
+        "name": "Flash 4th Shot",
         "region": "NA1"
       },
       {
-        "summoner_name": "Jhindiana Jones",
+        "name": "Jhindiana Jones",
         "region": "NA1"
       },
       {
-        "summoner_name": "RareBoi",
+        "name": "RareBoi",
         "region": "NA1"
       },
       {
-        "summoner_name": "I Keep It Taco",
+        "name": "I Keep It Taco",
         "region": "NA1"
       }
     ]
@@ -506,7 +511,7 @@
     "channel_name": "eneino01",
     "summoners": [
       {
-        "summoner_name": "Eneino",
+        "name": "Eneino",
         "region": "EUW1"
       }
     ]
@@ -515,7 +520,7 @@
     "channel_name": "katawina_",
     "summoners": [
       {
-        "summoner_name": "Carl0s Alcaraz",
+        "name": "Carl0s Alcaraz",
         "region": "EUW1"
       }
     ]
@@ -524,7 +529,7 @@
     "channel_name": "gamergirl",
     "summoners": [
       {
-        "summoner_name": "TOUTOUCHE",
+        "name": "TOUTOUCHE",
         "region": "NA1"
       }
     ]
@@ -533,7 +538,7 @@
     "channel_name": "hubblet",
     "summoners": [
       {
-        "summoner_name": "허블레엣",
+        "name": "허블레엣",
         "region": "KR"
       }
     ]
@@ -542,7 +547,7 @@
     "channel_name": "kayle_1v9",
     "summoners": [
       {
-        "summoner_name": "Kayle 1v9",
+        "name": "Kayle 1v9",
         "region": "EUW1"
       }
     ]
@@ -551,7 +556,7 @@
     "channel_name": "tinjusx1",
     "summoners": [
       {
-        "summoner_name": "oce zookeeper",
+        "name": "oce zookeeper",
         "region": "OC1"
       }
     ]
@@ -560,7 +565,11 @@
     "channel_name": "exos",
     "summoners": [
       {
-        "summoner_name": "c tier jgler",
+        "name": "c tier jgler",
+        "region": "EUW1"
+      },
+      {
+        "name": "P11 Exos",
         "region": "EUW1"
       }
     ]
@@ -569,7 +578,7 @@
     "channel_name": "kaos_angel",
     "summoners": [
       {
-        "summoner_name": "BUFF KEQING",
+        "name": "BUFF KEQING",
         "region": "EUW1"
       }
     ]
@@ -578,7 +587,7 @@
     "channel_name": "yozu",
     "summoners": [
       {
-        "summoner_name": "Yozu",
+        "name": "Yozu",
         "region": "NA1"
       }
     ]
@@ -587,7 +596,7 @@
     "channel_name": "kaizermordelol",
     "summoners": [
       {
-        "summoner_name": "Your Ruined King",
+        "name": "Your Ruined King",
         "region": "NA1"
       }
     ]
@@ -596,7 +605,7 @@
     "channel_name": "chatea0829",
     "summoners": [
       {
-        "summoner_name": "aeT ahC",
+        "name": "aeT ahC",
         "region": "NA1"
       }
     ]
@@ -605,7 +614,7 @@
     "channel_name": "carnarius_v2",
     "summoners": [
       {
-        "summoner_name": "Carnarius v2",
+        "name": "Carnarius v2",
         "region": "EUW1"
       }
     ]
@@ -614,7 +623,7 @@
     "channel_name": "psychopathictop",
     "summoners": [
       {
-        "summoner_name": "Rowpit",
+        "name": "Rowpit",
         "region": "NA1"
       }
     ]
@@ -623,7 +632,7 @@
     "channel_name": "sirhcez",
     "summoners": [
       {
-        "summoner_name": "SuckOnDeezBeez",
+        "name": "SuckOnDeezBeez",
         "region": "NA1"
       }
     ]
@@ -632,7 +641,7 @@
     "channel_name": "plasma_lemon",
     "summoners": [
       {
-        "summoner_name": "Plasma Lemon",
+        "name": "Plasma Lemon",
         "region": "NA1"
       }
     ]
@@ -641,11 +650,11 @@
     "channel_name": "keegunlol",
     "summoners": [
       {
-        "summoner_name": "Mr Unchained",
+        "name": "Mr Unchained",
         "region": "NA1"
       },
       {
-        "summoner_name": "aristootle",
+        "name": "aristootle",
         "region": "NA1"
       }
     ]
@@ -654,7 +663,7 @@
     "channel_name": "spear_shot",
     "summoners": [
       {
-        "summoner_name": "Spear Shot",
+        "name": "Spear Shot",
         "region": "EUW1"
       }
     ]
@@ -663,11 +672,11 @@
     "channel_name": "quinnad",
     "summoners": [
       {
-        "summoner_name": "QuinnAD In LAS",
+        "name": "QuinnAD In LAS",
         "region": "LA2"
       },
       {
-        "summoner_name": "QuinnAD Daddy",
+        "name": "QuinnAD Daddy",
         "region": "NA1"
       }
     ]
@@ -676,7 +685,7 @@
     "channel_name": "scrubnoob",
     "summoners": [
       {
-        "summoner_name": "Stkfear",
+        "name": "ScrubNoob",
         "region": "KR"
       }
     ]
@@ -685,7 +694,7 @@
     "channel_name": "1adrianaries1",
     "summoners": [
       {
-        "summoner_name": "Adrian Riven",
+        "name": "Adrian Riven",
         "region": "NA1"
       }
     ]
@@ -694,7 +703,7 @@
     "channel_name": "generalsniper",
     "summoners": [
       {
-        "summoner_name": "General Sniper",
+        "name": "General Sniper",
         "region": "NA1"
       }
     ]
@@ -703,7 +712,7 @@
     "channel_name": "viper",
     "summoners": [
       {
-        "summoner_name": "hate it",
+        "name": "hate it",
         "region": "NA1"
       }
     ]
@@ -712,7 +721,7 @@
     "channel_name": "builteuw",
     "summoners": [
       {
-        "summoner_name": "QKing X",
+        "name": "QKing X",
         "region": "EUW1"
       }
     ]
@@ -721,11 +730,11 @@
     "channel_name": "tofoufou",
     "summoners": [
       {
-        "summoner_name": "Feet Savant",
+        "name": "Feet Savant",
         "region": "EUW1"
       },
       {
-        "summoner_name": "twtv Tofoufou",
+        "name": "twtv Tofoufou",
         "region": "EUW1"
       }
     ]
@@ -734,7 +743,7 @@
     "channel_name": "kingodsoon1",
     "summoners": [
       {
-        "summoner_name": "순뀨박",
+        "name": "순뀨박",
         "region": "KR"
       }
     ]
@@ -743,7 +752,7 @@
     "channel_name": "excloudlol",
     "summoners": [
       {
-        "summoner_name": "Plumbèr",
+        "name": "Plumbèr",
         "region": "EUW1"
       }
     ]
@@ -752,7 +761,7 @@
     "channel_name": "chaseshaco",
     "summoners": [
       {
-        "summoner_name": "Shaco",
+        "name": "Shaco",
         "region": "NA1"
       }
     ]
@@ -761,11 +770,11 @@
     "channel_name": "minishcap1",
     "summoners": [
       {
-        "summoner_name": "Minishcap1",
+        "name": "Minishcap1",
         "region": "NA1"
       },
       {
-        "summoner_name": "Proxy then Feed",
+        "name": "Proxy then Feed",
         "region": "NA1"
       }
     ]
@@ -774,7 +783,7 @@
     "channel_name": "socialist_singed",
     "summoners": [
       {
-        "summoner_name": "Socialist Slnged",
+        "name": "Socialist Slnged",
         "region": "EUW1"
       }
     ]
@@ -783,7 +792,7 @@
     "channel_name": "nannersowo",
     "summoners": [
       {
-        "summoner_name": "ttv nannersowo",
+        "name": "ttv nannersowo",
         "region": "NA1"
       }
     ]
@@ -792,7 +801,7 @@
     "channel_name": "jettling",
     "summoners": [
       {
-        "summoner_name": "Jettling",
+        "name": "Jettling",
         "region": "EUW1"
       }
     ]
@@ -801,7 +810,7 @@
     "channel_name": "takyre",
     "summoners": [
       {
-        "summoner_name": "Princess Senna",
+        "name": "Princess Senna",
         "region": "EUW1"
       }
     ]
@@ -810,7 +819,7 @@
     "channel_name": "autolykuslol",
     "summoners": [
       {
-        "summoner_name": "Autolykus",
+        "name": "Autolykus",
         "region": "NA1"
       }
     ]
@@ -819,7 +828,7 @@
     "channel_name": "alamandertv",
     "summoners": [
       {
-        "summoner_name": "Alamander",
+        "name": "Alamander",
         "region": "NA1"
       }
     ]
@@ -828,7 +837,7 @@
     "channel_name": "sepekuu",
     "summoners": [
       {
-        "summoner_name": "twtv Sepekuu",
+        "name": "twtv Sepekuu",
         "region": "NA1"
       }
     ]
@@ -837,7 +846,7 @@
     "channel_name": "odysseus131",
     "summoners": [
       {
-        "summoner_name": "TwTv Odysseus131",
+        "name": "TwTv Odysseus131",
         "region": "EUW1"
       }
     ]
@@ -846,7 +855,7 @@
     "channel_name": "alanteemo",
     "summoners": [
       {
-        "summoner_name": "Alan234",
+        "name": "Alan234",
         "region": "EUW1"
       }
     ]
@@ -855,11 +864,11 @@
     "channel_name": "ipav999",
     "summoners": [
       {
-        "summoner_name": "TrashChampool",
+        "name": "TrashChampool",
         "region": "NA1"
       },
       {
-        "summoner_name": "CampTopYouNoob",
+        "name": "CampTopYouNoob",
         "region": "NA1"
       }
     ]
@@ -868,7 +877,7 @@
     "channel_name": "xblotter",
     "summoners": [
       {
-        "summoner_name": "Blotter",
+        "name": "Blotter",
         "region": "NA1"
       }
     ]
@@ -877,20 +886,25 @@
     "channel_name": "manco1",
     "summoners": [
       {
-        "summoner_name": "Manco",
+        "name": "Manco",
         "region": "NA1"
       }
     ]
   },
   {
     "channel_name": "guccishroom",
-    "summoners": []
+    "summoners": [
+      {
+        "name": "it just whatever",
+        "region": "NA1"
+      }
+    ]
   },
   {
     "channel_name": "yasukeh",
     "summoners": [
       {
-        "summoner_name": "Yasukeh",
+        "name": "Yasukeh",
         "region": "NA1"
       }
     ]
@@ -899,7 +913,7 @@
     "channel_name": "xfsn_saber",
     "summoners": [
       {
-        "summoner_name": "xFSN Saber",
+        "name": "xFSN Saber",
         "region": "NA1"
       }
     ]
@@ -908,7 +922,7 @@
     "channel_name": "eisukelol",
     "summoners": [
       {
-        "summoner_name": "Eisuke",
+        "name": "Eisuke",
         "region": "NA1"
       }
     ]
@@ -917,7 +931,7 @@
     "channel_name": "dunlol",
     "summoners": [
       {
-        "summoner_name": "Dun",
+        "name": "Dun",
         "region": "NA1"
       }
     ]
@@ -926,7 +940,7 @@
     "channel_name": "zane_prodigy",
     "summoners": [
       {
-        "summoner_name": "Zaun Holo",
+        "name": "Zaun Holo",
         "region": "NA1"
       }
     ]
@@ -935,7 +949,7 @@
     "channel_name": "elite500",
     "summoners": [
       {
-        "summoner_name": "forsen no vlad",
+        "name": "forsen no vlad",
         "region": "EUW1"
       }
     ]
@@ -944,7 +958,7 @@
     "channel_name": "allorim",
     "summoners": [
       {
-        "summoner_name": "Allorim",
+        "name": "Allorim",
         "region": "NA1"
       }
     ]
@@ -953,19 +967,19 @@
     "channel_name": "repobah",
     "summoners": [
       {
-        "summoner_name": "Nameless Wind",
+        "name": "Nameless Wind",
         "region": "NA1"
       },
       {
-        "summoner_name": "Flareon",
+        "name": "Flareon",
         "region": "NA1"
       },
       {
-        "summoner_name": "Haboper",
+        "name": "Haboper",
         "region": "NA1"
       },
       {
-        "summoner_name": "Repobah",
+        "name": "Repobah",
         "region": "NA1"
       }
     ]
@@ -974,7 +988,7 @@
     "channel_name": "llder",
     "summoners": [
       {
-        "summoner_name": "Bojji",
+        "name": "Bojji",
         "region": "EUW1"
       }
     ]
@@ -983,7 +997,7 @@
     "channel_name": "thewanderingpro",
     "summoners": [
       {
-        "summoner_name": "TheWanderingPro",
+        "name": "TheWanderingPro",
         "region": "EUW1"
       }
     ]
@@ -992,7 +1006,7 @@
     "channel_name": "lacerration",
     "summoners": [
       {
-        "summoner_name": "Laceration",
+        "name": "Laceration",
         "region": "NA1"
       }
     ]
@@ -1001,7 +1015,7 @@
     "channel_name": "lolzayno",
     "summoners": [
       {
-        "summoner_name": "Zayno",
+        "name": "Zayno",
         "region": "NA1"
       }
     ]
@@ -1010,7 +1024,7 @@
     "channel_name": "weiji1",
     "summoners": [
       {
-        "summoner_name": "4 Seasons Zyra",
+        "name": "4 Seasons Zyra",
         "region": "BR1"
       }
     ]
@@ -1019,7 +1033,7 @@
     "channel_name": "melyn",
     "summoners": [
       {
-        "summoner_name": "Melyn",
+        "name": "Melyn",
         "region": "NA1"
       }
     ]
@@ -1028,7 +1042,7 @@
     "channel_name": "lesbazyra",
     "summoners": [
       {
-        "summoner_name": "Lesba Zyra MID",
+        "name": "Lesba Zyra MID",
         "region": "EUW1"
       }
     ]

@@ -55,6 +55,12 @@ function getAccountInfoFromSummonerName(region, summonerName) {
   return request(url);
 }
 
+function getAccountInfoFromPuuid(region, puuid) {
+  const url = `${baseUrl(region)}/lol/summoner/v4/summoners/by-puuid/${puuid}`;
+
+  return request(url);
+}
+
 function getMatchesForAccountInPeriod(region, puuid, startTime, endTime) {
   let url = `${v5BaseUrl(region)}/lol/match/v5/matches/by-puuid/${puuid}/ids`;
   let params = {
@@ -92,6 +98,7 @@ module.exports = {
   getMatchesForAccountInPeriod,
   getMatchInfoById,
   getRankBySummonerId,
+  getAccountInfoFromPuuid,
   getMasteryBySummonerIdAndChampion,
   API_KEY,
 };

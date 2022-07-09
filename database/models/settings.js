@@ -2,6 +2,7 @@ const db = require("./raw_queries");
 
 const settingTypes = {
   TWITCH_ACCESS_TOKEN: "TWITCH_ACCESS_TOKEN",
+  VODLINK_PAGINATION_CURSOR: "VODLINK_PAGINATION_CURSOR",
 };
 
 function upsertSetting(settingType, settingValue) {
@@ -39,8 +40,13 @@ function getAccessToken() {
   return getSettingValue(settingTypes.TWITCH_ACCESS_TOKEN);
 }
 
+function getVodlinkPaginationCursor() {
+  return getSettingValue(settingTypes.VODLINK_PAGINATION_CURSOR);
+}
+
 module.exports = {
   settingTypes,
   upsertSetting,
+  getVodlinkPaginationCursor,
   getAccessToken,
 };
