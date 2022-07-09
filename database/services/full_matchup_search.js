@@ -171,17 +171,25 @@ async function getRoleCounts(matchupInfo, joins, params, filters, wheres) {
           const queryJoins = [...joins];
           const queryParams = { ...params };
           queryJoins.push(
-            roleJoinString(joinName(role), "= participant.team_id")
+            roleJoinString(
+              joinName(role),
+              getJoinType(streamerRoleName, filters, role)
+            )
           );
 
-          const orQuery = queryWheres[queryWheres.length - 1];
-          const baseString = `${orQuery.slice(0, orQuery.length - 2)}`;
-          // baseString is ( CONDITION OR CONDITION
-          queryWheres[queryWheres.length - 1] = `${baseString} OR ${joinName(
-            role
-          )}.lol_match_twitch_vods_id IS NOT NULL )`;
-          // last queryWhere element is the or string
-          // we need to insert this role into it
+          // if streamer role is included and only enemy champ
+          const lastQuery = queryWheres[queryWheres.length - 1];
+          const isVodlinkWhere = lastQuery.includes(
+            "lol_match_twitch_vods_id IS NOT NULL"
+          );
+          if (isVodlinkWhere) {
+            const baseString = `${lastQuery.slice(0, lastQuery.length - 2)}`;
+            // baseString is ( CONDITION OR CONDITION
+            queryWheres[queryWheres.length - 1] = `${baseString} OR ${joinName(
+              role
+            )}.lol_match_twitch_vods_id IS NOT NULL )`;
+          }
+
           queryWheres.push(`${joinName(role)}.role = ${roleName(role)}`);
           query = `    
             SELECT
@@ -227,7 +235,10 @@ async function getRoleCounts(matchupInfo, joins, params, filters, wheres) {
           );
         } else {
           queryJoins.push(
-            roleJoinString(joinName(role), "!= participant.team_id")
+            roleJoinString(
+              joinName(role),
+              getJoinType(streamerRoleName, filters, role)
+            )
           );
         }
 
@@ -306,14 +317,7 @@ function getMatchupBody(matchupInfo, params) {
 
     if (addedJoin) {
       matchupWheres.push(`$[${roleName}.joinName~].role = $[${roleName}.role]`);
-      const teamJoin = getJoinType(
-        isStreamerRole,
-        hasRole,
-        isAlly,
-        streamerRoleName,
-        champFilters,
-        roleName
-      );
+      const teamJoin = getJoinType(streamerRoleName, champFilters, roleName);
       matchupJoins.push(roleJoinString(joinName(roleName), teamJoin));
     }
   }
@@ -340,21 +344,15 @@ function getMatchupBody(matchupInfo, params) {
   };
 }
 
-function getJoinType(
-  isStreamerRole,
-  hasRole,
-  isAlly,
-  streamerRoleName,
-  champFilters,
-  roleName
-) {
-  if (isStreamerRole) {
+function getJoinType(streamerRoleName, champFilters, roleName) {
+  const hasStreamerRole = streamerRoleName.length > 5;
+  if (roleName === streamerRoleName) {
     // no need for team join, this join will be used for all other team joins
     return;
   }
 
-  const joinType = isAlly ? "=" : "!=";
-  if (hasRole) {
+  const joinType = roleName.includes("ALLY") ? "=" : "!=";
+  if (hasStreamerRole) {
     return `${joinType} $[${streamerRoleName}.joinName~].team_id`;
   } else {
     if (champFilters.ally.length === 5) {
