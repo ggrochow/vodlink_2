@@ -10,6 +10,20 @@ function getFactory(getFn) {
   };
 }
 
+function getResultsFactory(getFn) {
+  return async (req, res, next) => {
+    try {
+      const results = await getFn(req.query);
+      res.locals.results = results;
+      next();
+      return res.status(200).send(results);
+    } catch (err) {
+      console.error(err);
+      res.sendStatus(500);
+    }
+  };
+}
+
 function postFactory(postFn) {
   return async (req, res) => {
     try {
@@ -24,5 +38,6 @@ function postFactory(postFn) {
 
 module.exports = {
   getFactory,
+  getResultsFactory,
   postFactory,
 };

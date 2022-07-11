@@ -1,6 +1,7 @@
 const logger = require("../../../utils/logger");
 const db = require("../../../database/models");
 const { settingTypes } = require("../../../database/models/settings");
+const { vodlinkRedis, champCountsRedis } = require("../../../api/redis");
 
 /**
  * Updates the internal match id cursor for pagination.
@@ -39,6 +40,16 @@ async function createNewPaginationCursor() {
       `Error updating ${settingTypes.VODLINK_PAGINATION_CURSOR} to ${lolMatch.id} - ${sqlError.message}`
     );
     return this;
+  }
+
+  try {
+    await vodlinkRedis.flushAll();
+    await champCountsRedis.flushAll();
+  } catch (redisError) {
+    console.error(redisError);
+    logger.error(
+      `Error flushing the redis DB after setting pagination cursor - ${redisError.message}`
+    );
   }
 
   logger.verbose(
