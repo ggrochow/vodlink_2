@@ -39,7 +39,7 @@ async function matchupSearch(matchupInfo) {
   const cursor = await settings.getVodlinkPaginationCursor();
   if (cursor) {
     wheres.push(`lm.id < $(cursor)`);
-    params.cursor = Number(cursor);
+    params.cursor = Number(cursor.setting_value);
   }
 
   const baseQuery = `
@@ -62,7 +62,7 @@ async function matchupSearch(matchupInfo) {
         lm.*
      ${baseQuery}
      GROUP BY lm.id
-     ORDER by lm.id DESC
+     ORDER by lm.started_at DESC
      LIMIT $(limit) OFFSET $(offset)
   `;
 
@@ -316,7 +316,12 @@ function getMatchupBody(matchupInfo, params) {
     if (addedJoin) {
       matchupWheres.push(`$[${roleName}.joinName~].role = $[${roleName}.role]`);
       const teamJoin = getJoinType(streamerRoleName, champFilters, roleName);
-      matchupJoins.push(roleJoinString(joinName(roleName), teamJoin));
+      const joinString = roleJoinString(joinName(roleName), teamJoin);
+      if (isStreamerRole) {
+        matchupJoins.unshift(joinString);
+      } else {
+        matchupJoins.push(joinString);
+      }
     }
   }
 

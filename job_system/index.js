@@ -23,6 +23,7 @@ const {
   deleteOldLolMatchesCron,
   refreshLolAccountsCron,
   refreshTwitchAccountsCron,
+  createNewPaginationCursorCron,
 } = cronJobs;
 
 logger.info("Initializing CRON jobs");
@@ -32,6 +33,7 @@ deleteFinishedJobsCron.start();
 deleteOldLolMatchesCron.start();
 refreshTwitchAccountsCron.start();
 refreshLolAccountsCron.start();
+createNewPaginationCursorCron.start();
 
 // Handle graceful shutdowns
 if (process.platform === "win32") {
@@ -53,7 +55,7 @@ async function closeHandler() {
   console.log("SIGTERM Received, gracefully shutting down job queues");
   clearInterval(lolInterval);
   clearInterval(twitchInterval);
-  clearInterval(lolInterval);
+  clearInterval(localInterval);
 
   let running = true;
   let retries = 0;

@@ -39,10 +39,37 @@ function deleteByIds(ids) {
   return db.none(query, params);
 }
 
+function getMostRecentLolMatchWithFullData() {
+  const query = `
+    select
+        lm.*
+    from
+        lol_matches lm
+    join lol_match_participants lmp on
+        lmp.lol_match_id = lm.id
+    where
+        lmp.rank_tier is not null
+        and lmp.rank_rank is not null
+        and lmp.rank_lp is not null
+        and lmp.mastery_level is not null
+        and lmp.mastery_points is not null
+    group by
+        lm.id
+    having 
+        count(lmp.*) = 10
+    order by
+        id desc
+    limit 1; 
+  `;
+
+  return db.oneOrNone(query);
+}
+
 module.exports = {
   getById,
   getByRegionAndNativeId,
   createNew,
   getLolMatchIdsOlderThanTwoMonths,
+  getMostRecentLolMatchWithFullData,
   deleteByIds,
 };

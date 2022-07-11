@@ -5,11 +5,18 @@ const deleteFinishedJobs = require("./jobs/delete_finished_jobs");
 const deleteOldLolMatches = require("./jobs/delete_old_lol_matches");
 const refreshLolAccounts = require("./jobs/refresh_lol_account_information");
 const refreshTwitchAccounts = require("./jobs/refresh_twitch_account_information");
-// Every day at midnight
+const createNewPaginationCursor = require("./jobs/create_new_pagination_cursor");
+
+// Every 6 hours, one minute past the hour
 const createFetchNewVods = new CronJob(
-  "00 00 19 * * *",
-  // "00 00 00 * * *",
+  "00 01 0-23/6 * * *",
   createFetchNewTwitchVodsJob
+);
+
+// Every 6 hours, on the hour, runs before we start fetching new vods
+const createNewPaginationCursorCron = new CronJob(
+  "00 00 0-23/6 * * *",
+  createNewPaginationCursor
 );
 
 // Every day at noon
@@ -48,5 +55,6 @@ module.exports = {
   deleteFinishedJobsCron,
   deleteOldLolMatchesCron,
   refreshTwitchAccountsCron,
+  createNewPaginationCursorCron,
   refreshLolAccountsCron,
 };

@@ -56,6 +56,8 @@ CREATE TABLE lol_match_participants (
 
 CREATE INDEX lmp_role_index ON lol_match_participants (role);
 CREATE INDEX lmp_champion_id_index ON lol_match_participants (champion_id);
+CREATE INDEX lmp_native_summoner_id_index ON lol_match_participants (native_summoner_id);
+CREATE INDEX lmp_native_puuid_index ON lol_match_participants (native_puuid);
 
 CREATE TABLE lol_match_twitch_vods (
     id                  serial      PRIMARY KEY,
