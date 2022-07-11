@@ -114,6 +114,7 @@ class FetchLolMatchInfoJob extends Job {
 
     // Gather all participant info, it lives in two separate arrays in the api results, so we have to do some combining
     let participants = {};
+    let missingRoleId;
 
     for (const participant of apiResult.info.participants) {
       const primaryRunes = participant?.perks?.styles?.[0]?.selections;
@@ -121,6 +122,9 @@ class FetchLolMatchInfoJob extends Job {
       const runes = [...primaryRunes, ...secondaryRunes].map(
         (rune) => rune.perk
       );
+      if (participant.teamPosition === "") {
+        missingRoleId = participant.participantId;
+      }
 
       // TODO: fix role, team position can be empty string,
       //       if blank, we might be able to calculate it from other roles
@@ -141,6 +145,21 @@ class FetchLolMatchInfoJob extends Job {
       };
 
       participants[participantInfo.participantId] = participantInfo;
+    }
+
+    if (missingRoleId) {
+      // sometimes lol api returns blank for teamPosition
+      // we look at the other participants to find a position with only 1 participant
+      // if we can find one, we use it to correct the particpant role
+      const dbRoles = ["BOTTOM", "TOP", "UTILITY", "MIDDLE", "JUNGLE"];
+      const roleTotals = Object.values(participants).reduce((acc, p) => {
+        acc[p.role] = (acc?.[p.role] || 0) + 1;
+        return acc;
+      }, {});
+
+      const missingRole = dbRoles.find((role) => roleTotals[role] === 1);
+
+      participants[missingRoleId].role = missingRole || "";
     }
 
     // Save all our participant info

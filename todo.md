@@ -1,6 +1,5 @@
 ### Needs
 - double check how region is handled with riot api & id / name conflicts
-- fix blank roles caused by blank teamposition from api response
 - check vod existence clear lmp vodlink id
  
 ### Wants
