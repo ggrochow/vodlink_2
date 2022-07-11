@@ -12,7 +12,9 @@ const db = require("../../../../database/models");
  *
  * Vods expire after a certain period of time
  * Check twitch API to make sure the vod still exists, If it doesn't we delete it.
- * When deleting vods, also delete any lolMatchTwitchVod relations. Stale games will be deleted in another job
+ * When deleting vods, also delete
+ *  lolMatchTwitchVod relations
+ *  lolMatchTwitchVod ids from lolMatchParticipants
  */
 class CheckVodExistenceJob extends Job {
   get vodId() {
@@ -75,21 +77,42 @@ class CheckVodExistenceJob extends Job {
       }
     }
 
-    if (statusCode === 404) {
-      try {
-        await db.twitchVods.deleteById(this.vodId);
-      } catch (sqlError) {
-        this.errors = `Error deleting vod by id - ${sqlError.message}`;
-        console.error(sqlError);
-        return this;
-      }
-      try {
-        await db.lolMatchTwitchVods.deleteByVodId(this.vodId);
-      } catch (sqlError) {
-        this.errors = `Error deleting lol_match_twitch_vods by vodId - ${sqlError.message}`;
-        console.error(sqlError);
-        return this;
-      }
+    if (statusCode !== 404) {
+      return;
+    }
+
+    try {
+      await db.twitchVods.deleteById(this.vodId);
+    } catch (sqlError) {
+      this.errors = `Error deleting vod by id - ${sqlError.message}`;
+      console.error(sqlError);
+      return this;
+    }
+
+    let vodlinks;
+    try {
+      vodlinks = await db.lolMatchTwitchVods.getByVodId();
+    } catch (sqlError) {
+      console.error(sqlError);
+      this.errors = `Error getting a list of vodlinks to clean up - ${sqlError.message}`;
+      return this;
+    }
+
+    try {
+      await db.lolMatchTwitchVods.deleteByVodId(this.vodId);
+    } catch (sqlError) {
+      this.errors = `Error deleting lol_match_twitch_vods by vodId - ${sqlError.message}`;
+      console.error(sqlError);
+      return this;
+    }
+
+    let vodlinkIds = vodlinks.map((vodLink) => vodLink.id);
+    try {
+      await db.lolMatchParticipant.clearVodlinkIds(vodlinkIds);
+    } catch (sqlError) {
+      console.error(sqlError);
+      this.errors = `Error clearing old vodlinkIds ${vodlinkIds} - ${sqlError}`;
+      return this;
     }
 
     return this;

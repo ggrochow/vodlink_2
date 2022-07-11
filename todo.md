@@ -1,6 +1,5 @@
 ### Needs
 - double check how region is handled with riot api & id / name conflicts
-- check vod existence clear lmp vodlink id
  
 ### Wants
 - proper FK relations

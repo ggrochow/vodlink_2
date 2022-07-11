@@ -66,9 +66,15 @@ async function matchupSearch(matchupInfo) {
      LIMIT $(limit) OFFSET $(offset)
   `;
 
+  let lolMatches = [];
   const pagination = await queries.one(paginationQuery, params);
-  // TODO: abort lolMatch query if pagination results have 0 total
-  const lolMatches = await queries.manyOrNone(query, params);
+  const hasResults = pagination.total > 0;
+  const isWithinPageLimits =
+    params.page <= Math.ceil(pagination.total / vodsPerPage);
+
+  if (hasResults && isWithinPageLimits) {
+    lolMatches = await queries.manyOrNone(query, params);
+  }
 
   const counts = await getRoleCounts(
     matchupInfo,

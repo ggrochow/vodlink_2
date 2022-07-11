@@ -161,7 +161,6 @@ class FetchNewTwitchVodsJob extends Job {
       let nativeVodId = vodInfo.id;
       if (nativeVodIdsInDatabase.includes(nativeVodId)) {
         continue;
-        // TODO: look into why this might still allow for duplicate vodId
       }
 
       let startTime = dayjs.utc(vodInfo.created_at);

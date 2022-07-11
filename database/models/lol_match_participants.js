@@ -125,6 +125,22 @@ function setMasteryById(level, points, id) {
   return db.one(query, params);
 }
 
+function clearVodlinkIds(vodlinkIds) {
+  const query = `
+    UPDATE
+        lol_match_participants
+    SET
+        lol_match_twitch_vods_id = NULL
+    WHERE
+         lol_match_twitch_vods_id IN ( $(vodlinkIds:list) )
+  `;
+  const params = {
+    vodlinkIds,
+  };
+
+  return db.one(query, params);
+}
+
 function setVodlinkById(vodlinkId, id) {
   const query = `
     update
@@ -148,4 +164,5 @@ module.exports = {
   setVodlinkById,
   setMasteryById,
   deleteByLolMatchIds,
+  clearVodlinkIds,
 };

@@ -19,6 +19,13 @@ function findByMatchAndVodId(matchId, vodId) {
   return db.oneOrNone(query, params);
 }
 
+function getByVodId(vodId) {
+  let query = "SELECT * FROM lol_match_twitch_vods WHERE twitch_vod_id = $1";
+  let params = [vodId];
+
+  return db.manyOrNone(query, params);
+}
+
 function deleteByVodId(vodId) {
   let query = "DELETE FROM lol_match_twitch_vods WHERE twitch_vod_id  = $1";
   let params = [vodId];
@@ -50,5 +57,6 @@ module.exports = {
   findByMatchAndVodId,
   deleteByVodId,
   getByIds,
+  getByVodId,
   deleteByLolMatchIds,
 };
