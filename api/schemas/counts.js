@@ -1,21 +1,24 @@
 const Joi = require("joi");
-const { DB_LOL_ROLES } = require("../../utils/lol_data");
+const { matchupRoles, validRole } = require("./matchupSearch");
+const { roleNames } = require("../../database/services/matchupSearch/utils");
 
 const roleCountSchema = Joi.object({
-  championId: Joi.number(),
-});
+  ...matchupRoles,
+})
+  .unknown(false)
+  .required();
 
 const championCountSchema = Joi.object({
-  role: Joi.string().valid(...DB_LOL_ROLES),
-});
-
-const enemyChampionCountSchema = Joi.object({
-  role: Joi.string(),
-  championId: Joi.number(),
-});
+  COUNT_ROLE: Joi.string()
+    .valid(...roleNames)
+    .required(),
+  ROLE: validRole,
+  ...matchupRoles,
+})
+  .unknown(false)
+  .required();
 
 module.exports = {
   roleCountSchema,
   championCountSchema,
-  enemyChampionCountSchema,
 };
