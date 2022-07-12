@@ -126,6 +126,10 @@ function setMasteryById(level, points, id) {
 }
 
 function clearVodlinkIds(vodlinkIds) {
+  if (!vodlinkIds || vodlinkIds.length === 0) {
+    return;
+  }
+
   const query = `
     UPDATE
         lol_match_participants

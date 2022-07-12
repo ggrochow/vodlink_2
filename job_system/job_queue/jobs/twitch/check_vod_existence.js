@@ -91,7 +91,7 @@ class CheckVodExistenceJob extends Job {
 
     let vodlinks;
     try {
-      vodlinks = await db.lolMatchTwitchVods.getByVodId();
+      vodlinks = await db.lolMatchTwitchVods.getByVodId(this.vodId);
     } catch (sqlError) {
       console.error(sqlError);
       this.errors = `Error getting a list of vodlinks to clean up - ${sqlError.message}`;
