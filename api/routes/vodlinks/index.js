@@ -4,25 +4,22 @@ const router = express.Router();
 const {
   matchupSearch,
 } = require("../../../database/services/matchupSearch/full_matchup_search");
-const { getFactory } = require("../controller_factories");
+const { getResultsFactory } = require("../controller_factories");
 const { fullMatchupSearchSchema } = require("../../schemas/matchupSearch");
 const {
-  getCacheFactory,
   setCacheFactory,
   validateQueryFactory,
+  getCacheFactory,
 } = require("../../middleware");
 const { vodlinkRedis } = require("../../redis");
 const { queryParamsExtractor } = require("../../middleware/extractors");
 
-const getCache = getCacheFactory(vodlinkRedis, queryParamsExtractor);
-const setCache = setCacheFactory(vodlinkRedis, queryParamsExtractor);
-
 router.get(
   "/matchupSearch",
   validateQueryFactory(fullMatchupSearchSchema),
-  getCache,
-  getFactory(matchupSearch),
-  setCache
+  getCacheFactory(vodlinkRedis, queryParamsExtractor),
+  getResultsFactory(matchupSearch),
+  setCacheFactory(vodlinkRedis, queryParamsExtractor)
 );
 
 module.exports = router;

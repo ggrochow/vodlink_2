@@ -45,7 +45,8 @@ const refreshTwitchAccountsCron = new CronJob(
 
 // Every Weds at 5pm
 const refreshLolAccountsCron = new CronJob(
-  "00 00 17 * * 3",
+  "00 43 18 * * 1",
+  // "00 00 17 * * 3",
   refreshLolAccounts
 );
 

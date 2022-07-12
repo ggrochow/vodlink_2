@@ -1,12 +1,10 @@
 const queries = require("../../models/raw_queries");
-const {
-  lolMatchParticipant,
-  lolMatchTwitchVods,
-  twitchVods,
-  twitchAccounts,
-} = require("../../models");
 
-const { getMatchupBody } = require("./utils");
+const {
+  getMatchupBody,
+  mapMatchData,
+  getVodlinkDataByMatchIds,
+} = require("./utils");
 
 const vodsPerPage = 10;
 
@@ -22,7 +20,7 @@ async function matchupSearch(matchupInfo) {
   const { wheres, joins, params } = await getMatchupBody(matchupInfo);
   params.page = matchupInfo.PAGE || 1;
   params.limit = vodsPerPage;
-  params.offset = (matchupInfo.PAGE - 1) * vodsPerPage;
+  params.offset = (params.page - 1) * vodsPerPage;
 
   const baseQuery = `
      FROM 
@@ -58,24 +56,10 @@ async function matchupSearch(matchupInfo) {
     lolMatches = await queries.manyOrNone(query, params);
   }
 
-  const lolMatchIds = [];
-  const vodlinkIds = [];
-  lolMatches.forEach((match) => {
-    lolMatchIds.push(match.id);
-  });
+  const lolMatchIds = lolMatches.map((match) => match.id);
 
-  const participants = await lolMatchParticipant.getByMatchIds(lolMatchIds);
-  for (const participant of participants) {
-    if (participant.lol_match_twitch_vods_id) {
-      vodlinkIds.push(participant.lol_match_twitch_vods_id);
-    }
-  }
-
-  const vodLinks = await lolMatchTwitchVods.getByIds(vodlinkIds);
-  const vodIds = vodLinks.map((vodLink) => vodLink.twitch_vod_id);
-  const vods = await twitchVods.getByIds(vodIds);
-  const channelIds = vods.map((vod) => vod.twitch_channel_id);
-  const channels = await twitchAccounts.getByIds(channelIds);
+  const { participants, vodLinks, vods, channels } =
+    await getVodlinkDataByMatchIds(lolMatchIds);
 
   const matchData = mapMatchData(
     lolMatches,
@@ -89,33 +73,6 @@ async function matchupSearch(matchupInfo) {
     data: matchData,
     pagination,
   };
-}
-
-function mapMatchData(lolMatches, participants, vodLinks, vods, channels) {
-  return lolMatches.map((lolMatch) => {
-    const matchParticipants = participants.filter(
-      (participant) => participant.lol_match_id === lolMatch.id
-    );
-    lolMatch.participants = matchParticipants.map((participant) => {
-      const vodlinkId = participant.lol_match_twitch_vods_id;
-      if (!vodlinkId) {
-        return participant;
-      }
-
-      participant.vodLink = vodLinks.find(
-        (vodlink) => vodlink.id === vodlinkId
-      );
-      participant.vod = vods.find(
-        (vod) => vod.id === participant.vodLink?.twitch_vod_id
-      );
-      participant.channel = channels.find(
-        (channel) => channel.id === participant.vod?.twitch_channel_id
-      );
-      return participant;
-    });
-
-    return lolMatch;
-  });
 }
 
 module.exports = {

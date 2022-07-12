@@ -1,4 +1,10 @@
-const { settings } = require("../../models");
+const {
+  settings,
+  lolMatchTwitchVods,
+  twitchVods,
+  twitchAccounts,
+  lolMatchParticipant,
+} = require("../../models");
 const roleNames = [
   "ALLY_TOP",
   "ALLY_MIDDLE",
@@ -154,11 +160,59 @@ function roleJoinString(joinName, teamIdString) {
                     }`;
 }
 
+function mapMatchData(lolMatches, participants, vodLinks, vods, channels) {
+  return lolMatches.map((lolMatch) => {
+    const matchParticipants = participants.filter(
+      (participant) => participant.lol_match_id === lolMatch.id
+    );
+    lolMatch.participants = matchParticipants.map((participant) => {
+      const vodlinkId = participant.lol_match_twitch_vods_id;
+      if (!vodlinkId) {
+        return participant;
+      }
+
+      participant.vodLink = vodLinks.find(
+        (vodlink) => vodlink.id === vodlinkId
+      );
+      participant.vod = vods.find(
+        (vod) => vod.id === participant.vodLink?.twitch_vod_id
+      );
+      participant.channel = channels.find(
+        (channel) => channel.id === participant.vod?.twitch_channel_id
+      );
+      return participant;
+    });
+
+    return lolMatch;
+  });
+}
+
+async function getVodlinkDataByMatchIds(lolMatchIds) {
+  const participants = await lolMatchParticipant.getByMatchIds(lolMatchIds);
+
+  const vodlinkIds = [];
+  for (const participant of participants) {
+    if (participant.lol_match_twitch_vods_id) {
+      vodlinkIds.push(participant.lol_match_twitch_vods_id);
+    }
+  }
+
+  const vodLinks = await lolMatchTwitchVods.getByIds(vodlinkIds);
+  const vodIds = vodLinks.map((vodLink) => vodLink.twitch_vod_id);
+  const vods = await twitchVods.getByIds(vodIds);
+  const channelIds = vods.map((vod) => vod.twitch_channel_id);
+  const channels = await twitchAccounts.getByIds(channelIds);
+
+  return { participants, vodLinks, vods, channels };
+}
+
 module.exports = {
   roleJoinString,
   roleName,
   joinName,
   getJoinType,
   getMatchupBody,
+  mapMatchData,
+  getVodlinkDataByMatchIds,
   roleNames,
 };

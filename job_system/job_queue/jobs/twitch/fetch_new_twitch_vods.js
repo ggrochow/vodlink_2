@@ -143,7 +143,7 @@ class FetchNewTwitchVodsJob extends Job {
     }
     // For each vod, if its new, public, and created within the last month,
     // create DB entry then foreach lol account associated - a new FIND_LOL_MATCHES_DURING_VOD job.
-    let oneMonthAgo = dayjs().subtract(1, "week");
+    let oneMonthAgo = dayjs().subtract(1, "month");
     for (let vodIndex in apiResult.data) {
       let vodInfo = apiResult.data[vodIndex];
 

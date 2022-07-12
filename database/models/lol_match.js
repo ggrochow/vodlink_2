@@ -65,11 +65,33 @@ function getMostRecentLolMatchWithFullData() {
   return db.oneOrNone(query);
 }
 
+function getMatchWithMostVods() {
+  const query = `
+    select
+        lm.*
+    from
+        lol_matches lm
+    join lol_match_participants lmp on
+        lmp.lol_match_id = lm.id
+    where
+        lmp.lol_match_twitch_vods_id IS NOT NULL
+    group by
+        lm.id
+    order by 
+        count(lmp.*) desc
+    limit 
+        1
+  `;
+
+  return db.oneOrNone(query);
+}
+
 module.exports = {
   getById,
   getByRegionAndNativeId,
   createNew,
   getLolMatchIdsOlderThanTwoMonths,
   getMostRecentLolMatchWithFullData,
+  getMatchWithMostVods,
   deleteByIds,
 };

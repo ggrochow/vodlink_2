@@ -1,8 +1,5 @@
 ### Needs
 - double check how region is handled with riot api & id / name conflicts
-- auth token
-- admin auth token
-- route to find single vodlink with highest vod count for homepage
  
 ### Wants
 - some way of looking at a channels video list, and the amount of games found on them, maybe help find more lol accounts to add for users

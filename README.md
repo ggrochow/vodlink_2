@@ -1,6 +1,6 @@
 # VODLINK
 
-## https://www.lolvodlink.com
+## https://lol.vodfind.com
 
 A tool to link League of Legends matches to twitch streamers VODs.
 Allowing users to find timestamps to vods to watch based on a given champion matchup.
@@ -9,6 +9,7 @@ Automatically fetches matches & vods from Twitch/LoL APIs grabbing new data dail
 ### Requirements
 
 postgres 11.4
+redis ??
 node 12.6.0
 
 ### Setup
@@ -19,7 +20,7 @@ node 12.6.0
 - `npm install`
 - `npm run migrate_database`
 - `npm run seed-database`
-- `pip install -r python/requirements.txt`
+- You can now run job system to populate the database
 
 ### Running
 
@@ -29,7 +30,10 @@ Make sure you are running the start commands from project root to ensure the .en
 
 1. Job System
    - Queries Twitch/LoL Apis to fetch new data, as well as cleaning up old stale data.
-   - RUN: `node job_system/webapp.js`
+   - RUN: `node job_system/index.js`
+2. API Server
+   - Serves various api data
+   - RUN `node api/index.js`
 
 ### Folder Structure
 
