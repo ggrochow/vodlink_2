@@ -5,7 +5,7 @@ const { getFactory, postFactory } = require("../controller_factories");
 const {
   getAllChannelsWithSummoners,
 } = require("../../../database/services/channels_with_summoners");
-const { validateBodyFactory } = require("../../schemas/middleware_factories");
+const { validateBodyFactory } = require("../../middleware");
 const { addChannelsWithSummonersSchema } = require("../../schemas/channels");
 const {
   addTwitchAccountWithSummoners,

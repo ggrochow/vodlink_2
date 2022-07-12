@@ -1,4 +1,4 @@
-const logger = require("../../../utils/logger");
+const logger = require("../../utils/logger");
 
 function setCacheFactory(redisClient, keyExtractor, hasNext = false) {
   return async (req, res, next) => {

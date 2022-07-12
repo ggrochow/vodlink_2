@@ -5,11 +5,14 @@ const {
   matchupSearch,
 } = require("../../../database/services/matchupSearch/full_matchup_search");
 const { getFactory } = require("../controller_factories");
-const { validateQueryFactory } = require("../../schemas/middleware_factories");
 const { fullMatchupSearchSchema } = require("../../schemas/matchupSearch");
-const { getCacheFactory, setCacheFactory } = require("../../redis/middleware");
+const {
+  getCacheFactory,
+  setCacheFactory,
+  validateQueryFactory,
+} = require("../../middleware");
 const { vodlinkRedis } = require("../../redis");
-const { queryParamsExtractor } = require("../../redis/extractors");
+const { queryParamsExtractor } = require("../../middleware/extractors");
 
 const getCache = getCacheFactory(vodlinkRedis, queryParamsExtractor);
 const setCache = setCacheFactory(vodlinkRedis, queryParamsExtractor);
