@@ -1,27 +1,9 @@
 [
   {
-    "channel_name": "loltyler1",
-    "summoners": [
-      {
-        "name": "COOKIEMONSTER123",
-        "region": "NA1"
-      }
-    ]
-  },
-  {
     "channel_name": "thebausffs",
     "summoners": [
       {
         "name": "Thebausffs",
-        "region": "EUW1"
-      }
-    ]
-  },
-  {
-    "channel_name": "noway4u_sir",
-    "summoners": [
-      {
-        "name": "WashedUp4USir",
         "region": "EUW1"
       }
     ]
@@ -32,15 +14,6 @@
       {
         "name": "TFT YODA",
         "region": "BR1"
-      }
-    ]
-  },
-  {
-    "channel_name": "ratirl",
-    "summoners": [
-      {
-        "name": "Villager C",
-        "region": "EUW1"
       }
     ]
   },
@@ -76,6 +49,15 @@
     ]
   },
   {
+    "channel_name": "midbeast",
+    "summoners": [
+      {
+        "name": "HamburgerEater59",
+        "region": "NA1"
+      }
+    ]
+  },
+  {
     "channel_name": "bbbb87",
     "summoners": [
       {
@@ -85,11 +67,20 @@
     ]
   },
   {
-    "channel_name": "midbeast",
+    "channel_name": "noway4u_sir",
     "summoners": [
       {
-        "name": "HamburgerEater59",
-        "region": "NA1"
+        "name": "WashedUp4USir",
+        "region": "EUW1"
+      }
+    ]
+  },
+  {
+    "channel_name": "ratirl",
+    "summoners": [
+      {
+        "name": "Villager C",
+        "region": "EUW1"
       }
     ]
   },
@@ -227,6 +218,15 @@
     "summoners": [
       {
         "name": "JLand",
+        "region": "NA1"
+      }
+    ]
+  },
+  {
+    "channel_name": "loltyler1",
+    "summoners": [
+      {
+        "name": "COOKIEMONSTER123",
         "region": "NA1"
       }
     ]
@@ -712,7 +712,7 @@
     "channel_name": "viper",
     "summoners": [
       {
-        "name": "hate it",
+        "name": "love kalista",
         "region": "NA1"
       }
     ]
@@ -730,11 +730,11 @@
     "channel_name": "tofoufou",
     "summoners": [
       {
-        "name": "Feet Savant",
+        "name": "twtv Tofoufou",
         "region": "EUW1"
       },
       {
-        "name": "twtv Tofoufou",
+        "name": "Feet Savant",
         "region": "EUW1"
       }
     ]
@@ -1044,6 +1044,33 @@
       {
         "name": "Lesba Zyra MID",
         "region": "EUW1"
+      }
+    ]
+  },
+  {
+    "channel_name": "kamuslol",
+    "summoners": [
+      {
+        "name": "Kamus",
+        "region": "EUW1"
+      }
+    ]
+  },
+  {
+    "channel_name": "noarmwhatley",
+    "summoners": [
+      {
+        "name": "MOONSTONE FROG",
+        "region": "EUW1"
+      }
+    ]
+  },
+  {
+    "channel_name": "shiphtur",
+    "summoners": [
+      {
+        "name": "Shiphtur",
+        "region": "NA1"
       }
     ]
   }
