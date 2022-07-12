@@ -8,3 +8,4 @@
   - https://www.youtube.com/c/Synapse1
   - https://championsqueue.lolesports.com/en-us/
 - can we verify someone owns a lol account by asking them to swap profile icons, then doing a lookup
+- role counts not always properly respecting the streamer role when lots of champs selected

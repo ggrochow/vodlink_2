@@ -78,7 +78,7 @@ class CheckVodExistenceJob extends Job {
     }
 
     if (statusCode !== 404) {
-      return;
+      return this;
     }
 
     try {

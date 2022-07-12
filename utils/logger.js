@@ -12,8 +12,8 @@ if (process.env.NODE_ENV === "production") {
     new winston.transports.File({ filename: "error.log", level: "error" })
   );
 } else {
-  logger.add(new winston.transports.Console({ level: "debug" }));
-  // logger.add(new winston.transports.Console({ level: "verbose" }));
+  // logger.add(new winston.transports.Console({ level: "debug" }));
+  logger.add(new winston.transports.Console({ level: "verbose" }));
 }
 
 module.exports = logger;
