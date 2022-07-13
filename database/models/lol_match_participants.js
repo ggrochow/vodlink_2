@@ -142,7 +142,7 @@ function clearVodlinkIds(vodlinkIds) {
     vodlinkIds,
   };
 
-  return db.one(query, params);
+  return db.oneOrNone(query, params);
 }
 
 function setVodlinkById(vodlinkId, id) {
