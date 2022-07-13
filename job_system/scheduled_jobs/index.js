@@ -7,15 +7,15 @@ const refreshLolAccounts = require("./jobs/refresh_lol_account_information");
 const refreshTwitchAccounts = require("./jobs/refresh_twitch_account_information");
 const createNewPaginationCursor = require("./jobs/create_new_pagination_cursor");
 
-// Every 6 hours, one minute past the hour
+// Every day 1 after before midnight
 const createFetchNewVods = new CronJob(
-  "00 01 0-23/6 * * *",
+  "00 01 00 * * *",
   createFetchNewTwitchVodsJob
 );
 
-// Every 6 hours, on the hour, runs before we start fetching new vods
+// Every day at midnight, runs before we start fetching new vods
 const createNewPaginationCursorCron = new CronJob(
-  "00 00 0-23/6 * * *",
+  "00 00 00 * * *",
   createNewPaginationCursor
 );
 
