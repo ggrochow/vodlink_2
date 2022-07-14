@@ -24,15 +24,16 @@ function createNewJob(jobType, payload, priority = Job.PRIORITIES.DEFAULT) {
 
 function getRunnableJobOfType(jobTypeArray) {
   const query = `
-    SELECT * 
-    FROM jobs 
+    SELECT 
+        * 
+    FROM 
+        jobs 
     WHERE 
       job_type IN ( $(jobTypes:list) ) 
       AND status IN ( $(statusTypes:list) ) 
     ORDER BY 
       priority ASC,
-      status ASC,
-      id ASC
+      status ASC
     LIMIT 1
    `;
   const params = {

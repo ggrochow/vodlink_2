@@ -92,6 +92,7 @@ async function getMatchupBody(matchupInfo) {
   }
 
   if (!matchupInfo.ROLE) {
+    console.log(champFilters.ally);
     // when no role is included, ensure a vodlink exists on the allies team
     const allyWheres = champFilters.ally.map(
       (role) => `${joinName(role)}.lol_match_twitch_vods_id IS NOT NULL`
@@ -99,10 +100,11 @@ async function getMatchupBody(matchupInfo) {
     if (champFilters.ally.length !== 5) {
       matchupJoins.unshift(roleJoinString("participant"));
       allyWheres.push("participant.lol_match_twitch_vods_id IS NOT NULL");
+      for (const searchedRole of champFilters.ally) {
+        matchupWheres.push(`participant.role != ${roleName(searchedRole)}`);
+      }
     }
-    for (const searchedRole of champFilters.ally) {
-      matchupWheres.push(`participant.role != ${roleName(searchedRole)}`);
-    }
+
     matchupWheres.push(`( ${allyWheres.join("\n\tOR ")} )`);
   }
 
