@@ -4,1119 +4,1126 @@
     "id": "Annie",
     "key": "1",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPo9tA8Gh5Zq2mix8DEsLvM/2xZdIqSXKa0NENzpt//1yvedyZ5sPMwKPBwljtoRylLyjMwAADCPQ+qZRDp4gAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Annie.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Annie.png"
   },
   "2": {
     "name": "Olaf",
     "id": "Olaf",
     "key": "2",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ACpNVbLk5xA0PwAFAAAaLzDu//9OY2gADgoAx55q48qswJ+ATz4sAPivcf/Ylv/Smqd4SxJNF4K4EBBTAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Olaf.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Olaf.png"
   },
   "3": {
     "name": "Galio",
     "id": "Galio",
     "key": "3",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPgU3dJTcuVkFRmYJBgCEltXD5ngp2xBpOoHsOjO5f+///UP2kug0EsQ0VxQVV5oUdYDoO4AwCqahHynTsUHAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Galio.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Galio.png"
   },
   "4": {
     "name": "Twisted Fate",
     "id": "TwistedFate",
     "key": "4",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AHdifrmtxi4lLA4AAACqk6b/+/pGLjITAgkAg3OE//Tw/8u7Mx8bAF1PZ6uUpaB9bc6niz59F3wOT7ooAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/TwistedFate.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/TwistedFate.png"
   },
   "5": {
     "name": "Xin Zhao",
     "id": "XinZhao",
     "key": "5",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgY+CVF+EPczRRl1ViMFYy/n9s1f+ra8q9LRkqc7t/b5z9/9XOmgAXhpDAnNrM+roYL3N5XgDD7RNg6HijngAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/XinZhao.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/XinZhao.png"
   },
   "6": {
     "name": "Urgot",
     "id": "Urgot",
     "key": "6",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMQ5eN/+//P7hNHmBgYGWSEhQ9fOHLwykkRUVEGYX5+BRXluJICPTtrBh52rsja4NDiED4BEQDeUg+v1URDCAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Urgot.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Urgot.png"
   },
   "7": {
     "name": "LeBlanc",
     "id": "Leblanc",
     "key": "7",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOwNzQPtfc40FSX4xPPoKXhFWqf8P/tl6qoMgY2Rj4vM9f/20+FmHgw6CgYMzMwmyjpKgpIAQDLyA+SDyJkMgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Leblanc.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Leblanc.png"
   },
   "8": {
     "name": "Vladimir",
     "id": "Vladimir",
     "key": "8",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgZ2CYXlf2/+vjAm8XBjs5+f8Xd/+f2VxooM2QZqz/JCNxgrFOkJwsg6eGRp2ewXxflxxzIwAXzRLBxS2kVQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Vladimir.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Vladimir.png"
   },
   "9": {
     "name": "Fiddlesticks",
     "id": "Fiddlesticks",
     "key": "9",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AD0/QQ8VHE1RWnybuQBrXU8wAADmtK2RrcMAVl1oh0s8+///TGVyACo7Ss26qbe0ryUpLu8LFQ+NZkGPAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Fiddlesticks.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Fiddlesticks.png"
   },
   "10": {
     "name": "Kayle",
     "id": "Kayle",
     "key": "10",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AM66cf/8z//aqNTCfQD/34/TqpLqspP/5pcA8bh4rX5wrXpimlwrAJFnQH5VSlUoDSgAAHISG+w1zKxBAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Kayle.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Kayle.png"
   },
   "11": {
     "name": "Master Yi",
     "id": "MasterYi",
     "key": "11",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPIaS7etq21rjTc3V6HYenexf//H+hoTzXUlGbo3Dz37ImJTobyJkaGDP4JIaa6yjIMDAmRNgBXjxO9iteWuAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/MasterYi.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/MasterYi.png"
   },
   "12": {
     "name": "Alistar",
     "id": "Alistar",
     "key": "12",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AAYADDUlUm5alAoAAAAlGTCCYK/itP9SSWAAyrfAzarYcFh+cW1zAP/79nNme2hYZratqNbMFlAMdfRHAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Alistar.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Alistar.png"
   },
   "13": {
     "name": "Ryze",
     "id": "Ryze",
     "key": "13",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ACI/i3Z49fP8/3uh1wAvRaZZOLzVtP99kv0ALDyFGAAxUjeZgJTyAC81eAQAHCIcPlVblI5OFcYAo8aUAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Ryze.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Ryze.png"
   },
   "14": {
     "name": "Sion",
     "id": "Sion",
     "key": "14",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOI0NSqCMl4smRtgqYmw+qEhOqYxv8v///fu41hdnhCmFWUl6pTv084Q4ypowCDgKa4pqqYGgA4XBK+42DNMAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Sion.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Sion.png"
   },
   "15": {
     "name": "Sivir",
     "id": "Sivir",
     "key": "15",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMQYmCwDHaWl5cUYWBgEGJg6AwOWJCWIMfKzhAoJfR/ZuX/RRPLzdUYtlY5/P86/cfq0lX5DgA2uhEaJUfmPAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Sivir.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Sivir.png"
   },
   "16": {
     "name": "Soraka",
     "id": "Soraka",
     "key": "16",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ANGbtP/S8//r6s6orAD62vL/7v/zteuWbZ0AxZ2u+L3/rnrtJgo7AH1GUV00YhQAJkQjOrPhHeZLxC8VAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Soraka.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Soraka.png"
   },
   "17": {
     "name": "Teemo",
     "id": "Teemo",
     "key": "17",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNQl+LWFeL3VBGP1xNlMBJlyDWSWBtvvKvMg0GNl+H/uwP/X+2dG2LNoCHHMSXGM5VfRIOBAQBSyg5fPOMAYQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Teemo.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Teemo.png"
   },
   "18": {
     "name": "Tristana",
     "id": "Tristana",
     "key": "18",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMQZ2Du7Jz+5v9/XTVPhgjvkPUnPly99l9LL4VhfnJBWcL0VX3vYyJ7GRqNnFzU7JQlrCW4xAFU6BSiBtyuoQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Tristana.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Tristana.png"
   },
   "19": {
     "name": "Warwick",
     "id": "Warwick",
     "key": "19",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNg4WYTEONnYGJgYGRgcI5w8or0MLXUEpcSYbjw/0pOe15Bf0HT2nqGiYemKmrKRpYFNmwsBgAYKw8nLz92NAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Warwick.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Warwick.png"
   },
   "20": {
     "name": "Nunu & Willump",
     "id": "Nunu",
     "key": "20",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AF2PxQAARyhHa0RagwApR5cmG21LJFmbbWsAID+BvZDf/+j/8rSmAFefzmxstP/15u7bwP1zGNWyr6sRAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Nunu.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Nunu.png"
   },
   "21": {
     "name": "Miss Fortune",
     "id": "MissFortune",
     "key": "21",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPI0hZNFGPV5GLgZGBgiBBhWZrstjjf156PiSHGUOv/pzMvi2yCGBkZAhVlryzq7XfX02JgAAA+iw3uiYGCAQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/MissFortune.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/MissFortune.png"
   },
   "22": {
     "name": "Ashe",
     "id": "Ashe",
     "key": "22",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMwsyqMCplg7dpk41DBoOkyta3x0P8f/3fveMLAwJCUm3Dj/6P/fu5dDAwyqQxChYGOs01NagE2wBVL0ZntgAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Ashe.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Ashe.png"
   },
   "23": {
     "name": "Tryndamere",
     "id": "Tryndamere",
     "key": "23",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPQMjLecORQZmEREwMTg5GR0fP/PxZtW8/PxcNg4eA8s79z1aQuZSUlBl1VlcKComgvd00FWQDoARFqJ3VRXgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Tryndamere.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Tryndamere.png"
   },
   "24": {
     "name": "Jax",
     "id": "Jax",
     "key": "24",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ADI0YpuG5cew/2JnswAdDDHCi/T/7f+YmPQAXTJsPjJhSFWHZWOiALCD0WpIfAoAGB8aPpCVFpAU8LEoAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Jax.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Jax.png"
   },
   "25": {
     "name": "Morgana",
     "id": "Morgana",
     "key": "25",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPQkTEO0Q9WZlARY5ViiHGI+rjy3cq0VbqCpgy67Dq3Vlz7/+W/p4Y3AxcDl6+V17TSGTJcygCaMBCvu2ts9gAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Morgana.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Morgana.png"
   },
   "26": {
     "name": "Zilean",
     "id": "Zilean",
     "key": "26",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgEFaSkNTKLGiVdk9kYOVRWNK75P+v/6ntsxkEJVVqO6e2LN8sa+zIwK2qzSApx6CozsDKBwCbWQ58jX65cwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Zilean.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Zilean.png"
   },
   "27": {
     "name": "Singed",
     "id": "Singed",
     "key": "27",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMQ55fzsXR4dPNQwZZMBlN1q/XtLf8/vu3eXcogK6HWM2FiU3yKvoc5AwMDt767u7aBsbieFgAPfRG8Tsg9/gAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Singed.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Singed.png"
   },
   "28": {
     "name": "Evelynn",
     "id": "Evelynn",
     "key": "28",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AJ6x0u63/9uC4xcAMgDc//+/rfGPYLMOACMAttz/lI7VkVSwWR1qADhHekc5c0EdWCEJOOwtGFqKXvorAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Evelynn.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Evelynn.png"
   },
   "29": {
     "name": "Twitch",
     "id": "Twitch",
     "key": "29",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ABYABUc2O83Hur3SrQAzQTQ9LjSvmpTW2L8AQotYVFdVj7WEarZtACZsM059VLL/rVayWBukFgukw/0cAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Twitch.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Twitch.png"
   },
   "30": {
     "name": "Karthus",
     "id": "Karthus",
     "key": "30",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNQdwi89f9/w6q9Mgb2DLoeYYtO3/bOLHMJSWBgYBcrnbW0fMZiBgZBBhVDG9/0QjVrVwY2EQAUiBFCYCaAqgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Karthus.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Karthus.png"
   },
   "31": {
     "name": "Cho'Gath",
     "id": "Chogath",
     "key": "31",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AHZsiLWbznA2Ux8AAwCVmbSGjr9oRWFXGCwA1///h5/IMCZCQiIyAFxwhm13mqS70nJugzcsFlfVu94TAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Chogath.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Chogath.png"
   },
   "32": {
     "name": "Amumu",
     "id": "Amumu",
     "key": "32",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNQUZYrW1XmXBTBwCDJkJsWdu3vpvLZxQyiogzd7fHX/u/O7yqQ0tNkyAgwTCryUzTXYRDgBADTwBECF1LqrQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Amumu.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Amumu.png"
   },
   "33": {
     "name": "Rammus",
     "id": "Rammus",
     "key": "33",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AKe6j//8nJxcKyMAAACkaDjwqmWgUiQsAAAAqaOZc2s9SjAYKAAAAMzcv8TUklNhKx8gFzGCE9Pwj/nEAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Rammus.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Rammus.png"
   },
   "34": {
     "name": "Anivia",
     "id": "Anivia",
     "key": "34",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNg4A3KXHk25cht1vQeBjWH7n3//3ud/M+aPJNBwqOt8Mz/yLUvGEwLGJgFA+WUM6UUQlkZjAE+SROFp3eWGAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Anivia.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Anivia.png"
   },
   "35": {
     "name": "Shaco",
     "id": "Shaco",
     "key": "35",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgYmBptnRZX9BqrGfGkBxS8//e//8f/k9rX8lQ6pczL7PlwvyNyV5xDEIMDN2h4QsraoWZGQExNxTgQLvd2wAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Shaco.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Shaco.png"
   },
   "36": {
     "name": "Dr. Mundo",
     "id": "DrMundo",
     "key": "36",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ANfg6ISBkUNGUEFOWQB1g4n/8v+7p8gYGiMA6+350bnyWEpiLy4zAP/9/2ZQdAAADlFMUL4zGOgH1wp7AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/DrMundo.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/DrMundo.png"
   },
   "37": {
     "name": "Sona",
     "id": "Sona",
     "key": "37",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AAAtUSlPdx47XQAAIwA2b5eMY3+UYncKDy0Ajau2+rm53omOlnd/AM/P0P/9+bx/frSIf9VxF1YmJeMPAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Sona.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Sona.png"
   },
   "38": {
     "name": "Kassadin",
     "id": "Kassadin",
     "key": "38",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AEsxbD8jbWxGoyUSTgD/6v//4v/Nn/mmf8sArYzN/9T/lHy298v/AAIAG1BBcDwwWDElS7L4GZEyFAa8AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Kassadin.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Kassadin.png"
   },
   "39": {
     "name": "Irelia",
     "id": "Irelia",
     "key": "39",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AKyovWJQbF9QZZSCmACsn8u7dZGYTmA2KUkAf3aa/+ru0WVsIhEpAD8nPIFOWlgwQhwAE2wnFN/sHR+OAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Irelia.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Irelia.png"
   },
   "40": {
     "name": "Janna",
     "id": "Janna",
     "key": "40",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AF2BlKzx/19vehMAAADk8Pr/+P/TvMovHBkAbHKE/9H04a/FSTpAAAAnQk1NaCcAAAAJIbxbFuU0sWa4AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Janna.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Janna.png"
   },
   "41": {
     "name": "Gangplank",
     "id": "Gangplank",
     "key": "41",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPElEQVQImWNgYGFgZGbn5WOrjXFkUJYTV9ZUdVCV+P92LYOChUnn9P4QC+3/+xsZxHQ1ZFUUeDgYM0OtARP3DDVLe+oCAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Gangplank.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Gangplank.png"
   },
   "42": {
     "name": "Corki",
     "id": "Corki",
     "key": "42",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AGJkZe3VxF1FOTo8QADW0L33w6lxPznOu60A3NS///bYvomCwpuMALyvo+/CsJNSVBYAD9wTG+N7/64gAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Corki.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Corki.png"
   },
   "43": {
     "name": "Karma",
     "id": "Karma",
     "key": "43",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMQtDUILYoO8HfkZGBgCF/fk5cfVxjiFehgzbD7/7cTd8/UOzrktVcyrD9+NKm5xcfGo23XYgDXrBUYmEiIrgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Karma.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Karma.png"
   },
   "44": {
     "name": "Taric",
     "id": "Taric",
     "key": "44",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AEgifSAHOEEjWUw5mgAvDjyvgNmbacglGVUAnm7Y/+b/nGfIGgAfAFE0kJZlwEAZVRYMM9TNEqKKafniAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Taric.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Taric.png"
   },
   "45": {
     "name": "Veigar",
     "id": "Veigar",
     "key": "45",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ABILJX9or9y4+xADIgAnGVRVOVESABwoFzQA/+7/9siz9rmHv5CWAH1wmHJjmI1tpn1dlPpYFilWoHhYAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Veigar.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Veigar.png"
   },
   "48": {
     "name": "Trundle",
     "id": "Trundle",
     "key": "48",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOwV7bSlHM35HOVYhBhmLtkn1fyDEPdKC1lE4a3//+vn75ehtNELqyIYfbeix21kxQFrbn9cwCZRxFsThHLxAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Trundle.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Trundle.png"
   },
   "50": {
     "name": "Swain",
     "id": "Swain",
     "key": "50",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOIlxCtTYpcP6m9xsKYQYWfe0N37f/LR6YU5TAwMjAcmNDy/829jrhoBjYWplx/j9kJ0abyCgAClxMrLSIbMQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Swain.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Swain.png"
   },
   "51": {
     "name": "Caitlyn",
     "id": "Caitlyn",
     "key": "51",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOQF5BUl9BkYRCTNXFj0Ncw0pQ0ibINUFOxZtjz7f/x7Y/+v39mre3EcHTTXn+H4sLAJEkhWQBhKxD8K00wMQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Caitlyn.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Caitlyn.png"
   },
   "53": {
     "name": "Blitzcrank",
     "id": "Blitzcrank",
     "key": "53",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNQ4FFO1FXeVmnhYmrCEGkV9//G1/8XZswpCmUwlnT/f+Du/4/f/PVtGXgYpCud7FrD/IUZ5AESPRPocQrgyAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Blitzcrank.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Blitzcrank.png"
   },
   "54": {
     "name": "Malphite",
     "id": "Malphite",
     "key": "54",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMQY+LUk1Ywl1UMMzdlEGJgUBbldNNVfrBoCkNtgEu0s8La5vj/b+8yLC9MX1eadqit/N+hLQBBSRIjaY6o0AAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Malphite.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Malphite.png"
   },
   "55": {
     "name": "Katarina",
     "id": "Katarina",
     "key": "55",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPElEQVQImWPQZGBYZeOcoG1jwcDH4M8qWKesu7i9y1dRnUGLXdhbW///h+8rsnIZlMVlJfj4kmztTPklAUajDO+hC7whAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Katarina.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Katarina.png"
   },
   "56": {
     "name": "Nocturne",
     "id": "Nocturne",
     "key": "56",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AF9HnAAAKDRHcgwXPQCde+ctLWRKVpBJZZkAoX7pY2er3/7/2O//AHJQqpeK4NTO/7Kb/wRuGWVBRnGyAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Nocturne.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Nocturne.png"
   },
   "57": {
     "name": "Maokai",
     "id": "Maokai",
     "key": "57",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AKay0FE/VjYhKxUMFQCipMRJOEZcXV0gEx4A5v//i6q/XX+MFAkVAJyy1oCUrxQeIwAACvZzEreSOqMJAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Maokai.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Maokai.png"
   },
   "58": {
     "name": "Renekton",
     "id": "Renekton",
     "key": "58",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ACIFADYsHzY1KRURDACbdVL//9eJemEzJRsA/++t/+S0yoFtVkM2ANWNWv/InPOzmhAAAOEPFaV0qyJaAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Renekton.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Renekton.png"
   },
   "59": {
     "name": "Jarvan IV",
     "id": "JarvanIV",
     "key": "59",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMo9zNfXJ+4tzVQnoGBodha6//s3EsTEtykBBmSzbT/P73ybfcqTXFeBgc1pQY/Tz87Kw5GBgD6bxHWl7pzewAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/JarvanIV.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/JarvanIV.png"
   },
   "60": {
     "name": "Elise",
     "id": "Elise",
     "key": "60",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNQUtCbFJgaauklKKXNwMUu9v/j//93fjMw8DMoKBnNbV+6e95RGUllBnUNc2FucQ4Gfj5eMQCrvQ6YqLsA3QAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Elise.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Elise.png"
   },
   "61": {
     "name": "Orianna",
     "id": "Orianna",
     "key": "61",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgYBDxtbaNc7OX4OBgkJY2eHf//4Vte3WEWRjszHz+f/tfn1uhKczGICGmlhlbri4pycvAAACNqQ7uK6ns4gAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Orianna.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Orianna.png"
   },
   "62": {
     "name": "Wukong",
     "id": "MonkeyKing",
     "key": "62",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNomrdWS0LagIFBiYGB4dH///NSU48Ux3lISzC4qxm+nDbl6+yWZXbGDLoMDGYi4hn8Qrc8jADPrhEcwVdxTAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/MonkeyKing.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/MonkeyKing.png"
   },
   "63": {
     "name": "Brand",
     "id": "Brand",
     "key": "63",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNY3xj7f0PLzBj7/z83M5zsyT5Zl5Rhqt0e7sRgryAea6bzd8uUqhhvBhkGBnM2hm1lsXmBLgBuShRxEu51pAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Brand.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Brand.png"
   },
   "64": {
     "name": "Lee Sin",
     "id": "LeeSin",
     "key": "64",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AOrXxYVXW6pLVYJeWwD0yrgzAABxABL7uLIA//baei4/5ImR//jeAM++qoFfXFkhKYFZWKdaGaVVaFIHAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/LeeSin.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/LeeSin.png"
   },
   "67": {
     "name": "Vayne",
     "id": "Vayne",
     "key": "67",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AA8AGDYdP11BaTgvTgAUABiYPmffh73Fnc0AJQEjnmCl/+n/oZXFABYAFUocSsCy+yY2aaxSEwyaQThzAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Vayne.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Vayne.png"
   },
   "68": {
     "name": "Rumble",
     "id": "Rumble",
     "key": "68",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMIs7axMXWNN9VvCPRheLlvvb1DrLmRv4mGCcP/TzeeH9q/qnOCjoolg7eW6rNNs2qDvYUYOAHvGBNddX0i7QAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Rumble.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Rumble.png"
   },
   "69": {
     "name": "Cassiopeia",
     "id": "Cassiopeia",
     "key": "69",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOws7VWF+c10lLQkxNlMNTVcTTV6Ip3ykyMYOBnYHA0lf3/fuemE+cYYh01ajPsLs8vbunrAwBC7hBT+fkHwAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Cassiopeia.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Cassiopeia.png"
   },
   "72": {
     "name": "Skarner",
     "id": "Skarner",
     "key": "72",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AK6Hp/+7zsunwDYsdQD/7vfbm7RjSYFcTZYAPihLTTpfSUF2ZE6cAAMAIkMwZbWK0D00b69bFrneZXt9AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Skarner.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Skarner.png"
   },
   "74": {
     "name": "Heimerdinger",
     "id": "Heimerdinger",
     "key": "74",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AH9VH9euUGo8GzMKBwDfoHf/+9KYcXFGExUAn36L/+7/o5C+SR4VACUlJpqqq4GFihkAAEF9FYFqGGw2AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Heimerdinger.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Heimerdinger.png"
   },
   "75": {
     "name": "Nasus",
     "id": "Nasus",
     "key": "75",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNIkJnZUTlldn9JgJ0Vw6Haj/9//7c0t7E0MGRY1Lm4sanD3jciIymBwc/S28bURYRbQoiBGQBAgBK6LV5JAwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Nasus.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Nasus.png"
   },
   "76": {
     "name": "Nidalee",
     "id": "Nidalee",
     "key": "76",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgZWCYWZ2lqaCYmeXP4GKk+v/LwUwfN0UxMYaOzKCr/WX9ibHFzbUM+ooSepLiSvxCnWvnAQChoBBhLjevoAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Nidalee.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Nidalee.png"
   },
   "77": {
     "name": "Udyr",
     "id": "Udyr",
     "key": "77",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AGiHkpSOj6hyaHpWTAB9lp7IkIj0nYOPVkgA1///mIV9nWNSMxoaANX//1VfYSYYGAUACZi5FxeIkW+UAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Udyr.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Udyr.png"
   },
   "78": {
     "name": "Poppy",
     "id": "Poppy",
     "key": "78",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AFo5TGVGWfC5r//55ABLMFCEa6aynsG4hIsAXTpT2tT/2N3/r5KjACAAAT8dLnxIZbFwd6eBGOv1cDiMAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Poppy.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Poppy.png"
   },
   "79": {
     "name": "Gragas",
     "id": "Gragas",
     "key": "79",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPYlJrw//ODR1PKXNlYGWbHRv0/sPx7TWyutCBDmIJsk6FFm4Z8GAcXgyYDQ7GOfJqSqDwDAwBAMhD9TueJzgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Gragas.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Gragas.png"
   },
   "80": {
     "name": "Pantheon",
     "id": "Pantheon",
     "key": "80",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPoLUz8/+fN57cPvaz0GJJDfXYt6H12dqerhT6DraO3jIioqrSQAAsng6ikIic7t5SkDBsDKwBN6w/+xoURpgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Pantheon.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Pantheon.png"
   },
   "81": {
     "name": "Ezreal",
     "id": "Ezreal",
     "key": "81",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNICgguS0zcN69vRmMGg622Tmli4v9fe5/u7WYQZWDOCkh/fPBcobsNgyKXrJdRWGfFgvCIPAA31xTOdhwfFQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Ezreal.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Ezreal.png"
   },
   "82": {
     "name": "Mordekaiser",
     "id": "Mordekaiser",
     "key": "82",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMw9XDyCQ+OSU9vn7+AIa68TNVEZ/mW1U///2foP75VTF/d2ME6rayMgdlIjoGTkYGBW01NAwD9uRCy76uCIwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Mordekaiser.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Mordekaiser.png"
   },
   "83": {
     "name": "Yorick",
     "id": "Yorick",
     "key": "83",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNIzqwR5pGWk9L2DUhhiIsvUtK2SKjp8HbMYLA084xrnnD1/39/l1wGJgahqpkrVl69LSOrAwCTPxF80v/0mQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Yorick.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Yorick.png"
   },
   "84": {
     "name": "Akali",
     "id": "Akali",
     "key": "84",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNIL5sa7J1pru/NxMDJEOaW8//v/2trD/BziDMkeydP2blm8ZFNaooGDCmZRX4hEYYefhZmbgD5VxL4sT8TFAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Akali.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Akali.png"
   },
   "85": {
     "name": "Kennen",
     "id": "Kennen",
     "key": "85",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgYJQxlPFaFrlWnEGRgU9CZ0fSlv93/5e7djFwCOhPTyt+sP9gpmcBg7KVnxifqjyntoaAMQCljg/FXkvmLwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Kennen.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Kennen.png"
   },
   "86": {
     "name": "Garen",
     "id": "Garen",
     "key": "86",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ADY1cz8ZIkIaHBYAAABRTJ3/yML/zsBPJSsAODFy/+K9/9C2PB1HABAdbKRqbfauh9alj+MLFb3Vc0GAAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Garen.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Garen.png"
   },
   "89": {
     "name": "Leona",
     "id": "Leona",
     "key": "89",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ALN/VbBhOZ1KGH9BFgCvWyL/1ZDWeVF3NxkA3I9D/+SQ/8CMXCYTAKZmJadYKUsWDCgAAEmAFI21Kv2MAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Leona.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Leona.png"
   },
   "90": {
     "name": "Malzahar",
     "id": "Malzahar",
     "key": "90",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOw16ieaNMzyX5BmtcpBl1uv3dT/v8/+z9Ss4FBkEFud+f/2/3/1Tg0GFR5zWXZbeTYbeQ5zQAvqBK0ytG53AAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Malzahar.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Malzahar.png"
   },
   "91": {
     "name": "Talon",
     "id": "Talon",
     "key": "91",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMoi217+v9/y8ybuhYZDGnBrZ++/6+rmOfgmMmQ5dZvL+97umaiOIMIw4beM742GdVBtUoKHgCRWRZfEweT2gAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Talon.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Talon.png"
   },
   "92": {
     "name": "Riven",
     "id": "Riven",
     "key": "92",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AISfl6q2r3FdVD8uLADT7+va2sKdcWN+bmkAeqig///orYlyPD04AEt5cqq2o0w9LQAAALszGF6Sc2EJAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Riven.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Riven.png"
   },
   "96": {
     "name": "Kog'Maw",
     "id": "KogMaw",
     "key": "96",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMwNbS3MbbztPNSkFJjsDYy/f3qwf9fv7Rk1Ris9DR2z2zpy02S5BZh0DEQLgwztFRSZGPgBACwkQ86/LkHHgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/KogMaw.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/KogMaw.png"
   },
   "98": {
     "name": "Shen",
     "id": "Shen",
     "key": "98",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AGheq+bo/zQ4cwkAOQCbmO7t/f80O2MoKF4AmZH43Nb9XVl3c3y1AMbH/5SUwhMLHwMAGJ4tGFr/eCUTAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Shen.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Shen.png"
   },
   "99": {
     "name": "Lux",
     "id": "Lux",
     "key": "99",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AJJ4S7yCW4c6IBYAAADVtI3//NzRk3aGSzYAl2NL6cqz/96/ql1GAB8OCkcvKKV0XkgtI2M9Fix58yizAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Lux.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Lux.png"
   },
   "101": {
     "name": "Xerath",
     "id": "Xerath",
     "key": "101",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AJOnzbbL8oOWu5my2gDl//9xkcsACy4xPGAAXnGhAABNR1+pSF+fAAAeWRU4gmODxU14raw+Ft/KGFeJAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Xerath.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Xerath.png"
   },
   "102": {
     "name": "Shyvana",
     "id": "Shyvana",
     "key": "102",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOQYGDYkVv4//3zRHUdBh8J6Vo7hzmhwaHi0gyZOqr/r/3/f+p/vKo8g7GimatxhJdhiBinKADt8hHTeTRCwgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Shyvana.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Shyvana.png"
   },
   "103": {
     "name": "Ahri",
     "id": "Ahri",
     "key": "103",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgYJRQFTcxULRhYBBmEOI22z151f97r0VZ5RlUFbOf77r5/9N/CU4FBlOLqY7GaZHWkVwMIgBzTQ+5B0kCOgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Ahri.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Ahri.png"
   },
   "104": {
     "name": "Graves",
     "id": "Graves",
     "key": "104",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPQsnY119NRYGVUUNViKG5s/7937f/3T0yVVRkOnLvz/+Kxqw0NLqzSDNYqZq6qGiYMDKoMDADnFRG9tbT4AwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Graves.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Graves.png"
   },
   "105": {
     "name": "Fizz",
     "id": "Fizz",
     "key": "105",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWO4eGnP+/+/urcf9oqOZrD1i2k+9Lz1yC3XyCQGSTVLs/B659Q+NgULBkVtC2FNNwYGPRU1EwCQUhNNw1rJ+AAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Fizz.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Fizz.png"
   },
   "106": {
     "name": "Volibear",
     "id": "Volibear",
     "key": "106",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AAAAHy49XNnx/6GtyQATGzuMocnp///y//8AKjtscHWbsrbVmp+1AC5EaTExU09LbV9ifIXSGE3RRhv3AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Volibear.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Volibear.png"
   },
   "107": {
     "name": "Rengar",
     "id": "Rengar",
     "key": "107",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPg45fS0DbNTU2ct2IFg6aaZsukef//v6vp6GYwUJG3dXGpr8nXMzBhYGRg0zPSkxATd3D1AQC90w9nvHQ7LwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Rengar.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Rengar.png"
   },
   "110": {
     "name": "Varus",
     "id": "Varus",
     "key": "110",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AD5GY1FTdoeApbnS9gBQN1+FW4uziL7j//8AWw4btIS6s5XQYX2qAB0AAE0nTUcZOyAmQGzeFW/H1sFMAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Varus.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Varus.png"
   },
   "111": {
     "name": "Nautilus",
     "id": "Nautilus",
     "key": "111",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/APL/4AwAABMZCaC9oQCsoYdGKBnKjWiXdVQAIwAA8pVo+JJj/6d3ADAZDKFONiYAACwAABxDEnNMbbvQAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Nautilus.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Nautilus.png"
   },
   "112": {
     "name": "Viktor",
     "id": "Viktor",
     "key": "112",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNYWBSY7mxvKCYdb63JUBnpX+SfXB0SXehhx/D/0+kbq5ZfLM3NltZjyLc1V2LgMmYQUeeSBQDYWhDJDkJEJgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Viktor.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Viktor.png"
   },
   "113": {
     "name": "Sejuani",
     "id": "Sejuani",
     "key": "113",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOwyVovoBOrphKcVtjPEJjc7eldpW8Uz8Sgy6Bp4P3/2/+PZ/439+9l8PeMTgypygzpqqteAADWLhRTTsS8iAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Sejuani.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Sejuani.png"
   },
   "114": {
     "name": "Fiora",
     "id": "Fiora",
     "key": "114",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ABwMKEEKLGlKYqDF1wAoABrxnLGeSmxDN00AMSBH0XqN/9/7WEdrADEnNWlBV//4/+j1++B4FmOdI0dDAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Fiora.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Fiora.png"
   },
   "115": {
     "name": "Ziggs",
     "id": "Ziggs",
     "key": "115",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNoSAl30TKRYuBTYGBgKPB1dpeQybbX6E/1ZWhNtOkJtf///dC2+mSGHY0Rrxe17OxqCdKSBQCEgBJIs575NQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Ziggs.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Ziggs.png"
   },
   "117": {
     "name": "Lulu",
     "id": "Lulu",
     "key": "117",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNozg7xUzUwEZfN8XFmKLD168jrXDx/W6arH0Oae+r/H/9fXf4faubHYCZj2ls6N84lWoCBBQD1OBOL86janQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Lulu.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Lulu.png"
   },
   "119": {
     "name": "Draven",
     "id": "Draven",
     "key": "119",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOw1dXb1lkRa+euJmPOEGjj9v/95QMNVX4mfgwqMppnpvfNSUt3MnBj4OORynHzLnB2Y2PgAgDYiBB+TaiQegAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Draven.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Draven.png"
   },
   "120": {
     "name": "Hecarim",
     "id": "Hecarim",
     "key": "120",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ACRYSEaCc3LBtGKqoACX9tGx//9mp6qX6N4AQn1ubrPCTYabn/f8AAAFAxsyK2mvtKX7/7WEGq9DzOhRAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Hecarim.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Hecarim.png"
   },
   "121": {
     "name": "Kha'Zix",
     "id": "Khazix",
     "key": "121",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ABEAJjANU41U+R8OTAAUABqfjbOzef9pRY0AiZjVs6rX8r3/2/f/AKzQ/4mN2dX//3OU1ieDG1E9Q3KRAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Khazix.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Khazix.png"
   },
   "122": {
     "name": "Darius",
     "id": "Darius",
     "key": "122",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AK6VisSbnTYiMQsACACbZF//3NvNlKNGIy4AjjQw/+7hvo6kaklYAF4YGY9faVxCUCMABkwaFM0RYr6wAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Darius.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Darius.png"
   },
   "126": {
     "name": "Jayce",
     "id": "Jayce",
     "key": "126",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOI9PePdPRyU5WvLy9g2NTb8//9//MVhRNiXBiqkgv+P/z1Yeq8UDVpBi4GpmynoFw7bzUBfgBCFRSSmKV+YgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Jayce.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Jayce.png"
   },
   "127": {
     "name": "Lissandra",
     "id": "Lissandra",
     "key": "127",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMwdkv2T53CwKDIwK7BYBtQtOfGf1vfal4lJwZeBetr//8X9R7RsIpnYBDT9c5tm77haknjPACkURJtdm3FWgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Lissandra.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Lissandra.png"
   },
   "131": {
     "name": "Diana",
     "id": "Diana",
     "key": "131",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPITCua3T+lsqA4JCSYoa9nyf/f/2vSys1MDRhSM9sXNy7uTqvg4+Nj0NExdzdyCLR2YmPgAgBGVBLXB6cfvwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Diana.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Diana.png"
   },
   "133": {
     "name": "Quinn",
     "id": "Quinn",
     "key": "133",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ANC/yFM5OksjJLCBeAD/1e2ZbnRZKy67fHYA7srv//T/8pysTicqADw6Y1BHa3xMWAYAFJsKF3tzuTk8AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Quinn.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Quinn.png"
   },
   "134": {
     "name": "Syndra",
     "id": "Syndra",
     "key": "134",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AFJCYpVgwyATKxUPGQArGTnimvTcpdwXDhkAHBIk/+n//+z/FgcYAAcFE6N/n35abQQADeGREmD97elGAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Syndra.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Syndra.png"
   },
   "136": {
     "name": "Aurelion Sol",
     "id": "AurelionSol",
     "key": "136",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNQENHwM6iIC5igZxzFICWd0tf///mz/+WFMxgMjBuySi99/P7fx7+VgYFBjYHZyN4iiYvXBAD1aRJnT8jNLAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/AurelionSol.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/AurelionSol.png"
   },
   "141": {
     "name": "Kayn",
     "id": "Kayn",
     "key": "141",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AAEAFDs5SWdocOL//wAWFCXR0ePMsr0xKTIAFxIhXTxIlneAwdXVAA4BFjMcKWhJVb3P0fHFE7C+XF9NAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Kayn.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Kayn.png"
   },
   "142": {
     "name": "Zoe",
     "id": "Zoe",
     "key": "142",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNIEZXZ5e74JCf8bH0IQziX0rfC7v91XZeSAxmUZEz/3378v39horgaAwODQqClm5mGq6GSAwAnTBNE6KCSIQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Zoe.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Zoe.png"
   },
   "143": {
     "name": "Zyra",
     "id": "Zyra",
     "key": "143",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPIUNRqMLcPU9bT4Jdi6DOy+39q87bCfGMeGYYMNb3/70//27ZCklmAwUdOZXtlare/DysDOwDCABFf9OX14wAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Zyra.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Zyra.png"
   },
   "145": {
     "name": "Kai'Sa",
     "id": "Kaisa",
     "key": "145",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOIDe62MfJ3s0sICmxmUJOyrU+s7c2ZYSjrxsDFwDchq+X/l/+FYR0MbAyc7sauZ3ff9raIBwC1hBHsDu6uqgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Kaisa.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Kaisa.png"
   },
   "147": {
     "name": "Seraphine",
     "id": "Seraphine",
     "key": "147",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AFUAO5I0W5w/XmVXcAB9B13dlqL/ys7bwM0AWAAlx3eC//D33aO0ADgACmgAKJ5RW1UAKEloFfzbxhSEAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Seraphine.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Seraphine.png"
   },
   "150": {
     "name": "Gnar",
     "id": "Gnar",
     "key": "150",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPgZWBQE+azFuKRZGBgcBLm2ptl+67Wo0BfiqHZVOb/wbL/L+fdbA5l6POQvTchZG6Sf7m1JABYYhEFQMZQAAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Gnar.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Gnar.png"
   },
   "154": {
     "name": "Zac",
     "id": "Zac",
     "key": "154",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AAAQACpmGIzNhBlSJgAALgBQg0N2q3Bdp2MAZbd2iemVacRtieGWAKX/42zGYUWSOK//88xgFmBSvGe1AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Zac.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Zac.png"
   },
   "157": {
     "name": "Yasuo",
     "id": "Yasuo",
     "key": "157",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AAwAGiwSNpJpg8Tc/wARABTapcv/7v/37/8AODdp4q/VtoyfJSEyAD9dn6vS/z86UwAAG1zMFy2rvleEAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Yasuo.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Yasuo.png"
   },
   "161": {
     "name": "Vel'Koz",
     "id": "Velkoz",
     "key": "161",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AAAADk80Y3I/h2A4dgCEWZ7Pasv/kf+gMpgAjTud/5n//8f/xE7EAFcfU5Q0haczoEgYPUD+F3fOhWOfAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Velkoz.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Velkoz.png"
   },
   "163": {
     "name": "Taliyah",
     "id": "Taliyah",
     "key": "163",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AP/Bhu9/WzcAACUAAADceln/q4T/uJtACgsAaCkl/9ut/9WpUxgUAEYQDblaQaFVREoiG0S9FKGzGIi4AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Taliyah.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Taliyah.png"
   },
   "164": {
     "name": "Camille",
     "id": "Camille",
     "key": "164",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMQEBaeNqlv2pQJnNy8DB4ebpcO7/z/54u3uxtDTVXVnok1zZmxbs5ODEXllVN7myRFhBgYWAEVrxNKHTjg8gAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Camille.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Camille.png"
   },
   "166": {
     "name": "Akshan",
     "id": "Akshan",
     "key": "166",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMQF5NiY2D+sq39/7cDDI6Ojp05sW9XNXzZ3c8gLiEzv7OsNconzsmUgZONXUlWtjHZL9TOBAAASBH1cVtkZQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Akshan.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Akshan.png"
   },
   "200": {
     "name": "Bel'Veth",
     "id": "Belveth",
     "key": "200",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AMvC/2NNiJib2Ovr/wDOvf/FrO7Wyf+spOoA//f/+OL/3dH/Rj9iAKeNw0c1WgUAGhYNJKD1HvunIiH8AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Belveth.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Belveth.png"
   },
   "201": {
     "name": "Braum",
     "id": "Braum",
     "key": "201",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AG/D5Jj0/3/F6Yfl/wCT8/+Nga16UoCCu9kAtPr/cFGNYhhcmZzAALX//01tlxoAKysuUUysHJUOf3xzAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Braum.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Braum.png"
   },
   "202": {
     "name": "Jhin",
     "id": "Jhin",
     "key": "202",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgYuHR0tGydbRTUddjEBMWXrVz9/v//+2d3BiUGBgOnX/07v9/GQ4OBjcBFUMxVX1NY2NpJQCKHQ9kvF9YdgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Jhin.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Jhin.png"
   },
   "203": {
     "name": "Kindred",
     "id": "Kindred",
     "key": "203",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgYJBWtQoqa56uoGjKwMCvkZHV/uP/f1vfFAYGGeuIxL7lJ95xa/gwcEkYCCnZS+t6cLArAACGAw5Fs6GUhgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Kindred.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Kindred.png"
   },
   "221": {
     "name": "Zeri",
     "id": "Zeri",
     "key": "221",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AGpoQcPkkpvBgJaXaQC9yWXv/7BsUkKEeEAAd3s14sWSiXldcZVJAFhAJYt5SUFVIwAHAKLOFlyaYnCyAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Zeri.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Zeri.png"
   },
   "222": {
     "name": "Jinx",
     "id": "Jinx",
     "key": "222",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AA9elD2Fwj5BdUwAXAAtf7XV2vOffJVXAFwAUVyl//v/oXqSMAA4AE0HaId3pKKRnBMAFjFxFT7J9VlJAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Jinx.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Jinx.png"
   },
   "223": {
     "name": "Tahm Kench",
     "id": "TahmKench",
     "key": "223",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNw9w6wsXeUlJBS1TFkyEiJ7e2tXbt6hqe7I4OxttbKORP//3vr6WDNIMDA6uHgFObpLczMDgCkTw/fVZsoSgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/TahmKench.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/TahmKench.png"
   },
   "234": {
     "name": "Viego",
     "id": "Viego",
     "key": "234",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AE94iafN4JCwwUNYaQBpnrDJ5f+7xOl6kqUAUHeL7v//j46ycoadAAADF2x1jnB9lyY3T+2jGoJbTVRfAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Viego.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Viego.png"
   },
   "235": {
     "name": "Senna",
     "id": "Senna",
     "key": "235",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgYJcQ17Fbsfvo5///GXiEpZNyiivTyqMjUhkYuAXS/RLXlE0KdgxmYGDkUpPXdjZ0DIlNAwC/Hw+2C0hgFwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Senna.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Senna.png"
   },
   "236": {
     "name": "Lucian",
     "id": "Lucian",
     "key": "236",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ABkAAJRgXNCYiiojMwBlQEPun5f/7NZdRVAA38DI0o2K/8/Md3qVAGRSXaN5fY+JomqBqlSGGQb0DzHKAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Lucian.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Lucian.png"
   },
   "238": {
     "name": "Zed",
     "id": "Zed",
     "key": "238",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWM4sKV/9qyutinNSYWZDP//nNvdWRBjZuCkqsIwNyes0FLLXUnVg4GBIdPWyFGET5KBwVlYEgBJHBEyqPonHwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Zed.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Zed.png"
   },
   "240": {
     "name": "Kled",
     "id": "Kled",
     "key": "240",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ADUoKy0eIlUxQMSjiQBGMzKyk53Tn630xbMARzQooW+D+cbY//bWAAIAAoBresqqpuGlZSNRF8o9dTmvAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Kled.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Kled.png"
   },
   "245": {
     "name": "Ekko",
     "id": "Ekko",
     "key": "245",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ACkgK//w/62jrFtrdgBiT1v/9v+IfYzL6fMAOiYuhFhldXKBvODxACYAACkAABcSGjNFU51rFfSMwvC/AAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Ekko.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Ekko.png"
   },
   "246": {
     "name": "Qiyana",
     "id": "Qiyana",
     "key": "246",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AHgIAFU2LYp5Z7+fhAB7NCj/5uD/3tD11McAg1lr/599/9PO//j/AEEqPyoAAE0mLYJdXZY8GQY+dZyfAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Qiyana.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Qiyana.png"
   },
   "254": {
     "name": "Vi",
     "id": "Vi",
     "key": "254",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOoiEupd4qu90uy1zNnqJC22e5d9HTetoroNIbFmmGPJs35//6Vv5Edgy2z3ITY5J0dnYIM3AAVhxQ8FKQ4mAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Vi.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Vi.png"
   },
   "266": {
     "name": "Aatrox",
     "id": "Aatrox",
     "key": "266",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AAIAC11qfHJ2hw0AEAAjISk4NELB1fFTV2gAOS06lWlzwJWd/97YAGsyPP+1uf+qqv+knrvCFiMvaAZDAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Aatrox.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Aatrox.png"
   },
   "267": {
     "name": "Nami",
     "id": "Nami",
     "key": "267",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPQCo+p2PVKTNeagZGFwSg5taqjOykriZdfgEHC1m79oVX//9/hFRFlYODnk5OXNzE1YGLnAwCd2g5Fq6trjQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Nami.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Nami.png"
   },
   "268": {
     "name": "Azir",
     "id": "Azir",
     "key": "268",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AKaRj96uksmYd5R4bQDuyLj/7HXPbSSGUD0A1aqbkVUgbTUTJAACAF45JSQAAHdNH2I9JagRFPmN/VPJAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Azir.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Azir.png"
   },
   "350": {
     "name": "Yuumi",
     "id": "Yuumi",
     "key": "350",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AM2qst+uq4RNVk4oTwCSboL//v+RmrQjH1MAXVaCpLTyoKLkfXWUAKGToDwzWxoAHZ6Kf7cyGOf/Q/8EAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Yuumi.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Yuumi.png"
   },
   "360": {
     "name": "Samira",
     "id": "Samira",
     "key": "360",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AJ2Df1s2ODYkKjchJgCgdmuZX19JNT8IAhIA9d/S9KiaqWlwIhYgAPHy8//2331HTAMAD+uUFJ7A7zJNAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Samira.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Samira.png"
   },
   "412": {
     "name": "Thresh",
     "id": "Thresh",
     "key": "412",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ABxyNkWqX1zKdiV9SQBo3IcAORJl13yU/54AQKB+JXxaiP++UbtkAAAlKFS9nHTunQAPABvYFK8A7MhtAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Thresh.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Thresh.png"
   },
   "420": {
     "name": "Illaoi",
     "id": "Illaoi",
     "key": "420",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AP///9bDrZ2Qdubm5wC7m35xVSiGcUj/+O0APiQSXT8gaVAuclc7ABcNBDEgDy0bDAgAANSmFH5dirDXAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Illaoi.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Illaoi.png"
   },
   "421": {
     "name": "Rek'Sai",
     "id": "RekSai",
     "key": "421",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNwzurJK1/JLqjOz6PLsO79/0P//zMyK7MyyDDYOrZPr1xVYRsqziDKoCbv3xzXkmQZqMwsAwDKBxAPSg9fEwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/RekSai.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/RekSai.png"
   },
   "427": {
     "name": "Ivern",
     "id": "Ivern",
     "key": "427",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMQ5WWIjbZYvjBXTZWPQYiBISNa5/GlrvhERwZ5SYYtCxP+/18Vk+7FwMbI4OMhXllqpG+rAwCIOg9uVvHX+wAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Ivern.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Ivern.png"
   },
   "429": {
     "name": "Kalista",
     "id": "Kalista",
     "key": "429",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOQllXRUlTW09QVFpdlsIzKzt15KXbaKj0TGwYZQ/tV//+nLdouJ6/CwMjCpR2epW/jw8DAAgBm3Q3RJSnIDAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Kalista.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Kalista.png"
   },
   "432": {
     "name": "Bard",
     "id": "Bard",
     "key": "432",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNQF2FWZWCY1ZIwbWIFg5Ohyqvp1v9f5ZWHmDE4mGiZMDA8nu3vbazK0NRQIsrMEOpjW1lfAgClSBBG07vYcwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Bard.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Bard.png"
   },
   "497": {
     "name": "Rakan",
     "id": "Rakan",
     "key": "497",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ALinr/7f4YNHXI18hwCOanf/8f34r8PDoKwAt5+r0Iuj0oide1BdAGVQXWE4SCYHGhwAFRxFGeGQK/WsAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Rakan.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Rakan.png"
   },
   "498": {
     "name": "Xayah",
     "id": "Xayah",
     "key": "498",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPIdA7NccyIMAj0UjZl8NVwbDSLPBPfmqRqwyDLwPV+5dn/L/+HKhoxBFk77pm/Y17plIkFBQDGqxPf58bCNwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Xayah.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Xayah.png"
   },
   "516": {
     "name": "Ornn",
     "id": "Ornn",
     "key": "516",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWPIcsv4f////6f/Yw38GNRYxFfm1p3rnKPNKcEgx8DY5hZSb+thIijLYMApND8sZn5ImDWXOAAs5RGuNTnAywAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Ornn.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Ornn.png"
   },
   "517": {
     "name": "Sylas",
     "id": "Sylas",
     "key": "517",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNgYGCTEJXQVdGVkFRhkBSR6ijtPrHiiKWhM4O2svqBjVf+f//v7hDOUJGdkxlfvmLVPX+ffABolBIk5lwoOwAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Sylas.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Sylas.png"
   },
   "518": {
     "name": "Neeko",
     "id": "Neeko",
     "key": "518",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AJ2h61E6kkUWUY5EdgCLfuT/6/f/yc05BUgAYC2K/8XQ/9TQIwY4AD4VUD4MM1dETBQAGI84FgbYmDAJAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Neeko.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Neeko.png"
   },
   "523": {
     "name": "Aphelios",
     "id": "Aphelios",
     "key": "523",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOQlzGSFVWTkDCy8shkkBJSmN+9eULtfBPzIAYBBq43F3/9//Y/I6eLgZ9RUFdB21hJz9zQBwB8Xw+YqIMazQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Aphelios.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Aphelios.png"
   },
   "526": {
     "name": "Rell",
     "id": "Rell",
     "key": "526",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/ADEcCxsAADUgIS4ZCAC2hlKsdWF6Uk2ccUgA//WU9ZxpmlZO//28AF0zDz4QBcqeefPlsK0IFIrATsQuAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Rell.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Rell.png"
   },
   "555": {
     "name": "Pyke",
     "id": "Pyke",
     "key": "555",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPElEQVQImWOI62i7+///ztNHtTzcGKxSk1Mbyp0CPThNTRjEDPSMzSyMtNQZxIQZlI30BBkYBBgYxDVUAfQLDb3ZFkZWAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Pyke.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Pyke.png"
   },
   "711": {
     "name": "Vex",
     "id": "Vex",
     "key": "711",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AAAKKSlhhIDh/6bp/wAZRGVld72B3v+f//8AKl2L5fz/eI3UGkd1AAcAK2lqpy06ZgAAKINSFshulIhYAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Vex.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Vex.png"
   },
   "777": {
     "name": "Yone",
     "id": "Yone",
     "key": "777",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNYvHt99eyFigxiVgwMDB/+//DT8LZhYGhiYGNofv8hIqsqikG6niGdgSG7wqGlT5ZPUZrfAgDkVRB+KLmP1AAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Yone.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Yone.png"
   },
   "875": {
     "name": "Sett",
     "id": "Sett",
     "key": "875",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVQImQE0AMv/AKNpbY1HU0MlK0MrLwC3b3HzpaPrubYwFhkAbE1O/+/c/8CvPSotAA0AALiUhZBgUTQaGSz+FLXfy/+iAAAAAElFTkSuQmCC",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Sett.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Sett.png"
   },
   "876": {
     "name": "Lillia",
     "id": "Lillia",
     "key": "876",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOQZBVV4zRUZJBV4dFmsDEN39a9clt+sy6fHYODis3/U7v/v3wcaJLCoMonvDzaZ2penS6fLgBuCxBVGV9YZQAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Lillia.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Lillia.png"
   },
   "887": {
     "name": "Gwen",
     "id": "Gwen",
     "key": "887",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWOwyG1p+vpfO3UiA4Myg05G07H//x2atghalzOoJtfcvvGkq2e5iFMRg337YuuGRU7Fq0UcSwFFkhYHkkOoiAAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Gwen.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Gwen.png"
   },
   "888": {
     "name": "Renata Glasc",
     "id": "Renata",
     "key": "888",
     "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWNQ1VGOSQi0NNTy93dlUFRXXLtyVkdpYUFQJIOLp1l0qOfe3duddQ0YjCx1///5NK+2XpyBDQCg3RGito8rwgAAAABJRU5ErkJggg==",
-    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/Renata.png"
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Renata.png"
+  },
+  "895": {
+    "name": "Nilah",
+    "id": "Nilah",
+    "key": "895",
+    "placeholderBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQImWMQFlNjYGBn5xQWE1Bk4OGR4GbjNNTQc3aJZ+goKJlR11wRF52dUcXw/++7DQumWugZu1mbAgD2mQ4Zq7uehwAAAABJRU5ErkJggg==",
+    "imageUrl": "https://ddragon.leagueoflegends.com/cdn/12.13.1/img/champion/Nilah.png"
   }
 }
