@@ -31,7 +31,7 @@ const requireAuthHeader = requireAuthFactory(
 );
 const requireAdminAuthHeader = requireAuthFactory(
   process.env.ADMIN_AUTH_TOKEN,
-  "admin_authorization"
+  "admin-authorization"
 );
 
 module.exports = {

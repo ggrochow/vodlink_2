@@ -1,6 +1,5 @@
 ### Needs
 - double check how region is handled with riot api & id / name conflicts
-- role counts not always properly respecting the streamer role when lots of champs selected
 - fix cors
 - fix admin
  
