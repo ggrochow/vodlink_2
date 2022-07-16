@@ -4,7 +4,7 @@ module.exports = {
       name: "vodlink_api",
       script: "./api/index.js",
       watch: true,
-      ignore_watch: "node_modules",
+      ignore_watch: ["node_modules", "error.log"],
       exec_mode: "cluster",
       instances: 0,
       env: {
