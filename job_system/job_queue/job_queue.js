@@ -2,9 +2,6 @@ const jobs = require("./jobs");
 const db = require("../../database/models");
 const logger = require("../../utils/logger");
 
-// Setup two queues, with different 'rate limits' to wait between each job
-// Each queue will look at the database for jobs that use its API, maybe pass in a list of job types to search?
-
 /**
  * JobQueue
  * Used to run all our jobs that query APIs at a rate that will prevent rate limits from getting hit
@@ -163,7 +160,12 @@ class JobQueue {
         return;
       }
 
-      job = await this.runJob(job);
+      try {
+        job = await this.runJob(job);
+      } catch (jobError) {
+        console.error(job.logPrefix(), "-", jobError);
+        job.errors = `Unhandled job error - ${jobError.message}`;
+      }
 
       if (job.retry === true) {
         await this.retryJob(job);
