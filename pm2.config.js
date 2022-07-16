@@ -5,8 +5,6 @@ module.exports = {
       script: "./api/index.js",
       watch: true,
       ignore_watch: ["node_modules", "error.log"],
-      exec_mode: "cluster",
-      instances: 0,
       env: {
         NODE_ENV: "production",
       },
@@ -14,7 +12,7 @@ module.exports = {
     {
       name: "vodlink_jobs",
       script: "./job_system/index.js",
-      kill_timeout: 5000,
+      kill_timeout: 5500,
       env: {
         NODE_ENV: "production",
       },
