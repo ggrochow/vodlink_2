@@ -3,8 +3,6 @@ module.exports = {
     {
       name: "vodlink_api",
       script: "./api/index.js",
-      watch: true,
-      ignore_watch: ["node_modules", "error.log"],
       env: {
         NODE_ENV: "production",
       },

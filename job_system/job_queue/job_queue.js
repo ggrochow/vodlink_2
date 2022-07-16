@@ -175,7 +175,6 @@ class JobQueue {
         await this.finishJob(job);
       }
     } catch (err) {
-      // TODO
       this.isFetching = false;
       logger.error(err.message);
       console.error(err);
