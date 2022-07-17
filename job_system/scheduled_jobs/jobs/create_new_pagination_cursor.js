@@ -2,6 +2,7 @@ const logger = require("../../../utils/logger");
 const db = require("../../../database/models");
 const { settingTypes } = require("../../../database/models/settings");
 const { vodlinkRedis, champCountsRedis } = require("../../../api/redis");
+const { revalidateHomepage } = require("../../../external_apis/vodlink");
 
 /**
  * Updates the internal match id cursor for pagination.
@@ -50,6 +51,15 @@ async function createNewPaginationCursor() {
     logger.error(
       `Error flushing the redis DB after setting pagination cursor - ${redisError.message}`
     );
+    return this;
+  }
+
+  try {
+    await revalidateHomepage();
+  } catch (axiosError) {
+    console.error(axiosError);
+    logger.error(`Error clearing homepage cache - ${axiosError.message}`);
+    return this;
   }
 
   logger.verbose(

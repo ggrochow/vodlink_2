@@ -1,5 +1,4 @@
 const axios = require("axios");
-const { func } = require("joi");
 const NEW_API_BASE_URL = "https://api.twitch.tv/helix";
 const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET;
