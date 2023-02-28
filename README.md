@@ -1,7 +1,5 @@
 # VODLINK
 
-## https://lol.vodfind.com
-
 A tool to link League of Legends matches to twitch streamers VODs.
 Allowing users to find timestamps to vods to watch based on a given champion matchup.
 Automatically fetches matches & vods from Twitch/LoL APIs grabbing new data daily.
